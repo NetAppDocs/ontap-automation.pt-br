@@ -1,0 +1,192 @@
+---
+sidebar: sidebar 
+permalink: workflows/prepare_workflows.html 
+keywords: workflows, preparation, prepare to use workflows 
+summary: Você deve estar familiarizado com a estrutura e o formato dos fluxos de trabalho do ONTAP antes de usá-los com uma implantação em tempo real. 
+---
+= Prepare-se para usar os fluxos de trabalho
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você deve estar familiarizado com a estrutura e o formato dos fluxos de trabalho antes de usá-los com uma implantação do ONTAP ao vivo.
+
+
+TIP: Você deve garantir que sua versão do ONTAP ofereça suporte a todas as chamadas de API nos fluxos de trabalho que você planeja usar. Consulte link:../reference/api_reference.html["Referência da API"] para obter mais informações.
+
+
+
+== Introdução
+
+Um _workflow_ é uma sequência de uma ou mais etapas necessárias para realizar uma tarefa ou objetivo administrativo específico. Os fluxos de trabalho do ONTAP incluem as etapas e os parâmetros principais que você precisa para realizar cada tarefa. Eles fornecem um ponto de partida para personalizar o ambiente de automação do ONTAP.
+
+.Tipos de passos
+Cada etapa de um fluxo de trabalho do ONTAP é um dos seguintes tipos:
+
+* Chamada de API REST (com detalhes como exemplos curl e JSON)
+* Execute ou invoque outro fluxo de trabalho do ONTAP
+* Tarefa relacionada diversos (como tomar uma decisão de configuração)
+
+
+.Chamadas de API REST
+A maioria das etapas do fluxo de trabalho são chamadas de API REST. Estas etapas usam um formato comum que inclui um exemplo curl e outras informações. Consulte o link:../reference/api_reference.html["Referência da API"] para obter mais detalhes sobre as chamadas de API REST.
+
+.Fluxos de trabalho de uma única etapa
+Um fluxo de trabalho pode conter apenas uma etapa. Esses _fluxos de trabalho de etapa única_ são formatados de forma ligeiramente diferente dos fluxos de trabalho que contêm várias etapas. Por exemplo, o nome explícito da etapa é removido. A ação ou operação deve ser clara com base no título do fluxo de trabalho.
+
+
+
+== Variáveis de entrada
+
+Os fluxos de trabalho são projetados para serem o mais gerais possível para que possam ser usados em qualquer ambiente ONTAP. Com isso em mente, as chamadas REST API usam variáveis nos exemplos curl e outras entradas. As chamadas de API REST podem ser facilmente adaptadas a diferentes ambientes ONTAP.
+
+
+
+=== Formato URL base
+
+Você pode acessar a API REST do ONTAP diretamente através do curl ou de uma linguagem de programação. Nesse caso, o URL base é diferente do URL usado ao acessar a documentação on-line do ONTAP ou o Gerenciador de sistema.
+
+Ao acessar a API diretamente, você precisa anexar *API* ao domínio ou endereço IP. Por exemplo:
+
+`https://ontap.demo-example.com/api`
+
+Consulte link:../get-started/access_rest_api.html["Como acessar a API REST do ONTAP"] para obter mais informações.
+
+
+
+=== Parâmetros de entrada comuns
+
+Existem vários parâmetros de entrada comumente usados com a maioria das chamadas de API REST. Esses parâmetros normalmente não são descritos nos fluxos de trabalho individuais. Você deve estar familiarizado com os parâmetros. Consulte link:../rest/input_variables.html["Variáveis de entrada que controlam uma solicitação de API"] para obter mais informações.
+
+Se forem necessários parâmetros adicionais para uma chamada de API REST específica, eles serão incluídos na seção *parâmetros de entrada adicionais para o exemplo curl* para cada fluxo de trabalho.
+
+
+
+=== Formato variável
+
+Os valores de ID e outras variáveis usadas com os exemplos de fluxo de trabalho são opacos e podem variar com cada cluster ONTAP. Para melhorar a legibilidade dos exemplos, os valores reais não são usados. Variáveis são usadas em vez disso. Esta abordagem, baseada em um formato consistente e conjunto de nomes reservados, tem vários benefícios, incluindo:
+
+* As amostras curl e JSON são mais legíveis e fáceis de entender.
+* Como todas as palavras-chave usam o mesmo formato, você pode identificá-las rapidamente.
+* Não há exposição de segurança porque os valores não podem ser copiados e reutilizados.
+
+
+As variáveis são formatadas para serem usadas em um ambiente de shell Bash. Cada variável começa com um sinal de dólar e é incluída em aspas duplas, conforme necessário. Isso os torna reconhecíveis ao Bash. Maiúsculas são usadas consistentemente para os nomes.
+
+Aqui estão algumas das palavras-chave variáveis comuns. Esta lista não é exaustiva e variáveis adicionais são usadas conforme necessário. Seu significado deve ser óbvio com base no contexto.
+
+[cols="25,15,60"]
+|===
+| Palavra-chave | Tipo | Descrição 
+
+
+| FQDN_IP | URL | O nome de domínio totalmente qualificado ou o endereço IP do LIF de gerenciamento do ONTAP. 
+
+
+| CLUSTER_ID | Caminho | O valor UUIDv4 que identifica o cluster do ONTAP onde as operações da API são executadas. 
+
+
+| BASIC_AUTH | Colhedor | A string de credenciais usada para autenticação básica HTTP. 
+|===
+
+
+=== Exemplos de entrada JSON
+
+Algumas das chamadas de API REST, como aquelas que usam POST ou PATCH, exigem entrada JSON no corpo da solicitação. Os exemplos de entrada JSON são apresentados separadamente dos exemplos curl para maior clareza. Você pode usar os exemplos de entrada JSON com uma das técnicas descritas abaixo.
+
+.Guardar no ficheiro local
+Você pode copiar o exemplo de entrada JSON para um arquivo e salvá-lo localmente. O comando curl refere-se ao arquivo usando o `--data` parâmetro com o valor indicando o nome do arquivo com um `@` prefixo.
+
+.Cole no terminal após o exemplo curl
+Primeiro você precisa copiar e colar o exemplo curl em um shell terminal. Em seguida, edite o exemplo para remover completamente o `--data` parâmetro no final e substitua-o pelo `--data-raw` parâmetro. Finalmente, copie e cole no exemplo JSON para que ele siga o comando curl com o parâmetro atualizado. Você deve usar aspas simples para embrulhar o exemplo de entrada JSON.
+
+
+
+== Opções de autenticação
+
+A técnica de autenticação primária disponível para a API REST é a autenticação básica HTTP. A partir do ONTAP 9.14, você também tem a opção de usar a estrutura Open Authorization (OAuth 2,0) com autenticação e autorização baseadas em token.
+
+
+
+=== Autenticação básica HTTP
+
+Ao usar a autenticação básica, as credenciais do usuário devem ser incluídas em cada solicitação HTTP. Existem duas opções para enviar as credenciais.
+
+.Construa o cabeçalho de solicitação HTTP
+Você pode construir manualmente o cabeçalho de autorização e incluí-lo com as solicitações HTTP. Isso pode ser feito ao usar um comando curl na CLI ou uma linguagem de programação com seu código de automação. As etapas de alto nível incluem:
+
+. Concatenar os valores de usuário e senha com dois pontos:
++
+`admin:david123`
+
+. Converta toda a cadeia de carateres para base64:
++
+`YWRtaW46ZGF2aWQxMjM=`
+
+. Construa o cabeçalho da solicitação:
++
+`Authorization: Basic YWRtaW46ZGF2aWQxMjM=`
+
+
+
+Os exemplos de cURL de fluxo de trabalho incluem este cabeçalho com a variável * BASIC_AUTH* que você precisa atualizar antes de usar.
+
+.Use um parâmetro curl
+Outra opção ao usar curl é remover o cabeçalho de autorização e usar o parâmetro curl *user* . Por exemplo:
+
+`--user username:password`
+
+Você precisa substituir as credenciais apropriadas para o seu ambiente. As credenciais não são codificadas em base64. Ao executar o comando curl com este parâmetro, a cadeia de carateres é codificada e o cabeçalho de autorização é gerado para você.
+
+
+
+=== OAuth 2,0
+
+Ao usar o OAuth 2,0, você precisa solicitar um token de acesso a um servidor de autorização externo e incluí-lo em cada solicitação HTTP. Os passos básicos de alto nível são descritos abaixo. Consulte também https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Visão geral da implementação do ONTAP OAuth 2,0"^] para obter mais detalhes sobre o OAuth 2,0 e como usá-lo com o ONTAP.
+
+.Prepare seu ambiente ONTAP
+Antes de usar a API REST para acessar o ONTAP, você precisa preparar e configurar o ambiente ONTAP. Em um nível alto, os passos incluem:
+
+* Identificar os recursos e clientes protegidos pela ONTAP
+* Revise a função REST do ONTAP e as definições de usuário existentes
+* Instale e configure o servidor de autorização
+* Projetar e configurar as definições de autorização do cliente
+* Configure o ONTAP e ative o OAuth 2,0
+
+
+.Solicite um token de acesso
+Com o ONTAP e o servidor de autorização definido e ativo, você pode fazer uma chamada de API REST usando um token OAuth 2,0. O primeiro passo é solicitar um token de acesso ao servidor de autorização. Isso é feito fora do ONTAP usando uma das várias técnicas diferentes baseadas no servidor. O ONTAP não emite tokens de acesso nem realiza redirecionamento.
+
+.Construa o cabeçalho de solicitação HTTP
+Depois de obter um token de acesso, você pode construir um cabeçalho de autorização e incluí-lo com as solicitações HTTP. Independentemente de você usar curl ou uma linguagem de programação para acessar a API REST, você deve incluir o cabeçalho com cada solicitação de cliente. Você pode construir o cabeçalho da seguinte forma:
+
+`Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSld ...`
+
+
+
+== Usando os exemplos com Bash
+
+Se você usar os exemplos de cURL de fluxo de trabalho diretamente, você deve atualizar as variáveis que eles contêm com os valores apropriados para o seu ambiente. Você pode editar manualmente os exemplos ou confiar no shell Bash para fazer a substituição por você, conforme descrito abaixo.
+
+
+NOTE: Uma vantagem de usar o Bash é que você pode definir os valores da variável uma vez em uma sessão de shell em vez de uma vez por comando curl.
+
+.Passos
+. Abra o shell Bash fornecido com Linux ou sistema operacional semelhante.
+. Defina os valores da variável incluídos no exemplo curl que você deseja executar. Por exemplo:
++
+`CLUSTER_ID=ce559b75-4145-11ee-b51a-005056aee9fb`
+
+. Copie o exemplo curl da página de fluxo de trabalho e cole-o no terminal shell.
+. Pressione *ENTER*, que fará o seguinte:
++
+.. Substitua os valores da variável que você definir
+.. Execute o comando curl
+
+
+

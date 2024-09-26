@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: resources/networking.html 
+keywords: networking resources 
+summary: Você pode usar essas chamadas de API para gerenciar os recursos de rede físicos e lógicos usados com o cluster. 
+---
+= Rede
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar os recursos de rede físicos e lógicos usados com o cluster.
+
+.Grupos de pares BGP
+Você pode criar e administrar grupos de pares do Border Gateway Protocol. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Domínios de broadcast Ethernet
+Um domínio de transmissão Ethernet é um conjunto de portas físicas que parecem fazer parte da mesma rede física. Todas as portas recebem um pacote quando são transmitidas de uma das portas no domínio. Cada domínio de broadcast faz parte de um espaço IPspace. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Portas Ethernet
+Uma porta Ethernet é um endpoint de rede físico ou virtual. As portas podem ser combinadas em um grupo de agregação de link (LAG) ou separadas usando uma LAN virtual (VLAN). Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.8.
+
+.Portas de switch Ethernet
+Você pode recuperar as informações da porta de um switch Ethernet. Este tipo de recurso é novo com o ONTAP 9.8.
+
+.Switches Ethernet
+Você pode recuperar ou modificar a configuração dos switches Ethernet usados para o cluster ONTAP ou a rede de armazenamento. Esse tipo de recurso é novo com o ONTAP 9.8 e atualizado com o 9,11.
+
+.Tecidos Fibre Channel
+Você pode usar os pontos de extremidade da API REST de malha Fibre Channel (FC) para recuperar informações sobre a rede FC. Isso inclui as conexões entre o cluster ONTAP e a malha FC, os switches que compõem a malha e as zonas do conjunto ativo. Este tipo de recurso foi introduzido com o ONTAP 9.11.
+
+.Interfaces Fibre Channel
+Uma interface Fibre Channel é um ponto de extremidade lógico associado a um SVM. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.8. Suporte para recuperar dados de métricas de desempenho foi adicionado com o ONTAP 9.14.
+
+.Portas Fibre Channel
+Uma porta Fibre Channel é um adaptador físico em um nó ONTAP usado para se conetar à rede Fibre Channel. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.8. Suporte para recuperar dados de métricas de desempenho foi adicionado com o ONTAP 9.14.
+
+.Proxy HTTP
+Você pode configurar um proxy HTTP para um SVM ou um IPSpace de cluster. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Interfaces IP
+Uma interface lógica (LIF) é um endereço IP com atributos de configuração adicionais. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.8.
+
+.Rotas IP
+Uma tabela de roteamento é uma coleção de rotas IP usadas para encaminhar o tráfego para seu destino. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Políticas de serviço IP
+As políticas de serviço IP definem os serviços disponíveis em um LIF específico. As políticas de serviço podem ser configuradas no contexto de um SVM ou IPspace. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.8.
+
+.Sub-redes IP
+O recurso de rede ONTAP foi expandido para oferecer suporte a sub-redes IP. A API REST fornece acesso à configuração e gerenciamento das sub-redes IP em um cluster ONTAP. Este tipo de recurso foi introduzido com o ONTAP 9.11.
+
+.IPspaces
+Um IPspace cria um espaço de rede para suportar um ou mais SVMs. Os IPspaces podem ser isolados uns dos outros, proporcionando segurança e privacidade. Este tipo de recurso foi introduzido com o ONTAP 9.6.

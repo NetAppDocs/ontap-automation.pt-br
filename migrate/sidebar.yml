@@ -1,0 +1,16 @@
+---
+section: migrate
+title: Migre da ONTAPI para a API REST
+entries:
+- title: Desativação da ONTAPI
+  url: "/migrate/ontapi_disablement.html"
+- title: Considerações sobre migração
+  url: "/migrate/migration-considerations.html"
+- title: ONTAPI para mapeamento REST
+  url: "/migrate/mapping.html"
+- title: Contadores de desempenho
+  url: "/migrate/performance-counters.html"
+- title: Ferramentas e software
+  url: "/migrate/software.html"
+- title: Artigos de blog
+  url: "/migrate/blogs_migrate.html"

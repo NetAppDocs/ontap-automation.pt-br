@@ -1,0 +1,56 @@
+---
+indexpage:
+  title: Automação da ONTAP
+  summary: Você pode automatizar a implantação e a administração dos sistemas de storage
+    ONTAP usando uma das várias opções disponíveis.
+  keywords: automation, ontap automation, rest, rest api, migrate, migration
+  lead: Você pode automatizar a implantação e a administração dos sistemas de storage
+    ONTAP usando uma das várias opções disponíveis. A API REST do ONTAP fornece a
+    base principal para as tecnologias de automação.
+  tiles:
+  - title: Comece agora
+    links:
+    - title: Notas de versão
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
+    - title: Opções de automação do ONTAP
+      url: "/get-started/ontap_automation_options.html"
+    - title: Sua primeira chamada de API
+      url: "/get-started/first_call.html"
+  - title: API REST do ONTAP
+    links:
+    - title: Detalhes da implementação REST
+      url: "/rest/rest_web_services_foundation.html"
+    - title: Segurança RBAC
+      url: "/rest/rbac_overview.html"
+    - title: Resumo dos recursos REST
+      url: "/resources/overview_categories.html"
+    - title: Referência da API
+      url: "/reference/api_reference.html"
+  - title: Automação
+    links:
+    - title: Fluxos de trabalho
+      url: "/workflows/prepare_workflows.html"
+    - title: Biblioteca cliente Python
+      url: "/python/overview_pcl.html"
+    - title: Toolkit do PowerShell
+      url: "/pstk/overview_pstk.html"
+    - title: SDK de gerenciamento do NetApp
+      url: "/sw-tools/nmsdk.html"
+  - title: Migrar para a API REST
+    links:
+    - title: Desativação da ONTAPI
+      url: "/migrate/ontapi_disablement.html"
+    - title: ONTAPI para mapeamento REST
+      url: "/migrate/mapping.html"
+    - title: Contadores de desempenho
+      url: "/migrate/performance-counters.html"
+    - title: Artigos de blog
+      url: "/migrate/blogs_migrate.html"
+  - title: Conhecimento e apoio
+    links:
+    - title: Saiba mais
+      url: "/additional/learn_more.html"
+    - title: ONTAP 9 docs
+      url: https://docs.netapp.com/us-en/ontap/
+    - title: ONTAP Select docs
+      url: https://docs.netapp.com/us-en/ontap-select/

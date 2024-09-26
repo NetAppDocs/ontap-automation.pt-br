@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: resources/snaplock.html 
+keywords: snaplock resources 
+summary: Você pode usar essas chamadas de API para administrar o recurso SnapLock. 
+---
+= SnapLock
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para administrar o recurso ONTAP SnapLock.
+
+.Registo
+A estrutura de log do SnapLock é baseada em diretórios e arquivos em um volume específico que contém os Registros de log. Os ficheiros de registo são preenchidos e arquivados com base no tamanho máximo do registo. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Relógio de conformidade
+O relógio de conformidade determina o tempo de expiração dos objetos SnapLock. O relógio deve ser inicializado fora da API REST e não pode ser alterado. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Retenção de eventos
+Você pode usar o recurso retenção baseada em eventos do SnapLock (EBR) para definir quanto tempo um arquivo é retido após a ocorrência de um evento. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Retenção de arquivos e exclusão privilegiada
+Você pode gerenciar o tempo de retenção de um arquivo criado pelo SnapLock. Se necessário, você também pode excluir arquivos WORM não expirados em um volume SnapLock Enterprise. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+
+NOTE: A única função integrada com autoridade para executar a operação de exclusão é vsadmin-SnapLock.
+
+.Impressão digital do ficheiro
+Você pode visualizar e gerenciar as informações principais que descrevem arquivos e volumes, como tipo e data de expiração. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Guarda legal
+Você pode usar essas chamadas de API para gerenciar arquivos que fazem parte de um processo de litígio. Este tipo de recurso foi introduzido com o ONTAP 9.7.

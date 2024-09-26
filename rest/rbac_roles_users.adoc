@@ -1,0 +1,234 @@
+---
+sidebar: sidebar 
+permalink: rest/rbac_roles_users.html 
+keywords: rbac, roles, users, rest endpoints, cli, privileges, access level, cluster, svm 
+summary: Depois de entender os recursos básicos do RBAC, você pode começar a trabalhar com as funções e os usuários do ONTAP. 
+---
+= Trabalhe com funções e usuários
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Depois de entender os recursos básicos do RBAC, você pode começar a trabalhar com as funções e os usuários do ONTAP.
+
+
+NOTE: link:../workflows/wf_rbac_prepare.html["Workflows de RBAC"]Consulte para obter exemplos de como criar e usar funções com a API REST do ONTAP.
+
+
+
+== Acesso administrativo
+
+Você pode criar e gerenciar as funções do ONTAP por meio da API REST ou da interface de linha de comando. Os detalhes de acesso são descritos abaixo.
+
+
+
+=== API REST
+
+Existem vários endpoints que podem ser usados ao trabalhar com funções RBAC e contas de usuário. Os quatro primeiros na tabela são usados para criar e gerenciar as funções. Os dois últimos são usados para criar e gerenciar contas de usuário.
+
+
+TIP: Você pode acessar a documentação on-line do ONTAP link:../reference/api_reference.html["Referência da API"]para obter mais informações, incluindo exemplos de como usar a API.
+
+[cols="35,65"]
+|===
+| Endpoint | Descrição 
+
+
+| `/security/roles` | Esse endpoint permite que você crie uma nova função REST. E começando com ONTAP 9.11,1 você também pode criar um papel tradicional. Neste caso, o ONTAP determina o tipo de função com base nos parâmetros de entrada. Você também pode recuperar uma lista das funções definidas. 
+
+
+| `/security/roles/{owner.UUID}/{name}` | Você pode recuperar ou excluir um cluster específico ou função de escopo SVM. O valor UUID identifica o SVM onde a função é definida (cluster ou data SVM). O valor do nome é o nome da função. 
+
+
+| `/security/roles/{owner.UUID}/{name}/privileges` | Este endpoint permite configurar o Privileges para uma função específica. As funções incorporadas podem ser recuperadas, mas não atualizadas. Consulte a documentação de referência da API para sua versão do ONTAP para obter mais informações. 
+
+
+| `/security/roles/{owner.UUID}/{name}/privileges/[path]` | Você pode recuperar, modificar e excluir o nível de acesso e o valor de consulta opcional para um privilégio específico. Consulte a documentação de referência da API para sua versão do ONTAP para obter mais informações. 
+
+
+| `/security/accounts` | Esse endpoint permite que você crie uma nova conta de usuário com escopo de cluster ou SVM. Vários tipos de informações devem ser incluídos ou posteriormente adicionados antes que a conta esteja operacional. Você também pode recuperar uma lista das contas de usuário definidas. 
+
+
+| `/security/accounts/{owner.UUID}/{name}` | Você pode recuperar, modificar e excluir uma conta de usuário com escopo específico de cluster ou SVM. O valor UUID identifica o SVM onde o usuário está definido (cluster ou data SVM). O valor do nome é o nome da conta. 
+|===
+
+
+=== Interface de linha de comando
+
+Os comandos ONTAP CLI relevantes são descritos abaixo. Todos os comandos são acessados no nível do cluster por meio de uma conta de administrador.
+
+[cols="30,70"]
+|===
+| Comando | Descrição 
+
+
+| `security login` | Este é o diretório que contém os comandos necessários para criar e gerenciar um login de usuário. 
+
+
+| `security login rest-role` | Este é o diretório que contém os comandos necessários para criar e gerenciar uma FUNÇÃO REST associada a um login de usuário. 
+
+
+| `security login role` | Este é o diretório que contém os comandos necessários para criar e gerenciar uma função tradicional associada a um login de usuário. 
+|===
+
+
+== Definições de função
+
+Os papéis REST e tradicionais são definidos através de um conjunto de atributos.
+
+.Proprietário e escopo
+Uma função pode pertencer ao cluster do ONTAP ou a um data SVM específico no cluster. O proprietário também determina implicitamente o escopo da função.
+
+.Nome único
+Cada função deve ter um nome único dentro de seu escopo. O nome de uma função de cluster deve ser exclusivo no nível de cluster do ONTAP, enquanto as funções do SVM precisam ser exclusivas no SVM específico.
+
+
+NOTE: O nome de uma nova função REST deve ser único entre os papéis REST, bem como os papéis tradicionais. Isso ocorre porque a criação de uma FUNÇÃO REST também resulta em uma nova função _mapping_ tradicional com o mesmo nome.
+
+.Conjunto de Privileges
+Cada função contém um conjunto de um ou mais Privileges. Cada privilégio identifica um recurso ou comando específico e o nível de acesso associado.
+
+
+
+== Privileges
+
+Uma função pode conter um ou mais Privileges. Cada definição de privilégio é uma tupla e estabelece o nível de acesso a um recurso ou operação específico.
+
+
+
+=== Caminho do recurso
+
+O caminho do recurso é identificado como um endpoint REST ou caminho do diretório de comando/comando CLI.
+
+.Endpoint da REST
+Um endpoint de API identificou o recurso de destino para uma FUNÇÃO REST.
+
+.Comando CLI
+Um comando CLI identifica o destino para uma função tradicional. Um diretório de comando também pode ser especificado, que incluirá todos os comandos downstream na hierarquia da CLI do ONTAP.
+
+
+
+=== Nível de acesso
+
+O nível de acesso define o tipo de acesso que a função tem ao caminho ou comando específico do recurso. Os níveis de acesso são identificados através de um conjunto de palavras-chave predefinidas. Três níveis de acesso foram introduzidos com o ONTAP 9.6. Eles podem ser usados para papéis tradicionais e REST. Além disso, três novos níveis de acesso foram adicionados com o ONTAP 9.11,1. Esses novos níveis de acesso só podem ser usados com funções REST.
+
+
+NOTE: Os níveis de acesso seguem o modelo CRUD. Com REST, isso é baseado nos métodos HTTP primários (POST, GET, PATCH, DELETE). As operações CLI correspondentes geralmente mapeiam para as OPERAÇÕES REST (criar, mostrar, modificar, excluir).
+
+[cols="20,45,15,20"]
+|===
+| Nível de acesso | Primitivas de REPOUSO | Adicionado | Apenas função REST 
+
+
+| nenhum | n/a. | 9,6 | Não 
+
+
+| readonly | OBTER | 9,6 | Não 
+
+
+| tudo | OBTER, POSTAR, PATCH, EXCLUIR | 9,6 | Não 
+
+
+| read_create | GET, POST | 9.11.1 | Sim 
+
+
+| read_modify | OBTER, PATCH | 9.11.1 | Sim 
+
+
+| read_create_modify | OBTER, POSTAR, PATCH | 9.11.1 | Sim 
+|===
+
+
+=== Consulta opcional
+
+Ao criar uma função tradicional, você pode opcionalmente incluir um valor *query* para identificar o subconjunto de objetos aplicáveis para o diretório de comando ou comando.
+
+
+
+== Resumo das funções incorporadas
+
+Há várias funções predefinidas incluídas no ONTAP que podem ser usadas no cluster ou no nível da SVM.
+
+
+
+=== Funções de escopo do cluster
+
+Há várias funções incorporadas disponíveis no escopo do cluster.
+
+Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-cluster-administrators-concept.html["Funções predefinidas para administradores de cluster"^] para obter mais informações.
+
+[cols="20,80"]
+|===
+| Função | Descrição 
+
+
+| administrador | Os administradores com essa função têm direitos irrestritos e podem fazer qualquer coisa no sistema ONTAP. Eles podem configurar todos os recursos no nível do cluster e do SVM. 
+
+
+| AutoSupport | Esta é uma função especial adaptada para a conta AutoSupport. 
+
+
+| backup | Esta função especial para software de backup que precisa fazer backup do sistema. 
+
+
+| SnapLock | Esta é uma função especial adaptada para a conta SnapLock. 
+
+
+| readonly | Os administradores com essa função podem visualizar tudo no nível do cluster, mas não podem fazer alterações. 
+
+
+| nenhum | Não são fornecidos recursos administrativos. 
+|===
+
+
+=== Funções com escopo do SVM
+
+Há várias funções incorporadas disponíveis no escopo da SVM. O *vsadmin* fornece acesso aos recursos mais gerais e poderosos. Existem várias funções adicionais adaptadas a tarefas administrativas específicas, incluindo:
+
+* vsadmin-volume
+* protocolo vsadmin
+* vsadmin-backup
+* vsadmin-SnapLock
+* vsadmin-readonly
+
+
+Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm-administrators-concept.html["Funções predefinidas para administradores de SVM"^] para obter mais informações.
+
+
+
+== Comparando os tipos de função
+
+Antes de selecionar uma função *REST* ou *tradicional*, você deve estar ciente das diferenças. Algumas das maneiras como os dois tipos de função podem ser comparados são descritas abaixo.
+
+
+NOTE: Para casos de uso de RBAC mais avançados ou complexos, você normalmente deve usar uma função tradicional.
+
+
+
+=== Como o usuário acessa o ONTAP
+
+Antes de criar uma função, é importante saber como o usuário acessará o sistema ONTAP. Com base nisso, um tipo de função pode ser determinado.
+
+[cols="2,7"]
+|===
+| Acesso | Tipo sugerido 
+
+
+| Somente API REST | A função REST foi projetada para ser usada com a API REST. 
+
+
+| API REST E CLI | Você pode definir uma FUNÇÃO REST que também cria uma função tradicional correspondente. 
+
+
+| Apenas CLI | Você pode criar uma função tradicional. 
+|===
+
+
+=== Precisão do caminho de acesso
+
+O caminho de acesso definido para uma FUNÇÃO REST é baseado em um endpoint REST. O caminho de acesso para uma função tradicional é baseado em um comando CLI ou diretório de comando. Além disso, você pode incluir um parâmetro de consulta opcional com uma função tradicional para restringir ainda mais o acesso com base nos valores de parâmetro do comando.

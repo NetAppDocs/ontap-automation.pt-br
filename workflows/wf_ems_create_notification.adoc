@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_create_notification.html 
+keywords: support, ems, event management system, create ems, create ems notification 
+summary: Pode utilizar o seguinte fluxo de trabalho para criar um novo destino de notificação EMS para receber mensagens de evento selecionadas. 
+---
+= Crie uma notificação EMS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pode utilizar o seguinte fluxo de trabalho para criar um novo destino de notificação EMS para receber mensagens de evento selecionadas.
+
+
+
+== Passo 1: Configure as configurações de e-mail em todo o sistema
+
+Você pode emitir a seguinte chamada de API para configurar as configurações de e-mail em todo o sistema.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| PATCH | /api/support/ems 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para os exemplos Curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados nos exemplos curl para esta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| mail_from | Consulta | Sim | Define o `from` campo nas mensagens de e-mail de notificação. 
+
+
+| mail_server | Consulta | Sim | Configura o servidor de correio SMTP de destino. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request PATCH \
+--location "https://$FQDN_IP/api/support/ems?mail_from=administrator@mycompany.com&mail_server=mail@mycompany.com" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+
+
+== Passo 2: Defina um filtro de mensagens
+
+Você pode emitir uma chamada de API para definir uma regra de filtro que corresponda às mensagens.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/support/ems/filters 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para os exemplos Curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados nos exemplos curl para esta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| Filtro | Corpo | Sim | Inclui os valores para a configuração do filtro. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/filters" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, json]
+----
+{
+  "name": "test-filter",
+  "rules.type": ["include"],
+  "rules.message_criteria.severities": ["emergency"]
+}
+----
+
+
+== Passo 3: Crie um destino de mensagem
+
+Você pode emitir uma chamada de API para criar um destino de mensagem.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/support/ems/destinations 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para os exemplos Curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados nos exemplos curl para esta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| Configuração de destino | Corpo | Sim | Inclui os valores para o destino do evento. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/support/ems/destinations" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "test-destination",
+  "type": "email",
+  "destination": "administrator@mycompany.com",
+  "filters.name": ["important-events"]
+}
+----

@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_disks.html 
+keywords: workflow, storage, disks, list disks 
+summary: Você pode recuperar uma lista de discos no cluster. Você pode fazer isso para localizar uma ou mais peças sobressalentes para usar como parte da criação de um agregado. 
+---
+= Liste os discos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode recuperar uma lista de discos no cluster. Você pode fazer isso para localizar uma ou mais peças sobressalentes para usar como parte da criação de um agregado.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/storage/discos 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para os exemplos Curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados nos exemplos curl para esta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| estado | Consulta | Não | Pode ser usado para identificar os discos sobressalentes disponíveis para novos agregados. 
+|===
+.Curl exemplo: Retornar todos os discos
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Curl exemplo: Retornar discos sobressalentes
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/disks?state=spare" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Exemplo de saída JSON
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "name": "NET-1.20",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.20"
+        }
+      }
+    },
+    {
+      "name": "NET-1.12",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.12"
+        }
+      }
+    },
+    {
+      "name": "NET-1.7",
+      "state": "spare",
+      "_links": {
+        "self": {
+          "href": "/api/storage/disks/NET-1.7"
+        }
+      }
+    }
+  ],
+  "num_records": 3,
+  "_links": {
+    "self": {
+      "href": "/api/storage/disks?state=spare"
+    }
+  }
+}
+----
+====

@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_stor_list_aggrs.html 
+keywords: workflow, storage, aggregates, list aggregates 
+summary:  
+---
+= Liste os agregados
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode recuperar uma lista de agregados no cluster. Você pode fazer isso para avaliar a utilização e o desempenho.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/storage/discos 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para os exemplos Curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados nos exemplos curl para esta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| node.name | Consulta | Não | Pode ser usado para identificar o nó ao qual cada agregado está anexado. 
+|===
+.Curl exemplo: Retorna todos os agregados com os valores de configuração padrão
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Curl exemplo: Retorna todos os agregados com um valor de configuração específico
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/storage/aggregates?fields=node.name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Exemplo de saída JSON
+[%collapsible]
+====
+[listing]
+----
+{
+  "records": [
+    {
+      "uuid": "760d8137-fc59-47da-906a-cc28db0a1c1b",
+      "name": "sti214_vsim_sr027o_aggr1",
+      "node": {
+        "name": "sti214-vsim-sr027o"
+      },
+      "_links": {
+        "self": {
+          "href": "/api/storage/aggregates/760d8137-fc59-47da-906a-cc28db0a1c1b"
+        }
+      }
+    }
+  ],
+  "num_records": 1,
+  "_links": {
+    "self": {
+      "href": "/api/storage/aggregates?fields=node.name"
+    }
+  }
+}
+----
+====

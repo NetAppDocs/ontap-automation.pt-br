@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: resources/ndmp.html 
+keywords: ndmp resources 
+summary: Você pode usar essas chamadas de API para gerenciar os serviços NDMP. 
+---
+= NDMP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar os serviços NDMP.
+
+.Modo NDMP
+O modo operacional NDMP pode ser o escopo do SVM ou o escopo do nó. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Nós NDMP
+Você pode gerenciar a configuração NDMP dos nós. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Sessões NDMP
+Você pode recuperar e excluir detalhes da sessão NDMP de um nó ou SVM específico. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.SVMs NDMP
+Você pode gerenciar a configuração NDMP das SVMs. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Senhas de usuário do NDMP SVM
+Você pode gerar e recuperar senhas para um usuário NDMP específico no conteúdo SVM. Esse tipo de recurso foi introduzido com a API REST do ONTAP 9.8 e aprimorado com o ONTAP 9.9.

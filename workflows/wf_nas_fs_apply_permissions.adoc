@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_apply_permissions.html 
+keywords: nas, file security, sacl, dacl, permissions, apply permissions 
+summary: Você pode aplicar um novo descritor de segurança a um arquivo ou pasta específico. 
+---
+= Aplique novas permissões a um arquivo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode aplicar um novo descritor de segurança a um arquivo ou pasta específico.
+
+
+
+== Passo 1: Aplique as novas permissões
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/protocols/file-security/permissions/(caminho) 
+|===
+.Tipo de processamento
+Assíncrono
+
+.Parâmetros de entrada adicionais para exemplos curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados no exemplo curl nesta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| SVM_ID | Caminho | Sim | Este é o UUID do SVM que contém o arquivo. 
+
+
+| FILE_PATH | Caminho | Sim | Este é o caminho para o arquivo ou pasta. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST --location "https://$FQDN_IP/api/protocols/file-security/permissions/$SVM_ID/$FILE_PATH?return_timeout=0" --include --header "Accept */*" --header "Authorization: Basic $BASIC_AUTH" --data '{ \"acls\": [ { \"access\": \"access_allow\", \"advanced_rights\": { \"append_data\": true, \"delete\": true, \"delete_child\": true, \"execute_file\": true, \"full_control\": true, \"read_attr\": true, \"read_data\": true, \"read_ea\": true, \"read_perm\": true, \"write_attr\": true, \"write_data\": true, \"write_ea\": true, \"write_owner\": true, \"write_perm\": true }, \"apply_to\": { \"files\": true, \"sub_folders\": true, \"this_folder\": true }, \"user\": \"administrator\" } ], \"control_flags\": \"32788\", \"group\": \"S-1-5-21-2233347455-2266964949-1780268902-69700\", \"ignore_paths\": [ \"/parent/child2\" ], \"owner\": \"S-1-5-21-2233347455-2266964949-1780268902-69304\", \"propagation_mode\": \"propagate\"}'
+----
+.Exemplo de saída JSON
+[listing]
+----
+{
+  "job": {
+    "uuid": "3015c294-5bbc-11eb-9c4e-0050568e8682",
+    "_links": {
+      "self": {
+        "href": "/api/cluster/jobs/3015c294-5bbc-11eb-9c4e-0050568e8682"
+      }
+    }
+  }
+}
+----
+
+
+== Passo 2: Recupere o status do trabalho
+
+Execute o fluxo de trabalho link:../workflows/wf_jobs_get_job.html["Obter instância de trabalho"] e confirme se `state` o valor é `success`.

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: migrate/ontapi_disablement.html 
+keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
+summary: A interface ONTAPI será desativada em versões futuras do ONTAP. Se você estiver usando o ONTAPI, Planeje sua migração para a API REST do ONTAP. 
+---
+= Desativação da ONTAPI
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+A API ONTAPI (ZAPI) é o conjunto original de chamadas proprietárias incluídas no software NetApp ONTAP. A API é fornecida através do SDK de gerenciamento de rede e suporta a automação de tarefas de administração e gerenciamento de armazenamento de dados. A interface ONTAPI será desativada em versões futuras do ONTAP. Se você estiver usando o ONTAPI, Planeje sua migração para a API REST do ONTAP.
+
+.Informações relacionadas
+* link:../get-started/ontap_automation_options.html["Entenda as opções de automação do ONTAP"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 adiamento do anúncio de fim de disponibilidade do ONTAPI (ZAPI)"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Perguntas frequentes sobre a transformação da API REST do ONTAP para CPC"^]
+

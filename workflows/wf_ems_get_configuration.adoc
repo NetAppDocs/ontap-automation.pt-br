@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_ems_get_configuration.html 
+keywords: support, ems, event management system, ems configuration 
+summary: Pode recuperar a configuração atual do EMS para um cluster ONTAP. Você pode fazer isso antes de atualizar a configuração ou criar uma nova notificação EMS. 
+---
+= Obtenha a configuração EMS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pode recuperar a configuração atual do EMS para um cluster ONTAP. Você pode fazer isso antes de atualizar a configuração ou criar uma nova notificação EMS.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/support/ems 
+|===
+.Tipo de processamento
+Síncrono
+
+.Curl exemplo
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/support/ems" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Exemplo de saída JSON
+[listing]
+----
+{
+  "proxy_url": "https://proxyserver.mycompany.com",
+  "proxy_user": "proxy_user",
+  "mail_server": "mail@mycompany.com",
+  "_links": {
+    "self": {
+      "href": "/api/resourcelink"
+    }
+  },
+  "pubsub_enabled": "1",
+  "mail_from": "administrator@mycompany.com"
+}
+----

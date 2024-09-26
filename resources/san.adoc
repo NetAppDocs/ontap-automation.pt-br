@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: resources/san.html 
+keywords: san resources 
+summary: Você pode usar essas chamadas de API para gerenciar recursos de SAN. 
+---
+= SAN
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar recursos de rede de área de armazenamento (SAN).
+
+.Logins Fibre Channel
+Os logins de Fibre Channel representam conexões formadas por iniciadores de Fibre Channel que fizeram login no ONTAP. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Serviços Fibre Channel Protocol
+Um serviço do Fibre Channel Protocol (FCP) define as propriedades de um destino Fibre Channel para um SVM. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.7. Suporte para recuperar dados de métricas de desempenho foi adicionado com o ONTAP 9.14.
+
+.Aliases WWPN de Fibre Channel
+Um nome de porta mundial (WWPN) é um valor de 64 bits que identifica exclusivamente uma porta Fibre Channel. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.grupos
+Um grupo de iniciadores (igroup) é uma coleção de WWPNs Fibre Channel (nomes de portas mundiais) e IQNs iSCSI (nomes qualificados) e EUIs iSCSI (identificadores exclusivos estendidos) que identificam iniciadores de host. Esse tipo de recurso foi originalmente introduzido com o ONTAP 9.6.
+
+Igrupos aninhados é um novo recurso com o ONTAP 9.9 e o suporte também foi adicionado à API REST. Este tipo de recurso REST foi introduzido com o ONTAP 9.9.
+
+.Iniciadores
+Um iniciador é um nome de porta mundial (WWPN) Fibre Channel (FC), um IQN (iSCSI Qualified Name) ou um EUI iSCSI (Extended Unique Identifier) que identifica um endpoint de host. Você pode recuperar iniciadores para o cluster ou um SVM específico. Este tipo de recurso foi introduzido com o ONTAP 9.14.
+
+.Credenciais iSCSI
+O objeto credenciais iSCSI contém credenciais de autenticação que são usadas por um iniciador e ONTAP. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Serviços iSCSI
+Um serviço iSCSI define as propriedades do destino iSCSI para um SVM. Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.7. Suporte para recuperar dados de métricas de desempenho foi adicionado com o ONTAP 9.14.
+
+.Sessões iSCSI
+Uma sessão iSCSI é uma ou mais ligações TCP que ligam um iniciador iSCSI a um destino iSCSI. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Atributos LUN
+Os atributos LUN são pares de nome/valor definidos pelo chamador que podem ser armazenados opcionalmente com um LUN. Os atributos estão disponíveis para salvar pequenas quantidades de metadados específicos da aplicação e não são interpretados pelo ONTAP. Os endpoints permitem que você crie, atualize, exclua e descubra atributos para um LUN. Este tipo de recurso foi introduzido com o ONTAP 9.10.
+
+.Mapas LUN
+Um mapa LUN é uma associação entre um LUN e um grupo de iniciadores. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.LUN mapeia nós de relatórios
+Os nós de relatório são os nós de cluster a partir dos quais os caminhos de rede para um LUN mapeado são anunciados usando os protocolos SAN como parte do recurso mapa de LUN seletivo (SLM) do ONTAP. Os novos endpoints permitem adicionar, remover e descobrir os nós de relatórios de um mapa LUN. Este tipo de recurso foi introduzido com o ONTAP 9.10.
+
+.LUNs
+Um LUN é a representação lógica do armazenamento em uma rede de área de armazenamento (SAN). Esse tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com o ONTAP 9.7. Suporte para recuperar dados de métricas de desempenho foi adicionado com o ONTAP 9.14.
+
+.Conjuntos de portas
+Um conjunto de portas é uma coleção de interfaces de rede Fibre Channel ou iSCSI associadas à VM _portset_ Storage. Embora esse recurso tenha existido com versões anteriores do ONTAP, o suporte agora foi adicionado à API REST. Este tipo de recurso REST foi introduzido com o ONTAP 9.9.
+
+.Ligações VVol
+Uma vinculação de volume virtual da VMware (vVol) é uma associação entre um LUN de classe `protocol_endpoint` e um LUN de classe `vvol`. A API REST de vinculação da VVol permite que você crie, exclua e descubra vinculações da Vevolve. Este tipo de recurso foi introduzido com o ONTAP 9.10.

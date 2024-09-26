@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: rest/rbac_overview.html 
+keywords: rbac, rbac security, rbac overview, roles, scope, role mapping 
+summary: 'O ONTAP inclui uma funcionalidade robusta e extensível de controle de acesso baseado em funções (RBAC). Você pode atribuir a cada conta uma função diferente para controlar o acesso do usuário aos recursos expostos por meio da API REST e da CLI. As funções definem diferentes níveis de acesso administrativo para os vários usuários do ONTAP.' 
+---
+= Visão geral da segurança RBAC
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O ONTAP inclui uma funcionalidade robusta e extensível de controle de acesso baseado em funções (RBAC). Você pode atribuir a cada conta uma função diferente para controlar o acesso do usuário aos recursos expostos por meio da API REST e da CLI. As funções definem diferentes níveis de acesso administrativo para os vários usuários do ONTAP.
+
+
+NOTE: O recurso RBAC do ONTAP continuou a se expandir e foi significativamente aprimorado com o ONTAP 9.11,1 (e versões subsequentes). link:../rest/rbac_overview.html#summary-of-rbac-evolution["Resumo da evolução da RBAC"]Consulte e link:../whats-new.html["Novidades da API REST do ONTAP"] para obter mais informações.
+
+
+
+== Funções do ONTAP
+
+Uma função é um conjunto de Privileges que definem coletivamente quais ações o usuário pode realizar. Cada privilégio identifica um caminho de acesso específico e o nível de acesso associado. As funções são atribuídas a contas de usuário e aplicadas pelo ONTAP ao tomar decisões de controle de acesso.
+
+
+
+=== Tipos de papéis
+
+Existem dois tipos de funções. Eles foram introduzidos e adaptados a diferentes ambientes à medida que o ONTAP evoluiu.
+
+
+NOTE: Há vantagens e desvantagens ao usar cada tipo de função. Consulte link:../rest/rbac_roles_users.html#comparing-the-role-types["Comparando os tipos de função"] para obter mais informações.
+
+[cols="20,80"]
+|===
+| Tipo | Descrição 
+
+
+| DESCANSO | As funções REST foram introduzidas com o ONTAP 9.6 e geralmente são aplicadas aos usuários que acessam o ONTAP por meio da API REST. Criar uma FUNÇÃO REST cria automaticamente uma função _mapping_ tradicional. 
+
+
+| Tradicional | Estas são as funções herdadas incluídas antes do ONTAP 9.6. Eles foram introduzidos no ambiente de CLI do ONTAP e continuam sendo fundamentais para a segurança do RBAC. 
+|===
+
+
+=== Âmbito de aplicação
+
+Cada função tem um escopo ou contexto dentro do qual é definida e aplicada. O escopo determina onde e como uma função específica é usada.
+
+
+NOTE: As contas de usuário do ONTAP também têm um escopo semelhante que determina como um usuário é definido e usado.
+
+[cols="20,80"]
+|===
+| Âmbito de aplicação | Descrição 
+
+
+| Cluster | As funções com um escopo de cluster são definidas no nível do cluster do ONTAP. Eles estão associados a contas de usuário no nível do cluster. 
+
+
+| SVM | As funções com um escopo da SVM são definidas para um data SVM específico. Elas são atribuídas a contas de usuário no mesmo SVM. 
+|===
+
+
+=== Fonte das definições de função
+
+Há duas maneiras de definir uma função ONTAP.
+
+[cols="20,80"]
+|===
+| Fonte da função | Descrição 
+
+
+| Personalizado | O administrador do ONTAP pode criar funções personalizadas. Essas funções podem ser adaptadas a um ambiente específico e requisitos de segurança. 
+
+
+| Incorporado | Embora as funções personalizadas forneçam mais flexibilidade, também há um conjunto de funções incorporadas disponível no nível do cluster e do SVM. Essas funções são pré-definidas e podem ser usadas para muitas tarefas administrativas comuns. 
+|===
+
+
+== Mapeamento de funções e processamento de ONTAP
+
+Dependendo da versão do ONTAP que você está usando, todas ou quase todas as chamadas de API REST mapeiam para um ou mais comandos CLI. Quando você cria uma FUNÇÃO REST, uma função tradicional ou legada também é criada. Esta função tradicional *mapeada* é baseada nos comandos CLI correspondentes e não pode ser manipulada ou alterada.
+
+
+NOTE: O mapeamento de função reversa não é suportado. Ou seja, criar uma função tradicional não cria uma FUNÇÃO REST correspondente.
+
+
+
+== Resumo da evolução da RBAC
+
+As funções tradicionais estão incluídas em todas as versões do ONTAP 9. Os papéis RESTANTES foram introduzidos mais tarde e evoluíram como descrito abaixo.
+
+.ONTAP 9,6
+A API REST foi introduzida com o ONTAP 9.6. Os papéis RESTANTES também foram incluídos nesta versão. Além disso, quando você cria uma FUNÇÃO REST, uma função tradicional correspondente também é criada.
+
+.ONTAP 9 9.10.1
+Cada versão do ONTAP de 9,7 a 9.10.1 inclui melhorias na API REST. Por exemplo, terminais REST adicionais foram adicionados a cada versão. No entanto, a criação e o gerenciamento dos dois tipos de papéis permaneceram separados. Além disso, o ONTAP 9.10,1 adicionou suporte a RBAC REST para o endpoint REST de snapshots `/api/storage/volumes/{vol.uuid}/snapshots`, que é um endpoint qualificado por recursos.
+
+.ONTAP 9.11,1
+A capacidade de configurar e gerenciar funções tradicionais usando a API REST foi adicionada com esta versão. Níveis de acesso adicionais para as funções REST também foram adicionados.

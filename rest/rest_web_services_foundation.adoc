@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: rest/rest_web_services_foundation.html 
+keywords: REST, web services, transaction, API transaction, request, response 
+summary: 'Representational State Transfer (REST) é um estilo para a criação de aplicações web distribuídas. Quando aplicada ao design de uma API de serviços da Web, ela estabelece um conjunto de tecnologias para expor recursos baseados em servidor e gerenciar seus estados. Ele usa protocolos e padrões convencionais para fornecer uma base flexível para administrar clusters ONTAP.' 
+---
+= Base de serviços web REST
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Representational State Transfer (REST) é um estilo para a criação de aplicações web distribuídas. Quando aplicada ao design de uma API de serviços da Web, ela estabelece um conjunto de tecnologias para expor recursos baseados em servidor e gerenciar seus estados. Ele usa protocolos e padrões convencionais para fornecer uma base flexível para administrar clusters ONTAP.
+
+
+NOTE: Embora O REST estabeleça um conjunto comum de tecnologias e práticas recomendadas, os detalhes de cada API podem variar com base nas escolhas feitas durante o desenvolvimento. Você deve estar ciente das caraterísticas de design da API REST do ONTAP antes de usá-la com uma implantação ativa.
+
+
+
+== Recursos e representação do Estado
+
+Os recursos são os componentes básicos de um sistema baseado na Web. Ao criar um aplicativo REST de serviços da Web, as tarefas iniciais de design incluem:
+
+* Identificação de recursos baseados em sistema ou servidor
++
+Cada sistema usa e mantém recursos. Um recurso pode ser um arquivo, transação comercial, processo ou entidade administrativa. Uma das primeiras tarefas no projeto de um aplicativo baseado em serviços web REST é identificar os recursos.
+
+* Definição de estados de recursos e operações de estado associadas
++
+Os recursos estão sempre em um de um número finito de estados. Os estados, bem como as operações associadas usadas para afetar as mudanças de estado, devem ser claramente definidos.
+
+
+
+
+
+== Pontos de extremidade URI
+
+Todos os recursos REST devem ser definidos e disponibilizados usando um esquema de endereçamento bem definido. Os endpoints onde os recursos estão localizados e identificados usam um URI (Uniform Resource Identifier). O URI fornece uma estrutura geral para criar um nome exclusivo para cada recurso na rede. O Uniform Resource Locator (URL) é um tipo de URI usado com serviços da Web para identificar e acessar recursos. Os recursos são normalmente expostos em uma estrutura hierárquica semelhante a um diretório de arquivos.
+
+
+
+== Mensagens HTTP
+
+O Hypertext Transfer Protocol (HTTP) é o protocolo usado pelo cliente e servidor de serviços da Web para trocar mensagens de solicitação e resposta sobre os recursos. Como parte do projeto de um aplicativo de serviços da Web, os métodos HTTP são mapeados para os recursos e as ações de gerenciamento de estado correspondentes. HTTP está sem estado. Portanto, para associar um conjunto de solicitações e respostas relacionadas como parte de uma transação, informações adicionais devem ser incluídas nos cabeçalhos HTTP carregados com os fluxos de dados de solicitação e resposta.
+
+
+
+== Formatação JSON
+
+Embora as informações possam ser estruturadas e transferidas entre um cliente e um servidor de serviços da Web de várias maneiras, a opção mais popular é JavaScript Object Notation (JSON). JSON é um padrão da indústria para representar estruturas de dados simples em texto simples e é usado para transferir informações de estado descrevendo os recursos. A API REST do ONTAP usa JSON para formatar os dados transportados no corpo de cada solicitação e resposta HTTP.
+
+
+
+== Transação típica da API REST
+
+Cada transação de API consiste em uma solicitação HTTP e a resposta associada. Esta ilustração mostra como recuperar a versão do software ONTAP utilizado pelo cluster.
+
+image:rest_call_01.png["Ilustração de uma simples chamada de API REST"]
+
+.Solicitação HTTP
+A solicitação enviada do cliente para o servidor consiste no seguinte:
+
+* Obter verbo
+* Caminho de URL para o cluster
+* Parâmetro de consulta (campos)
+* Cabeçalhos de solicitação, incluindo autorização
+
+
+.Resposta HTTP
+A resposta enviada do servidor para o cliente consiste no seguinte:
+
+* Código de estado 200
+* Cabeçalhos de resposta
+* Corpo de resposta que contém a versão do software do cluster
+

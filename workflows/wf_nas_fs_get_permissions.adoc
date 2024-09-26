@@ -1,0 +1,94 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_nas_fs_get_permissions.html 
+keywords: nas, file security, effective permissions 
+summary: Você pode recuperar as permissões efetivas atuais para um arquivo ou pasta específico. 
+---
+= Obtenha as permissões efetivas para um arquivo
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode recuperar as permissões efetivas atuais para um arquivo ou pasta específico.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/protocols/file-security/effective-permissions/ 
+|===
+.Tipo de processamento
+Síncrono
+
+.Parâmetros de entrada adicionais para exemplos curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados no exemplo curl nesta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| SVM_ID | Caminho | Sim | Este é o UUID do SVM que contém o arquivo. 
+
+
+| FILE_PATH | Caminho | Sim | Este é o caminho para o arquivo ou pasta. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/protocols/file-security/effective-permissions/$SVM_ID/$FILE_PATH" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Exemplo de saída JSON
+[listing]
+----
+{
+  "svm": {
+    "uuid": "cf5f271a-1beb-11ea-8fad-005056bb645e",
+    "name": "vs1"
+  },
+  "user": "administrator",
+  "type": "windows",
+  "path": "/",
+  "share": {
+    "path": "/"
+  },
+  "file_permission": [
+    "read",
+    "write",
+    "append",
+    "read_ea",
+    "write_ea",
+    "execute",
+    "delete_child",
+    "read_attributes",
+    "write_attributes",
+    "delete",
+    "read_control",
+    "write_dac",
+    "write_owner",
+    "synchronize",
+    "system_security"
+  ],
+  "share_permission": [
+    "read",
+    "read_ea",
+    "execute",
+    "read_attributes",
+    "read_control",
+    "synchronize"
+  ]
+}
+----

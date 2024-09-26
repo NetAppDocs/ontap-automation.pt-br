@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: get-started/access_rest_api.html 
+keywords: accessing the rest api, lif 
+summary: Você pode acessar a API REST do ONTAP de várias maneiras diferentes. 
+---
+= Como acessar a API REST do ONTAP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode acessar a API REST do ONTAP de várias maneiras diferentes.
+
+
+
+== Considerações de rede
+
+Você pode se conetar à API REST através das seguintes interfaces:
+
+* LIF de gerenciamento de clusters
+* LIF de gerenciamento de nós
+* LIF de gerenciamento do SVM
+
+
+O LIF que você escolher usar deve estar configurado para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall na rede deve permitir o tráfego HTTPS.
+
+
+TIP: Você deve sempre usar um LIF de gerenciamento de cluster. Isso equilibrará a carga das solicitações de API em todos os nós e evitará os nós que estão offline ou que apresentam problemas de conetividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST.
+
+
+
+== Página de documentação online da API ONTAP
+
+A página de documentação on-line da API do ONTAP fornece um ponto de acesso ao usar um navegador da Web. Além de fornecer uma maneira de executar chamadas individuais de API diretamente, a página inclui uma descrição detalhada da API, incluindo parâmetros de entrada e outras opções para cada chamada. As chamadas de API são organizadas em categorias funcionais. Consulte link:../resources/overview_categories.html["Resumo dos recursos REST"] para obter mais informações.
+
+O formato do URL usado para acessar a página de documentação para a versão mais recente da API é:
+
+`\https://<cluster_mgmt_ip_address>/docs/api`
+
+
+
+== Software e ferramentas personalizadas
+
+Você pode acessar a API do ONTAP usando qualquer uma das várias linguagens e ferramentas de programação diferentes. As opções populares incluem Python, Java, Curl e PowerShell. Um programa, script ou ferramenta que usa a API atua como um cliente de serviços da Web REST. O uso de uma linguagem de programação permite uma compreensão mais profunda da API e oferece uma oportunidade para automatizar a administração do ONTAP.
+
+O formato da URL base usada para acessar diretamente a versão mais recente da API é:
+
+`\https://<cluster_mgmt_ip_address>/api`
+
+Para acessar uma versão específica da API em que várias versões são suportadas, o formato da URL é:
+
+`\https://<cluster_mgmt_ip_address>/api/v1`

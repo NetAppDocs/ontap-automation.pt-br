@@ -1,0 +1,24 @@
+---
+section: sw-tools
+title: Ferramentas de software
+entries:
+- title: Biblioteca cliente Python
+  entries:
+  - title: Visão geral
+    url: "/python/overview_pcl.html"
+  - title: Prepare-se para usar a biblioteca cliente Python
+    url: "/python/prepare_pcl.html"
+  - title: Pacotes e documentação
+    url: "/python/packages.html"
+  - title: Script para recuperar a configuração do cluster
+    url: "/python/script_retrieve_cluster_configuration.html"
+  - title: Artigos de blog
+    url: "/python/blogs_pcl.html"
+- title: Kit de ferramentas do PowerShell
+  entries:
+  - title: Visão geral
+    url: "/pstk/overview_pstk.html"
+  - title: Baixe e instale
+    url: "/pstk/install_pstk.html"
+- title: SDK de gerenciamento do NetApp
+  url: "/sw-tools/nmsdk.html"

@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: resources/cloud.html 
+keywords: cloud resources 
+summary: Você pode usar essas chamadas de API para gerenciar conexões com recursos de storage de objetos na nuvem. 
+---
+= Nuvem
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar conexões com recursos de storage de objetos na nuvem.
+
+.Alvos
+Um destino representa um recurso de storage de objetos na nuvem. Cada destino inclui as informações de configuração necessárias para se conetar ao recurso de armazenamento. Este tipo de recurso foi introduzido com o ONTAP 9.6.

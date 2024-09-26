@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_role_limit_svm.html 
+keywords: rbac, role, storage volume, limited storage volume administration 
+summary: É possível definir uma função para restringir a administração de volumes de storage em uma SVM. 
+---
+= Limitar o acesso a operações de volume do SVM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+É possível definir uma função para restringir a administração de volumes de storage em uma SVM.
+
+.Sobre este fluxo de trabalho
+Uma função tradicional é criada pela primeira vez para permitir o acesso a todas as principais funções de administração de volume, exceto a clonagem. A função é definida com as seguintes caraterísticas:
+
+* Capaz de executar todas as operações de volume CRUD, incluindo obter, criar, modificar e excluir
+* Não é possível criar um clone de volume
+
+
+Você pode, então, opcionalmente, atualizar a função conforme necessário. Nesse fluxo de trabalho, a função é alterada na segunda etapa para permitir que o usuário crie um clone de volume.
+
+
+
+== Passo 1: Crie a função
+
+Você pode emitir uma chamada de API para criar a função RBAC.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/security/roles 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "role1",
+  "owner": {
+    "name": "cluster-1",
+    "uuid": "852d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      { "path": "volume create", "access": "all" },
+      { "path": "volume delete", "access": "all" }
+    ]
+}
+----
+
+
+== Passo 2: Atualize a função
+
+Você pode emitir uma chamada de API para atualizar a função existente.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/security/roles 
+|===
+.Parâmetros de entrada adicionais para exemplos curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados no exemplo curl nesta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| SVM_ID | Caminho | Sim | Este é o UUID do SVM que contém a definição de função. 
+
+
+| NOME_FUNÇÃO | Caminho | Sim | Esse é o nome da função na SVM a ser atualizada. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "path": "volume clone",
+  "access": "all"
+}
+----

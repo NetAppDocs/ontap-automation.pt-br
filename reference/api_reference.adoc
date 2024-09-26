@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: reference/api_reference.html 
+keywords: reference, API reference, ONTAP API documentation, online reference, swagger 
+summary: A referência da API contém detalhes sobre as chamadas da API REST do ONTAP, incluindo os métodos HTTP, parâmetros de entrada e respostas. Essa referência completa é útil ao desenvolver aplicativos de automação usando a API REST. 
+---
+= Referência da API
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+A referência da API contém detalhes sobre as chamadas da API REST do ONTAP, incluindo os métodos HTTP, parâmetros de entrada e respostas. Essa referência completa é útil ao desenvolver aplicativos de automação usando a API REST.
+
+
+NOTE: Você pode acessar a documentação de referência da API REST em um dos vários sites com base na versão do ONTAP. Uma cópia da documentação equivalente também está disponível através da interface do usuário do Swagger no seu sistema ONTAP local.
+
+
+
+== Acesse a documentação de referência da API do ONTAP on-line
+
+Você pode acessar uma cópia da documentação de referência da API REST do ONTAP por meio dos links fornecidos abaixo. A documentação é mantida pela versão do ONTAP.
+
+* https://docs.netapp.com/us-en/ontap-restapi/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.15,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9141/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.14,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9131/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.13,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9121/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.12,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9111/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.11,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-9101/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.10,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-991/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9.9,1"^]
+* https://docs.netapp.com/us-en/ontap-restapi-98/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9,8"^]
+* https://docs.netapp.com/us-en/ontap-restapi-97/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9,7"^]
+* https://docs.netapp.com/us-en/ontap-restapi-96/ontap/getting_started_with_the_ontap_rest_api.html["ONTAP 9,6"^]
+
+
+
+
+== Acesse a documentação de referência da API do ONTAP por meio da IU do Swagger
+
+Você pode acessar a documentação da API REST do ONTAP por meio da IU do Swagger em seu sistema ONTAP local.
+
+.Antes de começar
+Você deve ter o seguinte:
+
+* Endereço IP ou nome de host do LIF de gerenciamento de cluster do ONTAP
+* Nome de usuário e senha de uma conta com autoridade para acessar a API REST do ONTAP
+
+
+.Passos
+. Digite o URL no seu navegador e pressione *Enter*:
++
+`https://<ip_address>/docs/api`
+
+. Inicie sessão utilizando a conta ONTAP.
++
+A página de documentação da API do ONTAP é exibida com as chamadas da API organizadas nas principais categorias de recursos na parte inferior.
+
+. Como exemplo de uma chamada de API individual, role para baixo até a categoria *cluster* e clique em *GET /cluster*.
+

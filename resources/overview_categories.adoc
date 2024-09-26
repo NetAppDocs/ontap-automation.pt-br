@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: resources/overview_categories.html 
+keywords: resources, resource categories 
+summary:  
+---
+= Visão geral das categorias de recursos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Os recursos disponíveis por meio da API REST do ONTAP são organizados em categorias. Cada uma das categorias de recursos inclui uma breve descrição, juntamente com considerações de uso adicionais, quando apropriado.
+
+Os RECURSOS REST descritos no resumo são baseados na versão mais recente do produto. Se você precisar de uma compreensão mais detalhada das alterações feitas em versões anteriores, consulte link:../whats-new.html["Novidades com a API REST do ONTAP"]bem como o https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de versão do ONTAP"^].
+
+
+TIP: Para muitos dos pontos finais REST, você pode incluir uma chave UUID como parte da cadeia de carateres de caminho para acessar uma instância de objeto específica. No entanto, em muitos casos, você também pode acessar objetos usando um valor de propriedade em um parâmetro de consulta.
+
+.Informações relacionadas
+* link:../reference/api_reference.html["Referência da API"]
+

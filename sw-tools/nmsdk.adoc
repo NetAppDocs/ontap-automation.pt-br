@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: sw-tools/nmsdk.html 
+keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, ontap rest api 
+summary: O SDK de gerenciamento do NetApp fornece um conjunto de chamadas de API do ONTAPI para desenvolver aplicativos para monitorar e gerenciar seu storage do ONTAP. Juntamente com o pacote OnCommand Workflow Automation, o SDK apoia seus esforços para automatizar o gerenciamento de seus sistemas ONTAP. 
+---
+= SDK de gerenciamento do NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+O SDK de gerenciamento do NetApp fornece um conjunto de chamadas de API do ONTAPI para desenvolver aplicativos para monitorar e gerenciar seu storage do ONTAP. Juntamente com o pacote OnCommand Workflow Automation, o SDK apoia seus esforços para automatizar o gerenciamento de seus sistemas ONTAP.
+
+
+NOTE: Embora o SDK e o OnCommand Workflow Automation de gerenciabilidade do NetApp continuassem a ser suportados, a API REST do ONTAP é a tecnologia preferida e estratégica a ser usada ao automatizar seus sistemas ONTAP. Consulte link:../migrate/ontapi_disablement.html["Desativação da ONTAPI"] para obter mais informações.
+
+.Faça o download do SDK
+Você pode baixar o SDK de gerenciamento do NetApp a partir do site de suporte da NetApp. O SDK suporta várias linguagens do lado do cliente, incluindo: Python, PowerShell, C, Java, C, VB.Net e Ruby. Certifique-se de revisar a ferramenta Matriz de interoperabilidade para obter informações sobre o SDK de gerenciamento do NetApp e como ele é suportado com sua versão do ONTAP.
+
+.Use o OnCommand Workflow Automation
+Você também pode usar a API fornecida com o SDK para automatizar tarefas de gerenciamento sem escrever nenhum script. O OnCommand Workflow Automation (OnCommand WFA) fornece vários fluxos de trabalho pré-empacotados para implantar e executar as tarefas de gerenciamento.
+
+.Informações relacionadas
+* https://mysupport.netapp.com/site/["Site de suporte da NetApp"^]
+* https://www.netapp.com/company/interoperability/["Ferramenta de Matriz de interoperabilidade do NetApp"^]
+* https://mysupport.netapp.com/documentation/docweb/index.html?productID=63638&language=en-US["Documentação do SDK de gerenciabilidade do NetApp"^]
+* https://www.netapp.com/data-management/oncommand-workflow-automation-documentation/["Recursos de documentação do OnCommand Workflow Automation"^]
+* https://automationstore.netapp.com/home.shtml["Loja de automação da NetApp"^]
+

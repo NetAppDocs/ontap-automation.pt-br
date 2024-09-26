@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: migrate/software.html 
+keywords:  
+summary:  
+---
+= Ferramentas e software
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+O NetApp fornece exemplos de scripts Python e outros softwares relacionados para dar suporte à migração do ONTAPI para a API REST do ONTAP. As amostras mais importantes são descritas abaixo.
+
+
+NOTE: Todas as amostras de código Python estão disponíveis no https://github.com/NetApp/ontap-rest-python["Python REST do NetApp ONTAP"^] repositório GitHub.
+
+
+
+== Ferramenta de relatórios de uso ONTAPI
+
+A ferramenta de relatórios de uso da ONTAPI foi projetada para ajudar os serviços profissionais, clientes e parceiros da NetApp a identificar o uso da ONTAPI em seu ambiente ONTAP. Os scripts são fornecidos para três casos de uso diferentes, conforme descrito na tabela abaixo.
+
+[cols="20,80"]
+|===
+| Script | Descrição 
+
+
+| apache_scraper.py | Um raspador de log do Apache para localizar as chamadas ONTAPI emitidas nos nós do ONTAP 
+
+
+| session_stats.py | Um script CLI para recuperar dados de estatísticas de sessão do ONTAP 
+
+
+| zapi_to_rest.py | Um script para extrair os detalhes RESTANTES das chamadas e atributos ONTAPI passados 
+|===
+Pode aceder ao https://github.com/NetApp/ontap-rest-python/tree/master/ONTAPI-Usage-Reporting-Tool["Ferramenta de relatórios de uso ONTAPI"^] para começar. Consulte também um https://www.youtube.com/watch?v=gJSWerW9S7o["Demonstração"^] sobre a ferramenta de relatórios e como usá-la.
+
+
+
+== Passagem de CLI privada
+
+A API REST fornece ampla cobertura dos recursos e instalações disponíveis com o ONTAP. No entanto, pode haver instâncias em que o acesso direto à CLI do ONTAP por meio da API REST pode ser útil.
+
+Para obter uma introdução a esse recurso, link:../rest/access_ontap_cli.html["Acesse a CLI do ONTAP por meio da API REST"]consulte . Para as amostras Python, https://github.com/NetApp/ontap-rest-python/tree/master/examples/rest_api/cli_passthrough_samples["Amostras de passagem CLI REST"^]consulte .
+
+
+
+== Biblioteca cliente Python
+
+A biblioteca cliente Python é um pacote que você pode instalar e usar para acessar a API REST do ONTAP com Python. Ele permite que você desenvolva rapidamente código robusto para a automação de suas implantações do ONTAP.
+
+Para obter uma introdução à biblioteca cliente Python, link:../python/overview_pcl.html["Visão geral da biblioteca cliente Python"]consulte . Para as amostras Python, https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Exemplos de bibliotecas de clientes Python"^]consulte .
+
+
+
+== Kit de ferramentas do ONTAP
+
+O kit de ferramentas do NetApp.ONTAP PowerShell aprimora seu ambiente local do PowerShell com um módulo que inclui mais de 2.400 cmdlets. Ele permite que você desenvolva rapidamente código para seu host Windows para automatizar as implantações do ONTAP. Para obter mais informações, link:../pstk/overview_pstk.html["Visão geral do PowerShell Toolkit"]consulte .

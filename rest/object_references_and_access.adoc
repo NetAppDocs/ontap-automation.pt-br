@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: rest/object_references_and_access.html 
+keywords: objects, access paths, uuid, uuidv4, collections, object collection 
+summary: As instâncias de recursos ou objetos expostos por meio da API REST do ONTAP podem ser referenciados e acessados de várias maneiras diferentes. 
+---
+= Referências de objetos e acesso
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+As instâncias de recursos ou objetos expostos por meio da API REST do ONTAP podem ser referenciados e acessados de várias maneiras diferentes.
+
+
+
+== Caminhos de acesso a objetos
+
+Em um nível alto, há dois tipos de caminho ao acessar um objeto:
+
+* Primário
++
+O objeto é o alvo principal ou direto da chamada API.
+
+* Estrangeiro
++
+O objeto não é a referência primária da chamada API, mas está ligado a partir do objeto primário. É, portanto, um objeto estranho ou downstream e referenciado através de um campo no objeto primário.
+
+
+
+
+
+== Acessando um objeto usando o UUID
+
+Cada objeto recebe um identificador exclusivo quando é criado, que na maioria dos casos é um UUID de 128 bits. Os valores UUUID atribuídos são imutáveis e são usados internamente no ONTAP para acessar e gerenciar os recursos. Por causa disso, o UUID geralmente fornece a maneira mais rápida e estável de acessar objetos.
+
+Para muitos dos tipos de recurso, um valor UUID pode ser fornecido como parte da chave de caminho no URL para acessar um objeto específico. Por exemplo, você pode usar o seguinte para acessar uma instância de nó: ``/cluster/nodes/{uuid}`
+
+
+
+== Acessando um objeto usando uma propriedade de objeto
+
+Além de um UUID, você também pode acessar um objeto usando uma propriedade de objeto. Na maioria dos casos, é conveniente usar a propriedade name. Por exemplo, você pode usar o seguinte parâmetro de consulta na cadeia de carateres de URL para acessar uma instância de nó pelo seu nome: `/cluster/nodes?name=node_one`. Além de um parâmetro de consulta, um objeto estranho pode ser acessado através de uma propriedade no objeto primário.
+
+Embora você possa usar o nome ou outra propriedade para acessar um objeto em vez do UUID, existem várias desvantagens possíveis:
+
+* O campo de nome não é imutável e pode ser alterado. Se o nome de um objeto for alterado antes de acessar um objeto, o objeto errado será retornado ou um erro de acesso ao objeto falhará.
++
+
+NOTE: Esse problema pode ocorrer com um método POST ou PATCH em um objeto estranho ou com um método GET em um objeto primário.
+
+* O ONTAP deve traduzir o campo de nome para o UUID correspondente. Este é um tipo de acesso indireto que pode se tornar um problema de desempenho.
+
+
+Em particular, uma degradação do desempenho é possível quando uma ou mais das seguintes situações é verdadeira:
+
+* Método GET é usado
+* Uma grande coleção de objetos é acessada
+* Uma consulta complexa ou elaborada é usada
+
+
+
+
+== Contexto cluster versus SVM
+
+Há vários pontos de extremidade REST que são compatíveis com cluster e SVM. Ao usar um desses endpoints, você pode indicar o contexto da chamada da API por meio do `scope=[svm|cluster]` valor. Exemplos de endpoints que suportam um contexto duplo incluem interfaces IP e funções de segurança.
+
+
+NOTE: O valor do escopo tem uma base de valor padrão nas propriedades fornecidas para cada chamada de API.
+
+
+
+== USANDO PATCH e DELETE em uma coleção de objetos
+
+Todos os endpoints REST que suportam PATCH ou EXCLUSÃO em uma instância de recurso também suportam o mesmo método em uma coleção de objetos. O único requisito é que pelo menos um campo deve ser fornecido através de um parâmetro de consulta na cadeia de carateres de URL. Ao emitir UM PATCH ou EXCLUIR sobre uma coleção, isso é equivalente a fazer o seguinte internamente:
+
+* GET baseado em consulta para recuperar a coleção
+* Sequência serial de PATCH ou EXCLUIR chamadas em cada objeto da coleção
+
+
+O tempo limite para a operação pode ser definido por `return_timeout` com um padrão de 15 segundos. Se não for concluída antes do tempo limite, a resposta inclui um link para o próximo objeto. Você deve reemitir o mesmo método HTTP usando o próximo link para continuar a operação.

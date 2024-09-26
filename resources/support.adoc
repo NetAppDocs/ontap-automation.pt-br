@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: resources/support.html 
+keywords: support resources 
+summary: Você pode usar essas chamadas de API para gerenciar os recursos do ONTAP usados para oferecer suporte a um cluster. 
+---
+= Suporte
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar os recursos do ONTAP usados para oferecer suporte a um cluster.
+
+.Registo de aplicações
+Um aplicativo autônomo pode gravar eventos EMS e pacotes AutoSupport gerados opcionalmente em um sistema ONTAP, emitindo uma SOLICITAÇÃO POST. Este tipo de recurso foi introduzido com o ONTAP 9.11,1
+
+.Atualização automática
+O recurso de atualização automática mantém seus sistemas ONTAP atualizados baixando e aplicando as atualizações de software mais recentes. Existem várias categorias de endpoint para suportar o recurso, incluindo status, configurações e atualizações. Esses tipos de recursos foram introduzidos com o ONTAP 9.10.
+
+.AutoSupport
+O AutoSupport coleta detalhes de configuração e status, bem como erros, e reporta as informações ao NetApp. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Mensagens AutoSupport
+Cada nó mantém mensagens AutoSupport que podem ser geradas e recuperadas. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Backup de configuração
+Você pode usar essas APIs para recuperar e atualizar as configurações de backup atuais. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Operações de backup de configuração
+Você pode criar, recuperar e excluir arquivos de backup de configuração. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Despejo de memória
+Você pode usar esses endpoints para recuperar e gerenciar os despejos de núcleo de memória gerados por um cluster ou nó. Este tipo de recurso foi introduzido com o ONTAP 9.10.
+
+.EMS
+O sistema de gestão de eventos (EMS) recolhe eventos e envia notificações para um ou mais destinos. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Destinos EMS
+Os destinos EMS determinam como e onde as notificações são enviadas. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Instância de destinos EMS
+Uma instância de destino EMS é definida por tipo e localização. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Eventos EMS
+Esta é uma coleção ao vivo de eventos do sistema para o cluster. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Filtros EMS
+Os filtros EMS identificam coletivamente os eventos que requerem processamento adicional. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Instância de filtros EMS
+Uma instância de filtro EMS é uma coleção de regras que são aplicadas aos eventos. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Mensagens EMS
+Fornece acesso ao catálogo de eventos EMS. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Configuração da função EMS
+O recurso de suporte do EMS permite o gerenciamento de funções e a configuração de controle de acesso atribuída às funções. Isso fornece a capacidade de limitar ou filtrar os eventos e mensagens com base na configuração da função. Este tipo de recurso foi introduzido com o ONTAP 9.13.
+
+.Regras EMS para instância de filtro
+Uma lista de regras pode ser gerenciada para uma instância específica de um filtro EMS. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Instância de regras EMS para instância de filtro
+Uma regra individual para uma instância específica de um filtro EMS. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.SNMP
+Pode ativar e desativar as operações SNMP e trap para o cluster. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Host de trap SNMP
+Um host de trap SNMP é um sistema configurado para receber traps SNMP do ONTAP. Você pode recuperar e definir os hosts. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Instância de host de intercetação SNMP
+Você pode gerenciar hosts de intercetação SNMP específicos. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Utilizadores SNMP
+Você pode definir e administrar usuários SNMP. Este tipo de recurso foi introduzido com o ONTAP 9.7.
+
+.Instância de usuários SNMP
+É possível administrar um usuário SNMP específico no qual o ID do mecanismo esteja associado ao SVM administrativo ou a um SVM de dados. Este tipo de recurso foi introduzido com o ONTAP 9.7.

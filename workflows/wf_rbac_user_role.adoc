@@ -1,0 +1,245 @@
+---
+sidebar: sidebar 
+permalink: workflows/wf_rbac_user_role.html 
+keywords:  
+summary: Você pode usar esse fluxo de trabalho para criar um usuário com uma FUNÇÃO REST associada. 
+---
+= Crie um usuário com uma função
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode usar esse fluxo de trabalho para criar um usuário com uma FUNÇÃO REST associada.
+
+.Sobre este fluxo de trabalho
+Este fluxo de trabalho inclui as etapas típicas necessárias para criar uma FUNÇÃO REST personalizada e associá-la a uma nova conta de usuário. O usuário e a função têm um escopo do SVM e estão associados a um SVM de dados específico. Algumas das etapas podem ser opcionais ou precisam mudar dependendo do seu ambiente.
+
+
+
+== Etapa 1: Listar os SVMs de dados no cluster
+
+Execute a seguinte chamada de API REST para listar os SVMs no cluster. O UUID e o nome de cada SVM são fornecidos na saída.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/svm/svms 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/svm/svms?order_by=name" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Depois de terminar
+Selecione o SVM desejado na lista onde você criará o novo usuário e a função.
+
+
+
+== Etapa 2: Listar os usuários definidos para o SVM
+
+Execute a seguinte chamada à API REST para listar os usuários definidos no SVM selecionado. Você pode identificar o SVM por meio do parâmetro proprietário.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/security/accounts 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/accounts?owner.name=dmp" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH"
+----
+.Depois de terminar
+Com base nos usuários já definidos no SVM, escolha um nome exclusivo para o novo usuário.
+
+
+
+== Etapa 3: Listar as funções REST definidas no SVM
+
+Execute a seguinte chamada à API REST para listar as funções definidas no SVM selecionado. Você pode identificar o SVM por meio do parâmetro proprietário.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| OBTER | /api/security/roles 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request GET \
+--location "https://$FQDN_IP/api/security/roles?owner.name=dmp" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Depois de terminar
+Com base nas funções já definidas no SVM, escolha um nome exclusivo para a nova função.
+
+
+
+== Passo 4: Crie uma FUNÇÃO REST personalizada
+
+Execute a seguinte chamada de API REST para criar uma FUNÇÃO REST personalizada no SVM. A função inicialmente tem apenas um privilégio que estabelece um acesso padrão de *none* para que todo o acesso seja negado.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/security/roles 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "name": "dprole1",
+  "owner": {
+    "name": "dmp",
+    "uuid": "752d96be-f17c-11ec-9d19-005056bbad91"
+  },
+  "privileges": [
+      {"path": "/api", "access": "none"},
+  ]
+}
+----
+.Depois de terminar
+Opcionalmente, execute a etapa 3 novamente para exibir a nova função. Você também pode exibir as funções na CLI do ONTAP.
+
+
+
+== Passo 5: Atualize a função adicionando mais Privileges
+
+Execute a seguinte chamada de API REST para modificar a função adicionando Privileges conforme necessário.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/security/roles/"owner.uuuid"//Privileges 
+|===
+.Parâmetros de entrada adicionais para exemplos curl
+Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes parâmetros também são usados no exemplo curl nesta etapa.
+
+[cols="25,10,10,55"]
+|===
+| Parâmetro | Tipo | Obrigatório | Descrição 
+
+
+| SVM_ID | Caminho | Sim | UUID do SVM que contém a definição de função. 
+
+
+| NOME_FUNÇÃO | Caminho | Sim | O nome da função no SVM a ser atualizado. 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "path": "/api/storage/volumes",
+  "access": "readonly"
+}
+----
+.Depois de terminar
+Opcionalmente, execute a etapa 3 novamente para exibir a nova função. Você também pode exibir as funções na CLI do ONTAP.
+
+
+
+== Passo 6: Crie um usuário
+
+Execute a seguinte chamada de API REST para criar uma conta de usuário. A função *dprole1* criada acima está associada ao novo usuário.
+
+
+TIP: Você pode criar o usuário sem uma função. Nesse caso, é atribuída ao usuário uma função padrão ( `admin`ou `vsadmin`), dependendo se o usuário está definido com escopo de cluster ou SVM. Você precisará modificar o usuário para atribuir uma função diferente.
+
+.Método HTTP e endpoint
+Essa chamada de API REST usa o método e o endpoint a seguir.
+
+[cols="25,75"]
+|===
+| Método HTTP | Caminho 
+
+
+| POST | /api/security/accounts 
+|===
+.Curl exemplo
+[source, curl]
+----
+curl --request POST \
+--location "https://$FQDN_IP/api/security/accounts" \
+--include \
+--header "Accept: */*" \
+--header "Authorization: Basic $BASIC_AUTH" \
+--data @JSONinput
+----
+.Exemplo de entrada JSON
+[source, curl]
+----
+{
+  "owner": {"uuid":"daf84055-248f-11ed-a23d-005056ac4fe6"},
+  "name": "david",
+  "applications": [
+      {"application":"ssh",
+       "authentication_methods":["password"],
+       "second_authentication_method":"none"}
+  ],
+  "role":"dprole1",
+  "password":"netapp123"
+}
+----
+.Depois de terminar
+Você pode fazer login na interface de gerenciamento do SVM usando as credenciais do novo usuário.

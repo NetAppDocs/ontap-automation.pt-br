@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: resources/application.html 
+keywords: application resources 
+summary: Você pode usar essas chamadas de API para gerenciar os recursos do aplicativo ONTAP. 
+---
+= Aplicação
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode usar essas chamadas de API para gerenciar os recursos do aplicativo ONTAP.
+
+.Instantâneos de aplicações
+As aplicações são compatíveis com cópias snapshot, que podem ser criadas ou restauradas a qualquer momento. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Aplicações
+Os aplicativos do ONTAP são organizados com base no tipo, incluindo: Modelos, aplicativos, componentes e cópias Snapshot. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+
+.Grupos de consistência
+Um grupo de consistência é um conjunto de volumes que são agrupados ao executar determinadas operações, como um snapshot. Esse recurso estende a mesma consistência de falhas e integridade de dados implícita com operações de volume único em um conjunto de volumes. Esse tipo de recurso foi introduzido com o ONTAP 9.10 e atualizado com o 9,12. Um ponto de extremidade para recuperar dados de desempenho e capacidade de métrica foi adicionado com o ONTAP 9.13.
+
+.Grupos de consistência instantâneos
+Você pode usar esses endpoints para copiar, criar, inventariar e restaurar snapshots para um grupo de consistência. Este tipo de recurso foi introduzido com o ONTAP 9.10.
