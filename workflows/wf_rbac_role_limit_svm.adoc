@@ -10,7 +10,7 @@ summary: É possível definir uma função para restringir a administração de 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

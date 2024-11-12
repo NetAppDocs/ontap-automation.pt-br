@@ -62,7 +62,7 @@ Os endpoints foram introduzidos para permitir que você recupere e defina opçõ
 Um workload DE QOS representa um objeto de storage controlado por QOS. Você pode recuperar os fluxos de trabalho DE QOS. Este tipo de recurso foi introduzido com o ONTAP 9.10.
 
 .Qtrees
-Você pode usar essas chamadas de API para gerenciar Qtrees, um tipo de sistema de arquivos dividido logicamente. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+Você pode usar essas chamadas de API para gerenciar Qtrees, um tipo de sistema de arquivos dividido logicamente. Este tipo de recurso foi introduzido com o ONTAP 9.6. O recurso de monitoramento de desempenho estendido de qtree foi adicionado ao ONTAP 9.16,1.
 
 .Relatórios de cotas
 Relatório sobre cotas, que é uma técnica para restringir ou rastrear arquivos ou uso de espaço. Este tipo de recurso foi introduzido com o ONTAP 9.6.

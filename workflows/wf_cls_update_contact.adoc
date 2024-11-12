@@ -10,7 +10,7 @@ summary: Pode atualizar as informações de contacto de um cluster. Como a solic
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Pode listar os certificados instalados no cluster do ONTAP. Você pode 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

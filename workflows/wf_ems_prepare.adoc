@@ -10,7 +10,7 @@ summary: 'Você pode configurar o processamento do sistema de gerenciamento de e
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Pode recuperar a configuração atual do EMS para um cluster ONTAP. Voc
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

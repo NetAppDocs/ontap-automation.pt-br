@@ -10,7 +10,7 @@ summary: Você pode recuperar a instância de um trabalho ONTAP específico. Nor
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

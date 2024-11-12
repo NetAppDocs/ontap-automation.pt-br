@@ -10,7 +10,7 @@ summary: Você pode usar a funcionalidade RBAC do ONTAP de várias maneiras dife
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

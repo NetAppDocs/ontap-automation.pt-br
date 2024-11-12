@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: migrate/performance-counters.html 
 keywords: performance, performance counters, mapping 
-summary: O ONTAP Counter Manager mantém informações abrangentes sobre o desempenho de cada sistema ONTAP. Ele exporta esses dados como contadores de performance que você pode usar para avaliar a performance do seu sistema ONTAP e ajudar a atingir suas metas de desempenho. 
+summary: O ONTAP Counter Manager mantém informações abrangentes sobre o desempenho de cada sistema ONTAP. Ele exporta esses dados como um conjunto de contadores de performance que você pode usar para avaliar o desempenho do seu sistema ONTAP e ajudar a atingir suas metas de desempenho. 
 ---
 = Contadores de desempenho
 :hardbreaks:
@@ -98,14 +98,7 @@ Retorna uma linha específica de uma tabela de contador nomeada.
 
 O NetApp oferece suporte extensivo para migrar seu código de automação do ONTAPI para a API REST do ONTAP. Isso inclui a documentação de mapeamento para identificar a tabela de contador de desempenho equivalente disponível na API REST para um determinado objeto ONTAPI.
 
-Consulte a documentação de mapeamento apropriada com base na versão do ONTAP que você está usando:
-
-* https://docs.netapp.com/us-en/ontap-pcmap/["Mapeamento do contador de desempenho ONTAP 9.15,1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9141/["Mapeamento do contador de desempenho ONTAP 9.14,1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9131/["Mapeamento do contador de desempenho ONTAP 9.13,1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9121/["Mapeamento do contador de desempenho ONTAP 9.12,1"^]
-* https://docs.netapp.com/us-en/ontap-pcmap-9111/["Mapeamento do contador de desempenho ONTAP 9.11,1"^]
-
+Você pode acessar a documentação atual https://docs.netapp.com/us-en/ontap-pcmap/["Mapeamento do contador de desempenho do ONTAP"^] on-line. Há também um seletor de versão disponível para acessar versões anteriores da documentação com base na versão ONTAP.
 
 
 

@@ -181,26 +181,16 @@
   <block id="a744a6f8fd15a39f0d95ce77ce3db16c" category="paragraph">O NetApp fornece uma ferramenta para ajudar clientes e parceiros a fazer a transição para a API REST do ONTAP.</block>
   <block id="e69e5f7f3b9067e533a0c848ce387094" category="inline-link">NetApp.io/2022/03/21/transiting-from-ontapizapi-using-ontapi-use-reporting-tool</block>
   <block id="9a602388f357467e0f50667f5767b094" category="paragraph"><block ref="9a602388f357467e0f50667f5767b094" category="inline-link-rx"></block></block>
-  <block id="40ccd15522e040a44684db0616c80933" category="summary">O NetApp fornece documentação que descreve o mapeamento das chamadas ONTAPI para as chamadas de API REST equivalentes.</block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="doc">ONTAPI para mapeamento de API REST</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">A API REST do ONTAP inclui funcionalidade equivalente à ONTAPI na maioria das áreas. O NetApp fornece documentação que descreve o mapeamento das chamadas ONTAPI para as chamadas de API REST equivalentes.</block>
-  <block id="0b3de81010176abb2584daa05d6aa0c1" category="paragraph">A documentação de mapeamento da API depende da versão do ONTAP:</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="inline-link">ONTAP 9.15,1</block>
-  <block id="69738e35b71c70a30fc6aaf48b3ab41b" category="list-text"><block ref="69738e35b71c70a30fc6aaf48b3ab41b" category="inline-link-rx"></block></block>
   <block id="8020ad245e7cbc2ac49c84b7f4ace684" category="inline-link">ONTAP 9.14,1</block>
-  <block id="61a5cb9aa0d74d026e5b2a2811ac5856" category="list-text"><block ref="61a5cb9aa0d74d026e5b2a2811ac5856" category="inline-link-rx"></block></block>
   <block id="b6e60011eab2ca1cf5d6c756a1bbfc5e" category="inline-link">ONTAP 9.13,1</block>
-  <block id="b41840dcdd390cc23a6e04dde600cf7b" category="list-text"><block ref="b41840dcdd390cc23a6e04dde600cf7b" category="inline-link-rx"></block></block>
   <block id="594e1ec3daa27e540baa061f731f028f" category="inline-link">ONTAP 9.12,1</block>
-  <block id="09481788bfd4f0387538dc40f7253600" category="list-text"><block ref="09481788bfd4f0387538dc40f7253600" category="inline-link-rx"></block></block>
   <block id="b59cced8914a5ae4b2997c54c8cfeb8d" category="inline-link">ONTAP 9.11,1</block>
-  <block id="8282c5eb60df31dec0965e6ae9158721" category="list-text"><block ref="8282c5eb60df31dec0965e6ae9158721" category="inline-link-rx"></block></block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="inline-link">ONTAP 9.10,1</block>
-  <block id="946db446900ee1ab057b2f9b4c05f134" category="list-text"><block ref="946db446900ee1ab057b2f9b4c05f134" category="inline-link-rx"></block></block>
   <block id="74eb178224c5fa701fbcd96998feaafe" category="inline-link">ONTAP 9.9,1</block>
-  <block id="866a03d0e7b971bda163096bf0c8b27d" category="list-text"><block ref="866a03d0e7b971bda163096bf0c8b27d" category="inline-link-rx"></block></block>
   <block id="2abfff2974f589f7a217325f304e0ec5" category="inline-link">ONTAP 9,8</block>
-  <block id="571a9281dc7d54056134d0ae9cebe097" category="list-text"><block ref="571a9281dc7d54056134d0ae9cebe097" category="inline-link-rx"></block></block>
   <block id="e6a021828131c610a8d1434615483b06" category="summary">Antes de migrar para a API REST do ONTAP a partir da API ONTAPI (ZAPI) ou da CLI do ONTAP, há vários problemas que você deve considerar.</block>
   <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">Considerações sobre migração</block>
   <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">Diferenças gerais de design</block>
@@ -236,7 +226,6 @@
   <block id="ea53ecb52450e46f8a6a0fb33b6e191a" category="list-text"><block ref="ea53ecb52450e46f8a6a0fb33b6e191a" category="inline-link-rx"></block></block>
   <block id="80ea4b005fd9d89a5db44b1a4c02962a" category="inline-link">Perguntas frequentes sobre a transformação da API REST do ONTAP para CPC</block>
   <block id="383b172302e7a0ad8e5f63e801347592" category="list-text"><block ref="383b172302e7a0ad8e5f63e801347592" category="inline-link-rx"></block></block>
-  <block id="7e9d549a6ae2d8edef3b2cbe603be866" category="summary">O ONTAP Counter Manager mantém informações abrangentes sobre o desempenho de cada sistema ONTAP. Ele exporta esses dados como contadores de performance que você pode usar para avaliar a performance do seu sistema ONTAP e ajudar a atingir suas metas de desempenho.</block>
   <block id="a3139937e50cf495467ef74d1e2841ff" category="doc">Contadores de desempenho</block>
   <block id="f820365d9bff90a726b9e0e66581d39d" category="paragraph">O ONTAP Counter Manager mantém informações abrangentes sobre o desempenho de cada sistema ONTAP. Ele exporta esses dados como um conjunto de _contadores de desempenho_ que você pode usar para avaliar o desempenho do seu sistema ONTAP e ajudar a atingir suas metas de desempenho.</block>
   <block id="a47c181a1090073afb97b1f1a4307d7d" category="section-title">Acesse os contadores de desempenho do ONTAP</block>
@@ -286,17 +275,6 @@
   <block id="a01a598346c8ee9e07f64ca8b3c6dfb3" category="paragraph">Retorna uma linha específica de uma tabela de contador nomeada.</block>
   <block id="8754d12ba0d161651192001fada04f18" category="section-title">Migração do ONTAPI para a API REST</block>
   <block id="9cfb5bc4e6579f4ac50244e8b2931ed5" category="paragraph">O NetApp oferece suporte extensivo para migrar seu código de automação do ONTAPI para a API REST do ONTAP. Isso inclui a documentação de mapeamento para identificar a tabela de contador de desempenho equivalente disponível na API REST para um determinado objeto ONTAPI.</block>
-  <block id="38fa1dfa125f39c71e3841bb1a8acad8" category="paragraph">Consulte a documentação de mapeamento apropriada com base na versão do ONTAP que você está usando:</block>
-  <block id="fc1f7dfc3ae68bb32df56212cf0f0599" category="inline-link">Mapeamento do contador de desempenho ONTAP 9.15,1</block>
-  <block id="e3cbd6dca7bdf2bdd855bf1938c16e2b" category="list-text"><block ref="e3cbd6dca7bdf2bdd855bf1938c16e2b" category="inline-link-rx"></block></block>
-  <block id="f393f584e27f669b011040984c1c9496" category="inline-link">Mapeamento do contador de desempenho ONTAP 9.14,1</block>
-  <block id="49ffd7a8d8266844e2ec7c32f18e5cb1" category="list-text"><block ref="49ffd7a8d8266844e2ec7c32f18e5cb1" category="inline-link-rx"></block></block>
-  <block id="6b9418a55963f7822ccea753684768bf" category="inline-link">Mapeamento do contador de desempenho ONTAP 9.13,1</block>
-  <block id="8673c6516e8e00de96b96886974e6eb6" category="list-text"><block ref="8673c6516e8e00de96b96886974e6eb6" category="inline-link-rx"></block></block>
-  <block id="69171af9658ef4af7c5718f77b0005ea" category="inline-link">Mapeamento do contador de desempenho ONTAP 9.12,1</block>
-  <block id="d80bcff677f986fc21887a1d1191e247" category="list-text"><block ref="d80bcff677f986fc21887a1d1191e247" category="inline-link-rx"></block></block>
-  <block id="54f3a66937c05960457b35fe016ec878" category="inline-link">Mapeamento do contador de desempenho ONTAP 9.11,1</block>
-  <block id="7406cf183a318ad72a9fcbd90c5efa56" category="list-text"><block ref="7406cf183a318ad72a9fcbd90c5efa56" category="inline-link-rx"></block></block>
   <block id="0780850d56e52d88a8eaefb85c6c63bb" category="section-title">Comece a usar a API REST do ONTAP</block>
   <block id="ae545f118384587cae56a2872c8f5b56" category="paragraph">Os exemplos a seguir ilustram como usar a API REST para acessar os contadores de desempenho do ONTAP. Isso inclui recuperar uma lista das tabelas disponíveis e explorar a estrutura da tabela.</block>
   <block id="5d40b4d1c96be5f3ac1fce29c993e666" category="paragraph">Reveja as seguintes informações antes de utilizar os exemplos.</block>
@@ -354,7 +332,6 @@
   <block id="4028e751d6613e2ade147d59afdd8a50" category="paragraph"><block ref="4028e751d6613e2ade147d59afdd8a50" category="inline-link-rx"></block></block>
   <block id="1904aecd859f7f23f24c1be156dc343b" category="paragraph-title">Galeria do PowerShell</block>
   <block id="4c6410f017732f17e33613aeeb023d8d" category="paragraph">Você pode baixar o kit de ferramentas do PowerShell da Galeria do PowerShell:</block>
-  <block id="7aa552dc681d656a7dca492830d13523" category="paragraph"><block ref="7aa552dc681d656a7dca492830d13523" category="inline-link-rx"></block></block>
   <block id="f954d54d4b0a7e9ea5cf236808483a7c" category="summary">O NetApp oferece suporte ao uso do PowerShell para administrar seus sistemas de storage do ONTAP.</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="paragraph-title">PowerShell</block>
   <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">O PowerShell é um programa da Microsoft que você pode usar para automação de tarefas e gerenciamento de configuração. Ele inclui um ambiente shell de linha de comando, bem como uma linguagem de script.</block>
@@ -443,17 +420,6 @@
   <block id="b62a0ce222a32de08e1187e5c25337b3" category="summary">A referência da API contém detalhes sobre as chamadas da API REST do ONTAP, incluindo os métodos HTTP, parâmetros de entrada e respostas. Essa referência completa é útil ao desenvolver aplicativos de automação usando a API REST.</block>
   <block id="9ee871a8bdae23bde132bdc475127a91" category="admonition">Você pode acessar a documentação de referência da API REST em um dos vários sites com base na versão do ONTAP. Uma cópia da documentação equivalente também está disponível através da interface do usuário do Swagger no seu sistema ONTAP local.</block>
   <block id="2b143ad87a879a3f7e0e10f005539f8e" category="section-title">Acesse a documentação de referência da API do ONTAP on-line</block>
-  <block id="a82c48b5d06cbcc4f0ba1ae8bdef9c02" category="paragraph">Você pode acessar uma cópia da documentação de referência da API REST do ONTAP por meio dos links fornecidos abaixo. A documentação é mantida pela versão do ONTAP.</block>
-  <block id="430f1c1df2cd64a3c4f965b8d9c49566" category="list-text"><block ref="430f1c1df2cd64a3c4f965b8d9c49566" category="inline-link-rx"></block></block>
-  <block id="35edae61aca91aae4cbd46b48209e29c" category="list-text"><block ref="35edae61aca91aae4cbd46b48209e29c" category="inline-link-rx"></block></block>
-  <block id="1a7a6021e347b043939d76bcefa6df25" category="list-text"><block ref="1a7a6021e347b043939d76bcefa6df25" category="inline-link-rx"></block></block>
-  <block id="e5b9abf558fec0163b635d6d64f9e7ad" category="list-text"><block ref="e5b9abf558fec0163b635d6d64f9e7ad" category="inline-link-rx"></block></block>
-  <block id="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="list-text"><block ref="df9ddc7cae6db2b9f03ec9f63e9a15fb" category="inline-link-rx"></block></block>
-  <block id="f184911465f21dd8f7c4dcdc711e1ac7" category="list-text"><block ref="f184911465f21dd8f7c4dcdc711e1ac7" category="inline-link-rx"></block></block>
-  <block id="be16bcaaf8f90b15fde4e47a0b2bada9" category="list-text"><block ref="be16bcaaf8f90b15fde4e47a0b2bada9" category="inline-link-rx"></block></block>
-  <block id="6da29242aaec0bfacf4cccc152f3ae17" category="list-text"><block ref="6da29242aaec0bfacf4cccc152f3ae17" category="inline-link-rx"></block></block>
-  <block id="d5653468b803018e1df8a03526ca0dfe" category="list-text"><block ref="d5653468b803018e1df8a03526ca0dfe" category="inline-link-rx"></block></block>
-  <block id="804b12a0b7232fc26053b6e4ef6143e9" category="list-text"><block ref="804b12a0b7232fc26053b6e4ef6143e9" category="inline-link-rx"></block></block>
   <block id="39d2726aa93bd430df52956407b809b4" category="section-title">Acesse a documentação de referência da API do ONTAP por meio da IU do Swagger</block>
   <block id="527df4f1ccd81173595bb685c8266938" category="paragraph">Você pode acessar a documentação da API REST do ONTAP por meio da IU do Swagger em seu sistema ONTAP local.</block>
   <block id="a08d0039b6defc60dd0db0aebca289d8" category="paragraph">Você deve ter o seguinte:</block>
@@ -756,7 +722,6 @@
   <block id="187f8868291bfb72a7e033dd667af916" category="paragraph-title">Proxy do active Directory</block>
   <block id="5bfa71d20e72cfa3885c1399635e02fe" category="paragraph">É possível administrar as informações da conta SVM no servidor do active Directory. Este tipo de recurso foi introduzido com o ONTAP 9.7.</block>
   <block id="346f7f627d1a93bfbf315865554048c6" category="paragraph-title">Anti-ransomware</block>
-  <block id="d7741d8eafdec4ae992161e15c2ae508" category="paragraph">O ONTAP deteta arquivos potencialmente contendo uma ameaça de ransomware. Existem várias categorias de endpoints. Você pode recuperar uma lista desses arquivos suspeitos, bem como removê-los de um volume. Este tipo de recurso foi introduzido com o ONTAP 9.10,1.</block>
   <block id="97140b7fab1bb651b5fc8173a48e9824" category="paragraph">As configurações que determinam o que é registrado nos arquivos de log de auditoria. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
   <block id="f260003a35e4d85e558fddca87a44bc3" category="paragraph-title">Auditar destinos</block>
   <block id="355af35bea1f9a472b4aee466d9acada" category="paragraph">Essas configurações controlam como as informações de log de auditoria são encaminhadas para sistemas remotos ou servidores splunk. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
@@ -801,7 +766,6 @@
   <block id="6a36d99c2ac30ed84aa720f045f9fb79" category="paragraph-title">Autenticação NIS</block>
   <block id="0435d401767ed66c66ec6b98940edb55" category="paragraph">Essas configurações são usadas para recuperar e gerenciar a configuração do servidor NIS do cluster. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
   <block id="81965b7bd1ea175b46252dfed91f5375" category="paragraph-title">OAuth 2,0</block>
-  <block id="3e1b68a51cd18c85f6633a372eaa47d5" category="paragraph">A autorização aberta (OAuth 2,0) é uma estrutura baseada em token que pode ser usada para restringir o acesso aos recursos de armazenamento do ONTAP. Você pode usá-lo com clientes que acessam o ONTAP por meio da API REST. A configuração pode ser realizada com qualquer uma das interfaces administrativas do ONTAP, incluindo a API REST. Este tipo de recurso foi introduzido com o ONTAP 9.14.</block>
   <block id="22df0a92ffce80c2c0b94f54238b8ec0" category="paragraph-title">Autenticação por senha</block>
   <block id="5a2049402058b884646ba056f5eb32b6" category="paragraph">Isso inclui a chamada de API usada para alterar a senha de uma conta de usuário. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
   <block id="7ceacf64cc5732c8c39d8622d4e2d44c" category="paragraph-title">Privileges para uma instância de função</block>
@@ -877,7 +841,6 @@
   <block id="807c87dbc2a84cfb9ed828623f9216ac" category="paragraph-title">Workloads de QOS</block>
   <block id="40bfd79f754a21d30d27146e76e53e9a" category="paragraph">Um workload DE QOS representa um objeto de storage controlado por QOS. Você pode recuperar os fluxos de trabalho DE QOS. Este tipo de recurso foi introduzido com o ONTAP 9.10.</block>
   <block id="48b9817af3fdae7035b6862c98196584" category="paragraph-title">Qtrees</block>
-  <block id="f46974aa6acf92306910967155e721fd" category="paragraph">Você pode usar essas chamadas de API para gerenciar Qtrees, um tipo de sistema de arquivos dividido logicamente. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
   <block id="bb1c10ea5234afcb091a28054d68573b" category="paragraph-title">Relatórios de cotas</block>
   <block id="13ac41c0f5b92c0695d1031496644111" category="paragraph">Relatório sobre cotas, que é uma técnica para restringir ou rastrear arquivos ou uso de espaço. Este tipo de recurso foi introduzido com o ONTAP 9.6.</block>
   <block id="b9104e60761a7668c71846e0def23f3a" category="paragraph-title">Regras de quota</block>
@@ -1473,11 +1436,6 @@
   <block id="e63dbec97e259e045c2bdaab696ebe25" category="list-text"><block ref="eb9fd5adf45f5072855c8bbbb18ec1d3" category="inline-link-rx"></block></block>
   <block id="15ed38b5d48d9edf37f82cc89687f17e" category="inline-link">Recursos de documentação do OnCommand Workflow Automation</block>
   <block id="f8e4512adc37ddf24d285dd82223a4d9" category="list-text"><block ref="f8e4512adc37ddf24d285dd82223a4d9" category="inline-link-rx"></block></block>
-  <block id="00ebf5cec061915cd0462d73602dcad8" category="inline-link">Loja de automação da NetApp</block>
-  <block id="f3d744cfa0520002045d6f43144f6d48" category="list-text"><block ref="f3d744cfa0520002045d6f43144f6d48" category="inline-link-rx"></block></block>
-  <block id="b5ad0fadac714409796245d1b58f5199" category="summary">O NetApp atualiza periodicamente a API REST do ONTAP para oferecer novos recursos, melhorias e correções de bugs.</block>
-  <block id="aa23dd032f1fc4a5a95d9eb732608f33" category="admonition">Você também deve revisar o<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> para obter informações adicionais, incluindo limitações ou problemas conhecidos. Consulte também <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block>para ver quaisquer alterações que possam afetar o seu software de automação.</block>
-  <block id="25c2f3f417194f8a4327550b96839461" category="paragraph">O ONTAP 9.15,1 continua a expandir os recursos da API REST do ONTAP. A atualização para esta versão é relativamente modesta, com suporte para dois novos recursos.</block>
   <block id="f503cec406370353472f2af8bffc177d" category="list-text">Há três novos endpoints disponíveis com esse recurso. Você pode emitir essas chamadas de API para recuperar todas as interfaces NFS sobre TLS, recuperar uma interface específica por UUID e atualizar as propriedades de configuração de uma interface TLS. Coletivamente, essas chamadas de API fornecem um equivalente ao conjunto de<block ref="e06252ee7104d7c63fe9612305d61ed2" prefix=" " category="inline-code"></block> comandos CLI.</block>
   <block id="9fca2ad29082aa8ea692f5764bcc5371" category="admonition">O NFS em TLS está disponível no ONTAP 9.15,1 como prévia pública. Como oferta de prévia, esse recurso não é compatível com workloads de produção com o ONTAP 9.15,1.</block>
   <block id="df1b9eeca7fff049392b594c09b8d79c" category="list-text">Aplicativos de backup do Windows e links simbólicos em estilo Unix</block>
@@ -1507,7 +1465,6 @@
   <block id="02225fa77795933e713b9af48999c77d" category="list-text">O Amazon Web Services inclui um serviço de gerenciamento de chaves que fornece armazenamento seguro para chaves e outros segredos. Você pode acessar esse serviço por meio da API REST para permitir que o ONTAP armazene com segurança suas chaves de criptografia na nuvem. Além disso, você pode criar e listar as chaves de autenticação usadas com a criptografia de armazenamento NetApp.</block>
   <block id="9863c1e1980ca3e9b3f4b8a47215bc9a" category="list-text">Você pode gerenciar as contas do ative Directory definidas para um cluster do ONTAP. Isso inclui criar novas contas, bem como exibir, atualizar e excluir contas.</block>
   <block id="8b2b839cdbfd10a224488a51243a2b15" category="list-text">A API REST foi aprimorada para dar suporte à criação e gerenciamento de políticas de grupo CIFS. As informações de configuração estão disponíveis e administradas por meio de objetos de diretiva de grupo que são aplicados a todos ou SVMs específicas.</block>
-  <block id="fed998214be47115214a92dcb94e441c" category="paragraph">O ONTAP 9.11,1 continua a expandir os recursos da API REST do ONTAP com quase uma centena de novas chamadas de API. Esses endpoints suportam os novos recursos do ONTAP, bem como aprimoramentos aos recursos existentes. Esta versão tem como foco dar suporte à migração de clientes para a API REST do ONTAP a partir da API Data ONTAP (ONTAPI ou ZAPI).</block>
   <block id="d6e857e52e070e2d7dc74670d30f4681" category="list-text">RBAC granular</block>
   <block id="2496b3f288a81c8c923f8c9c19fe6ed4" category="inline-link-macro">Segurança RBAC</block>
   <block id="8f03646cdaaa9cd76a52d75033e05e70" category="list-text">A funcionalidade de controle de acesso baseado em função (RBAC) do ONTAP foi aprimorada para fornecer granularidade adicional. Você pode usar as funções tradicionais ou criar novas funções personalizadas conforme necessário com a API REST. Cada função é associada a um ou mais Privileges, cada uma das quais identifica uma chamada de API REST ou um comando CLI junto com o nível de acesso. Novos níveis de acesso estão disponíveis para funções REST,<block ref="c7bde91eb70d1a5e9e14857d8570759d" prefix=" " category="inline-code"></block> como e<block ref="76d9af335b2ebd589c08f1c7042aed22" prefix=" " category="inline-code"></block>. Esse aprimoramento fornece paridade com a API Data ONTAP (ONTAPI ou ZAPI) e dá suporte à migração de clientes para a API REST. Consulte <block ref="8d8071017129e35b901b9066a106b44a" category="inline-link-macro-rx"></block> para obter mais informações.</block>
@@ -1522,9 +1479,7 @@
   <block id="209360388d2327cf0da8f0db9d83d822" category="list-text">Pools de armazenamento</block>
   <block id="d70c1c333f3dd79f029de6a7f21196cc" category="list-text">Vários pontos de extremidade foram adicionados para fornecer acesso aos pools de storage do ONTAP. O suporte está incluído para criar e listar os pools de armazenamento em um cluster, bem como atualizar e excluir pools específicos por ID.</block>
   <block id="46c5fd81e1ba5f738d2c1dd0ae4cabdc" category="list-text">Suporte a cache de serviços de nomes</block>
-  <block id="fe82f3320d7dc6994f70bf750ba7e784" category="list-text">Os serviços de nomes do ONTAP foram aprimorados para oferecer suporte ao armazenamento em cache, o que aumenta a performance e a resiliência. A configuração do cache de serviços de nome agora pode ser acessada por meio da API REST. As configurações podem ser aplicadas em vários níveis, incluindo: Hosts, UNIX-users, UNIX-groups e netgroups.</block>
   <block id="9047fe19c5c01912bf0c89c78bd42103" category="list-text">Ferramenta de relatórios ONTAPI</block>
-  <block id="bc17bb7b3d848d1ecddda052e3af0ca2" category="list-text">A ferramenta de relatórios ONTAPI ajuda clientes e parceiros a identificar o uso da ONTAPI em seu ambiente. Além do software Python, há também um vídeo e suporte em evolução no Laboratório NetApp sob demanda. Essa ferramenta fornece outro recurso ao migrar do ONTAPI para a API REST do ONTAP.</block>
   <block id="f81a95c072d17e5d1b7da75eee2c5a50" category="paragraph">O ONTAP 9.10,1 continua a expandir os recursos da API REST do ONTAP. Mais de cem novos endpoints foram adicionados para suportar novos recursos do ONTAP, bem como melhorias em recursos existentes. Um resumo dos aprimoramentos da API REST é apresentado abaixo.</block>
   <block id="b5742337dd1612713a73b81dd85f6519" category="list-text">Grupo de consistência de aplicativos</block>
   <block id="89b60b7b18597a3fbf28c20a66d0554f" category="list-text">Um grupo de consistência é um conjunto de volumes que são agrupados ao executar determinadas operações, como um snapshot. Esse recurso estende a mesma consistência de falhas e integridade de dados implícita com operações de volume único em um conjunto de volumes. Ele é valioso para aplicações de workloads de vários volumes.</block>
@@ -1543,7 +1498,6 @@
   <block id="cfe5635d91cfb6abed08c3ae78515315" category="list-text">Expandiu a análise de volume</block>
   <block id="6495a298c2a1a26b997ca9bbb99ef7ef" category="list-text">As métricas e análises de volume foram expandidas por meio de endpoints adicionais para dar suporte aos principais arquivos, diretórios e usuários.</block>
   <block id="faa07c048822900bcf8537b1c474345f" category="list-text">Melhorias de suporte</block>
-  <block id="8c0d6517a0a1c4f8718164322e468757" category="list-text">O suporte foi aprimorado através de vários novos recursos. A atualização automática pode manter seus sistemas ONTAP atualizados baixando e aplicando as atualizações de software mais recentes. Você também pode recuperar e gerenciar os despejos de memória gerados por um nó.</block>
   <block id="789933b01aa01335db4e573eb0fdfea6" category="paragraph">O ONTAP 9.9,1 continua a expandir os recursos da API REST do ONTAP. Há novos pontos de extremidade de API para os recursos existentes do ONTAP, incluindo conjuntos de portas SAN e segurança do diretório de arquivos SVM. Além disso, os endpoints foram adicionados para suportar novos recursos e aprimoramentos do ONTAP 9.9,1. E a documentação relacionada também foi melhorada. Um resumo das melhorias é apresentado abaixo.</block>
   <block id="154f94956201de1d51f6ff61e84ae944" category="list-text">Mapeando ONTAPI para a API REST do ONTAP 9</block>
   <block id="0b08cc4c67821b9e4925ec877f62dc60" category="list-text">Para ajudar você a migrar seu código de automação do ONTAP para a API REST, o NetApp fornece documentação de mapeamento de API. Essa referência inclui uma lista de chamadas ONTAPI e o equivalente à API REST para cada uma. O documento de mapeamento foi atualizado para incluir os novos pontos finais da API ONTAP 9.9,1. Consulte <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> para obter mais informações.</block>
@@ -1553,15 +1507,10 @@
   <block id="192cf409001c19f48a695ad558e612f6" category="list-text">Mais das chamadas legadas ONTAPI agora têm equivalentes de API REST correspondentes. Isso inclui usuários e grupos Unix locais, gerenciamento da segurança de arquivos NTFS sem a necessidade de um cliente, conjuntos de portas SAN e atributos de espaço de volume. Essas alterações também são incluídas na documentação atualizada do ONTAPI para mapeamento REST.</block>
   <block id="88b1c796bb089f48a24b20aea93fb18e" category="list-text">Documentação online melhorada</block>
   <block id="ddd51e3a52a14385d0b60fcaf5dfe038" category="list-text">A página de referência de documentação on-line do ONTAP agora inclui rótulos que indicam a versão do ONTAP quando cada ponto final ou parâmetro REST foi introduzido, incluindo aqueles novos com o ONTAP 9.9,1.</block>
-  <block id="67c4467b9d90249efeb3de541a9cc553" category="paragraph">O ONTAP 9.8 expande muito a amplitude e a profundidade da API REST do ONTAP. Ele inclui vários novos recursos que aprimoram a capacidade de automatizar a implantação e o gerenciamento de sistemas de storage da ONTAP. Além disso, o suporte foi aprimorado para auxiliar na transição para REST da API legada ONTAPI.</block>
   <block id="8cdc96bc9ea6b47bb91dc9a53923dd2c" category="list-text">Para ajudá-lo a atualizar sua automação ONTAPI, o NetApp fornece uma lista de chamadas ONTAPI que exigem um ou mais parâmetros de entrada, juntamente com um mapeamento dessas chamadas para a chamada equivalente à API REST do ONTAP 9. Consulte <block ref="9a78e4571d9a7f8312d61713dd66ccf3" category="inline-link-macro-rx"></block> para obter mais informações.</block>
-  <block id="abdf317b8f58236a4195d452834d45c9" category="list-text">Endpoints de API para novos recursos principais do ONTAP 9.8</block>
-  <block id="cf1724d8d3131e94ad854521ae7d4f4a" category="list-text">O suporte para os novos recursos principais do ONTAP 9.8 não disponíveis por meio do ONTAPI foi adicionado à API REST. Isso inclui suporte à API REST para buckets e serviços do ONTAP S3, continuidade dos negócios do SnapMirror e análise do sistema de arquivos.</block>
   <block id="35d207b2ca355b3e7e3a5d74f2b2afe4" category="list-text">Suporte expandido para maior segurança</block>
   <block id="464aebcdd9770cb945a307d7eac64f0b" category="list-text">A segurança foi aprimorada com o suporte de vários serviços e protocolos, incluindo o Azure Key Vault, o Google Cloud Key Management Services, o IPSec e as solicitações de assinatura de certificado.</block>
   <block id="d94d27f597c0934bda8dbb95acf619c3" category="list-text">Melhorias para melhorar a simplicidade</block>
-  <block id="31001cec0e2a7aa1674330c54c5cf6c3" category="list-text">O ONTAP 9.8 fornece fluxos de trabalho mais eficientes e modernos usando a API REST. Por exemplo, as atualizações de firmware oneclick estão agora disponíveis para vários tipos diferentes de firmware.</block>
-  <block id="c66e346c00fb27a786c7ab8aab00e61b" category="list-text">A página de documentação on-line do ONTAP agora inclui rótulos que indicam a versão do ONTAP que cada endpoint ou parâmetro REST foi introduzido, incluindo os novos no 9,8.</block>
   <block id="1482f7989113f72ca0be0b6011b2a73e" category="list-text">Mais chamadas legadas ONTAPI agora têm equivalentes de API REST correspondentes. A documentação também está disponível para ajudar a identificar qual endpoint REST deve ser usado em vez de uma chamada ONTAPI existente.</block>
   <block id="7b877f8f81aaeb44b31dd25569c45deb" category="list-text">Métricas de performance expandidas</block>
   <block id="f8ad546722fba29d7bec9c27636f94a1" category="list-text">As métricas de desempenho da API REST foram expandidas para incluir vários novos objetos de storage e rede.</block>
@@ -1949,4 +1898,60 @@
   <block id="a518180b1666983f22dffbfc9e53cab8" category="sidebar">Obtenha a configuração EMS</block>
   <block id="0e0109505c34b65099fc5f28788f80c2" category="sidebar">Criar notificação EMS</block>
   <block id="8dba8e84622ab6bad2deffab01006636" category="sidebar">Listar SVMs</block>
+  <block id="579851ddc4d8f0127fccf537855c187d" category="inline-link">Mapeamento ONTAP ONTAPI-to-REST</block>
+  <block id="58d5b5cde9f7d2f8f7787113a761d4a8" category="paragraph">Você pode acessar a documentação atual<block ref="a3d33b5f363ac773db2f522918dc0d4f" category="inline-link-rx"></block> on-line. Há também um seletor de versão disponível para acessar versões anteriores da documentação com base na versão ONTAP.</block>
+  <block id="68d26d1aac1d90ae670aa8a5fe3415f3" category="summary">O ONTAP Counter Manager mantém informações abrangentes sobre o desempenho de cada sistema ONTAP. Ele exporta esses dados como um conjunto de contadores de performance que você pode usar para avaliar o desempenho do seu sistema ONTAP e ajudar a atingir suas metas de desempenho.</block>
+  <block id="08d2a25d52e092c6c253545968ce5bb5" category="inline-link">Mapeamento do contador de desempenho do ONTAP</block>
+  <block id="91b54891dd280b62b83af7ec4c8e3979" category="paragraph">Você pode acessar a documentação atual<block ref="9d8aae4b84eb6e74ade1e0afd2ee1664" category="inline-link-rx"></block> on-line. Há também um seletor de versão disponível para acessar versões anteriores da documentação com base na versão ONTAP.</block>
+  <block id="d9c24a6b276d26b3ed8aa4df515da6c8" category="paragraph"><block ref="d9c24a6b276d26b3ed8aa4df515da6c8" category="inline-link-rx"></block></block>
+  <block id="31272abf1c9209ab4acd0bf10f129338" category="list-title">ONTAP 9.16,1</block>
+  <block id="0c06f2efbe678ca8c3e4cd68189cf2ae" category="inline-link">PyPI: NetApp ONTAP 9.16,1</block>
+  <block id="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="list-text"><block ref="8f3ad8f9a04fe39c8fd1b3e0ba9e3dd2" category="inline-link-rx"></block></block>
+  <block id="51a272535291837663b9d29ca43d1aec" category="inline-link">Documentação NetApp PCL para 9.16.1</block>
+  <block id="7bb622625faf5a5e7c3f1cbdc8630d38" category="list-text"><block ref="7bb622625faf5a5e7c3f1cbdc8630d38" category="inline-link-rx"></block></block>
+  <block id="8162203e3ec38c896e5f6d688115d731" category="inline-link">Referência da API REST do ONTAP</block>
+  <block id="7fa54c481eb8ad78d44f6e504e7b4169" category="paragraph">Você pode acessar a documentação atual<block ref="ef2ba38b04f0d7157a7cd156ad8c1827" category="inline-link-rx"></block> on-line. Há também um seletor de versão disponível para acessar versões anteriores da documentação com base na versão ONTAP.</block>
+  <block id="129b5712fd60415907d5e6cd819422a0" category="paragraph-title">Instantâneos do balde</block>
+  <block id="b7dea6f3fb95fba3243ff8dffff88d5f" category="paragraph">Você pode criar e administrar snapshots dos buckets do S3. Este recurso foi adicionado com o ONTAP 9.16,1.</block>
+  <block id="335fbde7fdce25596a01b2a19aa07279" category="paragraph">O ONTAP deteta arquivos potencialmente contendo uma ameaça de ransomware. Existem várias categorias de endpoints. Você pode recuperar uma lista desses arquivos suspeitos, bem como removê-los de um volume. Este tipo de recurso foi introduzido com o ONTAP 9.10,1. Suporte para exibir a versão e atualizar o pacote anti-ransomware foi adicionado com o ONTAP 9.16.</block>
+  <block id="8c4dde1a3b2c4b32644f6822c9478527" category="paragraph-title">Funções externas</block>
+  <block id="b0ad72a194f384d2b2a1a01c9e3219d7" category="paragraph">Uma função externa é definida em um provedor de identificação OAUTH 2,0. Você pode criar e administrar relacionamentos de mapeamento entre essas funções externas e as funções do ONTAP. Este tipo de recurso foi introduzido com o ONTAP 9.16.</block>
+  <block id="a37ede293936e29279ed543129451ec3" category="paragraph-title">Grupos</block>
+  <block id="0edc727da3f53d819f809cfb92890269" category="paragraph">Você pode administrar configurações de grupo, incluindo grupos representados com UUIDs. Este tipo de recurso foi introduzido com o ONTAP 9.16.</block>
+  <block id="7625be304e8750b6d1f7a7cfade49ca1" category="paragraph-title">Mapeamentos de função de grupo</block>
+  <block id="9456c82d4c2ff3d63d795770ea0a6835" category="paragraph">Você pode criar e administrar relacionamentos de mapeamento entre grupos e funções. Este tipo de recurso foi introduzido com o ONTAP 9.16.</block>
+  <block id="b2d7d79fb0f7b257dcdb51106acc5598" category="paragraph">A autorização aberta (OAuth 2,0) é uma estrutura baseada em token que pode ser usada para restringir o acesso aos recursos de armazenamento do ONTAP. Você pode usá-lo com clientes que acessam o ONTAP por meio da API REST. Este tipo de recurso foi introduzido com o ONTAP 9.14. Ele foi aprimorado com o ONTAP 9.16 através do suporte do servidor de autorização de ID do Microsoft Entra (anteriormente Azure AD) com reivindicações padrão OAuth 2,0. Além disso, as reivindicações de grupo padrão do Entra ID baseadas em valores de estilo UUID são suportadas por meio de novos recursos de mapeamento de grupo e função. Um novo recurso de mapeamento de função externa também foi introduzido. Consulte também *funções externas*, *grupos* e *Mapeamentos de funções de grupo*.</block>
+  <block id="6c2bedd693b0a3278c427d71a3daceef" category="paragraph-title">Autenticação da Web</block>
+  <block id="bfbaef85d5b976da22129ab320702015" category="paragraph">A autenticação Web (WebAuthn) é um padrão da Web para autenticar usuários com segurança com base em criptografia de chave pública. Com o ONTAP, ele suporta a administração de MFAs resistentes a phishing por meio do Gerenciador de sistema e da API REST do ONTAP. Este recurso foi adicionado com o ONTAP 9.16.</block>
+  <block id="11d592db3e1d98d2daf37961c9dbf17c" category="paragraph">Você pode usar essas chamadas de API para gerenciar Qtrees, um tipo de sistema de arquivos dividido logicamente. Este tipo de recurso foi introduzido com o ONTAP 9.6. O recurso de monitoramento de desempenho estendido de qtree foi adicionado ao ONTAP 9.16,1.</block>
+  <block id="c344b894d7706b83c51639c719e2e442" category="summary">Cada versão do ONTAP atualiza a API REST do ONTAP para oferecer novos recursos, melhorias e correções de bugs.</block>
+  <block id="75a05751d550bce275fb1c4f49e75a9f" category="admonition">Você deve rever o<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block> para obter informações adicionais, incluindo limitações ou problemas conhecidos. Consulte também <block ref="edc7b83fd666812e33623acd898a41ba" category="inline-link-macro-rx"></block>para ver quaisquer alterações que possam afetar o seu software de automação.</block>
+  <block id="15e77450afe3ace28221555b8da2684d" category="paragraph">O ONTAP 9.16,1 inclui mais de duas dúzias novas chamadas de API que continuam a expandir os recursos da API REST do ONTAP. Essas melhorias se concentram principalmente na segurança, mas também incluem melhorias com métricas e administração de buckets.</block>
+  <block id="63d0226fbc39532205d9ce9e4b74814a" category="inline-link">Compatibilidade com API REST para sistemas ASA R2</block>
+  <block id="e6f310acd917cebcb8a763950e7800cf" category="admonition">A API REST do ONTAP exposta a usuários de sistemas NetApp ASA R2 (ASA A1K, ASA A70 e ASA A90) é diferente da API REST fornecida com todos os outros sistemas FAS, AFF e ASA. Consulte<block ref="d65975c7cdc75140b37feb4233ca18c0" category="inline-link-rx"></block> para obter mais informações.</block>
+  <block id="510641734764ee5c004b84d0ed337e95" category="list-text">Suporte OAuth 2,0 para Microsoft Entra ID</block>
+  <block id="88b0187eca0304f406b640a6510066c4" category="list-text">O suporte do OAuth 2,0 foi introduzido pela primeira vez com o ONTAP 9.14,1. Os recursos do OAuth 2,0 foram aprimorados com o ONTAP 9.16,1 para suportar o servidor de autorização de ID do Microsoft Entra (antigo Azure AD) com reivindicações padrão do OAuth 2,0. Dois principais recursos estão incluídos como descrito abaixo.</block>
+  <block id="e67a7b259d255fd0a1df41dd2e6b1068" category="list-text">OAuth 2,0 com grupos como UUIDs</block>
+  <block id="b42314a57de5e923931b20b09ee51923" category="list-text">As reivindicações de grupo padrão do Entra ID com base nos valores de estilo UUID são suportadas por dois novos recursos com dez novas chamadas de API:</block>
+  <block id="4beaaf669e2357fe3c91eb24ca2efc5e" category="list-text">Mapeamento de UUUID do grupo para nome do grupo <block ref="3bcf95f089632d1028a4d5e0494270d0" prefix="(" category="inline-code"></block>)</block>
+  <block id="d1b33a385b2c5f8c651006d711f0222d" category="list-text">Mapeamento de grupo UUID para função <block ref="f0f1a80584eaf73a5e927985d21bcbb5" prefix="(" category="inline-code"></block>)</block>
+  <block id="37e44638054c8e3f7322719ae505d9ac" category="list-text">OAuth 2,0 com papéis externos</block>
+  <block id="30e512aff33315445808d96ad27e4ffd" category="list-text">Uma função externa é definida em um provedor de identificação OAUTH 2,0 definido como ONTAP. Você pode criar e administrar relacionamentos de mapeamento entre essas funções externas e as funções do ONTAP. Cinco novas chamadas de API foram adicionadas.</block>
+  <block id="85f881093d749974d1b780a53d7858a8" category="list-text">A autenticação Web (WebAuthn) é um padrão da Web para autenticar usuários com segurança com base em criptografia de chave pública. Com o ONTAP, ele suporta a administração de MFAs resistentes a phishing por meio do Gerenciador de sistema e da API REST do ONTAP. Sete novas chamadas de API foram adicionadas em vários endpoints.</block>
+  <block id="0035a37df80c7fae5f6aa46b327a4c8b" category="list-text">Controle de versão e atualizações do Autonomous ransomware Protection</block>
+  <block id="2cbe684208107dbc546eae321d542b15" category="list-text">Duas chamadas de API foram adicionadas com um novo endpoint para gerenciar o pacote Autonomous ransomware Protection usado pelo ONTAP. Você pode exibir a versão e atualizar o pacote Autonomous ransomware Protection.</block>
+  <block id="57025678f778bc959aa67fd58dfc4760" category="list-text">Métricas de Qtree</block>
+  <block id="4c231a72ce95f01714eea84424048699" category="list-text">O ONTAP 9.16,1 inclui um recurso opcional de monitoramento de desempenho estendido de qtree. Com o recurso ativado, o ONTAP captura dados adicionais, incluindo métricas de latência e dados históricos. Um novo ponto final foi adicionado para permitir que você recupere esses dados de desempenho.</block>
+  <block id="b83a65405ab254148515fc9c31e26232" category="list-text">Instantâneos do bucket do S3</block>
+  <block id="c34a7361b4cd5f27474f83b461710946" category="list-text">Quatro novas chamadas de API foram adicionadas para permitir que você crie e administre snapshots dos buckets do S3. Cada instantâneo é uma imagem do bucket, tal como existia quando o instantâneo foi criado.</block>
+  <block id="26b71c4bae8e768b45e6ad393c1b9dae" category="paragraph">O ONTAP 9.15,1 continua a expandir os recursos da API REST do ONTAP, incluindo suporte a dois novos recursos.</block>
+  <block id="90490905d0c8cdaa43b63d7538ca2498" category="paragraph">O ONTAP 9.11,1 continua a expandir os recursos da API REST do ONTAP com quase uma centena de novas chamadas de API. Esses endpoints suportam os novos recursos do ONTAP, bem como aprimoramentos aos recursos existentes.</block>
+  <block id="9433050e31620d6604acaf1d5f39eac5" category="list-text">Os serviços de nomes do ONTAP foram aprimorados para oferecer suporte ao armazenamento em cache, o que aumenta a performance e a resiliência. A configuração do cache de serviços de nome agora pode ser acessada por meio da API REST. As configurações podem ser aplicadas em vários níveis, incluindo hosts, UNIX-usuários, UNIX-grupos e netgroups.</block>
+  <block id="da7a364d0eee7812a90f39ef782e831f" category="list-text">A ferramenta de relatórios ONTAPI ajuda clientes e parceiros a identificar o uso da ONTAPI em seu ambiente. Essa ferramenta fornece insights valiosos para os clientes que planejam a migração do ONTAPI para a API REST do ONTAP.</block>
+  <block id="ab522c365aa1761fb10bf9a5c29d0327" category="list-text">O suporte foi aprimorado através de vários novos recursos. As atualizações automáticas podem manter seus sistemas ONTAP atualizados baixando e aplicando as atualizações de software mais recentes. Você também pode recuperar e gerenciar os despejos de memória gerados por um nó.</block>
+  <block id="f2ff2a38b5af79ed71b833a1d5b1e909" category="paragraph">O ONTAP 9.8 inclui vários novos recursos que aprimoram sua capacidade de automatizar a implantação e o gerenciamento de sistemas de storage da ONTAP. Além disso, o suporte foi aprimorado para auxiliar na transição para REST da API legada ONTAPI.</block>
+  <block id="f36b8f3ffd333dc3ec5f15d91da465e1" category="list-text">Endpoints de API para novos recursos do ONTAP 9.8</block>
+  <block id="5002d79d77c997408c96270b3cd46237" category="list-text">O suporte para os novos recursos do ONTAP 9.8 não disponíveis por meio do ONTAPI foi adicionado à API REST. Isso inclui suporte à API REST para buckets e serviços do ONTAP S3, SnapMirror active Sync (anteriormente SnapMirror Business Continuity) e análise do sistema de arquivos.</block>
+  <block id="982a944cf7d3a2f28ae7bfcc8755ec2c" category="list-text">O ONTAP 9.8 fornece fluxos de trabalho mais eficientes e modernos usando a API REST. Por exemplo, atualizações de firmware com um clique estão agora disponíveis para vários tipos diferentes de firmware.</block>
+  <block id="c408f623f341094b81899c67b52a1051" category="list-text">A página de documentação on-line do ONTAP inclui rótulos que indicam a versão do ONTAP que cada ponto final ou parâmetro REST foi introduzido, incluindo os novos no 9,8.</block>
 </blocks>

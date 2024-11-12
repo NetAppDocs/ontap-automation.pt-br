@@ -10,7 +10,7 @@ summary: Você deve estar familiarizado com a estrutura e o formato dos fluxos d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

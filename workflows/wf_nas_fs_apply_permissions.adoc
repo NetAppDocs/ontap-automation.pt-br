@@ -10,7 +10,7 @@ summary: Você pode aplicar um novo descritor de segurança a um arquivo ou past
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

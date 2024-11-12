@@ -10,7 +10,7 @@ summary: Pode utilizar o seguinte fluxo de trabalho para criar um novo destino d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

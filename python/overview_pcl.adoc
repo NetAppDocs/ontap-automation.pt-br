@@ -10,7 +10,7 @@ summary: A biblioteca cliente NetApp ONTAP Python é um pacote que você pode in
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

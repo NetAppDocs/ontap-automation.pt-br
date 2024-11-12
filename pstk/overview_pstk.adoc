@@ -10,7 +10,7 @@ summary: O NetApp oferece suporte ao uso do PowerShell para administrar seus sis
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

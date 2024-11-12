@@ -10,7 +10,7 @@ summary: Você pode recuperar todas as informações de auditoria de um arquivo 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

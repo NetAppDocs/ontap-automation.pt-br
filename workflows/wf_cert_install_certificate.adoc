@@ -10,7 +10,7 @@ summary: Você pode instalar um certificado X,509 assinado no cluster do ONTAP. 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -19,6 +19,9 @@ Você pode usar essas chamadas de API para acessar o storage de objetos baseado 
 .Baldes
 Um bucket é um contentor de objetos e é estruturado usando um espaço de nome de objeto. Cada servidor de objetos S3 pode ter vários buckets. Esse tipo de recurso foi introduzido com o ONTAP 9.7 e atualizado com o ONTAP 9.8.
 
+.Instantâneos do balde
+Você pode criar e administrar snapshots dos buckets do S3. Este recurso foi adicionado com o ONTAP 9.16,1.
+
 .Serviços
 Você pode criar e gerenciar a configuração do ONTAP S3, incluindo servidores e configurações de bucket. Este tipo de recurso foi introduzido com o ONTAP 9.7.
 

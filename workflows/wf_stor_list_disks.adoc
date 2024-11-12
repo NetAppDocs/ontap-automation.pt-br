@@ -10,7 +10,7 @@ summary: Você pode recuperar uma lista de discos no cluster. Você pode fazer i
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

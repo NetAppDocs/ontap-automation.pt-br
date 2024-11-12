@@ -10,7 +10,7 @@ summary: Você deve preparar o ambiente de tempo de execução local antes de us
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

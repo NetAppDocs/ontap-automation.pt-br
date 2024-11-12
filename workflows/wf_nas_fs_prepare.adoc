@@ -10,7 +10,7 @@ summary: Você pode gerenciar as permissões e as políticas de auditoria de arq
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

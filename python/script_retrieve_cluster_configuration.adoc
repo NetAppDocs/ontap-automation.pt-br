@@ -10,7 +10,7 @@ summary: Você pode executar o script usando Python 3 na CLI para recuperar a co
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

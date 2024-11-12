@@ -10,7 +10,7 @@ summary: Você pode atualizar um descritor de segurança específico para um arq
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Você pode criar uma FUNÇÃO REST para fornecer aos usuários a capaci
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

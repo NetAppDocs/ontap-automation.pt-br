@@ -10,7 +10,7 @@ summary: 'Você pode excluir uma entrada de controle de acesso existente (ACE) d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: Você pode recuperar a configuração de um cluster ONTAP, incluindo ca
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

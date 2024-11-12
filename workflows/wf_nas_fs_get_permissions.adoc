@@ -10,7 +10,7 @@ summary: Você pode recuperar as permissões efetivas atuais para um arquivo ou 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

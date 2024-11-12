@@ -10,7 +10,7 @@ summary: Você pode fornecer a um usuário recursos limitados de proteção de d
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

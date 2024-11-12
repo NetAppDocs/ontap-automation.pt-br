@@ -10,7 +10,7 @@ summary: 'Você pode listar as máquinas virtuais de armazenamento (SVMs) defini
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
