@@ -139,7 +139,6 @@
   <block id="8d5ff34376065bd3b5b8beab5c2a0a8f" category="paragraph">A biblioteca cliente Python é um pacote que você pode usar ao escrever scripts para acessar a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento de solicitações assíncronas e tratamento de exceções. Ao usar a biblioteca cliente Python, você pode desenvolver rapidamente um código robusto para dar suporte aos seus objetivos de automação do ONTAP. Consulte <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block> para obter mais informações.</block>
   <block id="895d9f6334617339bb786f62f4a5c67f" category="paragraph-title">Kit de ferramentas do PowerShell</block>
   <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="inline-link">Visão geral do PowerShell Toolkit</block>
-  <block id="600c764bdcc8f9d03c6a1f6ddeb1eb60" category="paragraph">Você pode usar o kit de ferramentas do NetApp.ONTAP PowerShell para automatizar a administração de um cluster do ONTAP a partir de um host do Windows. Consulte<block ref="a392538979ff10b567cebfb1b03839f9" category="inline-link-rx"></block> para obter mais informações.</block>
   <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">Estruturas de automação</block>
   <block id="045c9b234c3f9802c9287b1b0cd9cebf" category="paragraph">Você pode criar e implantar código de automação usando uma das várias estruturas</block>
   <block id="d51d5ee15f404c2f4f7863bebcde1fac" category="paragraph-title">Ansible</block>
@@ -1954,4 +1953,5 @@
   <block id="3ae9565cf3f15d0b18e64848bf75114f" category="list-text">ONTAP 9.7 e versões anteriores: V1 e v2 (apenas ONTAPI)</block>
   <block id="87fa2e5a8b05545afa808741d9743b82" category="list-text">ONTAP 9.8 – 9,9.1: V1, v2 e v3 (tanto o ONTAPI quanto O REST API)</block>
   <block id="12f58f465df2b1ae3ddb0a5303288c2d" category="list-text">ONTAP 9.10,1 e posterior: Somente V3 (somente API REST)</block>
+  <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">Você pode usar o kit de ferramentas do NetApp.ONTAP PowerShell para automatizar a administração de um cluster do ONTAP a partir de um host do Windows. Consulte <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> para obter mais informações.</block>
 </blocks>
