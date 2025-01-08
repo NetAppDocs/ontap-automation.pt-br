@@ -136,7 +136,6 @@
   <block id="efea648fde82cca9a59a6c5e90f3d617" category="section-title">Kits de ferramentas de software cliente</block>
   <block id="9d344c4d689635bee0d71b95de7b0c04" category="paragraph">O NetApp fornece kits de ferramentas do cliente que abstraem a API REST do ONTAP e facilitam a criação de código de automação. Você deve escolher um apropriado para sua linguagem de desenvolvimento e ambiente.</block>
   <block id="5a0dcab393f624ccdcf664bede74e9b2" category="paragraph-title">Biblioteca cliente Python</block>
-  <block id="8d5ff34376065bd3b5b8beab5c2a0a8f" category="paragraph">A biblioteca cliente Python é um pacote que você pode usar ao escrever scripts para acessar a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento de solicitações assíncronas e tratamento de exceções. Ao usar a biblioteca cliente Python, você pode desenvolver rapidamente um código robusto para dar suporte aos seus objetivos de automação do ONTAP. Consulte <block ref="a9a8739a57e07a475c98045ed71a9c60" category="inline-link-macro-rx"></block> para obter mais informações.</block>
   <block id="895d9f6334617339bb786f62f4a5c67f" category="paragraph-title">Kit de ferramentas do PowerShell</block>
   <block id="c79fa3b95a882a4d5a7a0e5e00100e39" category="inline-link">Visão geral do PowerShell Toolkit</block>
   <block id="978685ea07530013be4ee7935a3a51c0" category="section-title">Estruturas de automação</block>
@@ -314,10 +313,6 @@
   <block id="0446fa4ca147c362e3712c199d31f607" category="paragraph">A API REST fornece ampla cobertura dos recursos e instalações disponíveis com o ONTAP. No entanto, pode haver instâncias em que o acesso direto à CLI do ONTAP por meio da API REST pode ser útil.</block>
   <block id="4dee1eb90de4bde1248e4896c4dc4381" category="inline-link">Amostras de passagem CLI REST</block>
   <block id="dfd00e91a832f40b6d730ced03aa0c44" category="paragraph">Para obter uma introdução a esse recurso, <block ref="430c6d579ad9ddc178e54d66821e7597" category="inline-link-macro-rx"></block>consulte . Para as amostras Python,<block ref="93e4c8d6cc1dc72ab5e25d8c76e6620b" category="inline-link-rx"></block>consulte .</block>
-  <block id="5b6f04d9b27dfe7b2a32885119050b9f" category="paragraph">A biblioteca cliente Python é um pacote que você pode instalar e usar para acessar a API REST do ONTAP com Python. Ele permite que você desenvolva rapidamente código robusto para a automação de suas implantações do ONTAP.</block>
-  <block id="cc64aef30dda7a27f1a668974ac1e3a8" category="inline-link-macro">Visão geral da biblioteca cliente Python</block>
-  <block id="c6b457514ae1938bb2d3532b1e2647dd" category="inline-link">Exemplos de bibliotecas de clientes Python</block>
-  <block id="a33bae430fa2ebfdc47724814a7caf8c" category="paragraph">Para obter uma introdução à biblioteca cliente Python, <block ref="ac55708e9eb87a85b101cbb6f38b8a1d" category="inline-link-macro-rx"></block>consulte . Para as amostras Python,<block ref="7bcad7f4339ec59707ec4753e36168b7" category="inline-link-rx"></block>consulte .</block>
   <block id="18e808da68bb719b1204b8c83712fac3" category="section-title">Kit de ferramentas do ONTAP</block>
   <block id="a44d5f089327249c77efb12dd65462af" category="paragraph">O kit de ferramentas do NetApp.ONTAP PowerShell aprimora seu ambiente local do PowerShell com um módulo que inclui mais de 2.400 cmdlets. Ele permite que você desenvolva rapidamente código para seu host Windows para automatizar as implantações do ONTAP. Para obter mais informações, <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block>consulte .</block>
   <block id="b5ca69b3b3ee6f013fa4a87b8fdd4fb5" category="doc">Baixe e instale o Kit de Ferramentas do ONTAP PowerShell</block>
@@ -347,9 +342,6 @@
   <block id="490e2dee1b4d1da33a1ba638e5861b68" category="paragraph">Parte 2:<block ref="0e829edfac15b600e5db829e0dbcae43" category="inline-link-rx"></block></block>
   <block id="a9adf5e105b5d632566d99bb7f32a6f9" category="inline-link">NetApp.io/2020/06/09/ONTAP-rest-api-python-client-library-pt3</block>
   <block id="e22079c2317a1e68e469eede383260df" category="paragraph">Parte 3:<block ref="f97052e0926ab7c2261472d6fa9ba8c2" category="inline-link-rx"></block></block>
-  <block id="1c1bc2e99a3cb180530f75cfed772539" category="summary">A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever scripts que acessam a API REST do ONTAP. Usando a biblioteca cliente Python, você pode desenvolver rapidamente código robusto para suportar a automação de implantações ONTAP.</block>
-  <block id="61f3e167c95c469dd90a86ddd901388f" category="paragraph">A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever scripts que acessam a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento assíncrono, tratamento de exceções e mensagens de erro. Usando a biblioteca cliente Python, você pode desenvolver rapidamente código robusto para suportar a automação de implantações ONTAP.</block>
-  <block id="6353689d5872d03a15424fcc44ff9a38" category="admonition">O NetApp mantém um repositório do GitHub contendo amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python.</block>
   <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">Repositório REST do ONTAP Python</block>
   <block id="62277cb84205b149ab77912513497f3a" category="list-text"><block ref="62277cb84205b149ab77912513497f3a" category="inline-link-rx"></block></block>
   <block id="82285d8d320aa0ca532320803369535d" category="inline-link">Exemplos de Biblioteca de Cliente Python REST do ONTAP</block>
@@ -398,14 +390,9 @@
   <block id="4c421ca686c08a2f5117b9c8cac019a0" category="list-text"><block ref="4c421ca686c08a2f5117b9c8cac019a0" category="inline-link-rx"></block></block>
   <block id="f358359db0f64d4f6246e5efe7bf61cd" category="inline-link">Documentação NetApp PCL para 9,6</block>
   <block id="c6b6406d472f50178a7d6d34c51c2828" category="list-text"><block ref="c6b6406d472f50178a7d6d34c51c2828" category="inline-link-rx"></block></block>
-  <block id="0b34effe852a73597e152fe2e5523f1e" category="summary">Você deve preparar o ambiente de tempo de execução local antes de usar a biblioteca cliente Python.</block>
-  <block id="d63266d909698767690c10fa377a617c" category="doc">Prepare-se para usar a biblioteca cliente Python</block>
   <block id="11593a40313671a88f29e6475859f238" category="paragraph-title">Nome e versão do pacote</block>
-  <block id="364c42d2725eeecf011214a366b6186d" category="paragraph">O nome do pacote de biblioteca cliente Python é *NetApp-ONTAP*. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para o cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem: 9,6.1, 9,6.2 e 9,7.1.</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="paragraph-title">Instalação</block>
-  <block id="85ca39724867fb05bf4fd74b5fcac448" category="paragraph">Você deve usar o pip para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).</block>
   <block id="7f2ab26d3f83b0c07dfcecd8c4e4d730" category="paragraph-title">Pacotes e documentação da versão ONTAP</block>
-  <block id="fe89184d8cb9195c1086f74c6b4d0d8b" category="paragraph">Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI e documentação associada. Consulte <block ref="75af8f7877b901b5fed8d9ea10b7425b" category="inline-link-macro-rx"></block> para obter mais informações. Os requisitos de instalação são incluídos em cada pacote e incluem diferentes versões do seguinte:</block>
   <block id="23eeeb4347bdd26bfc6b7ee9a3b755dd" category="list-text">python</block>
   <block id="3298f13049d19cffaa37ca931dd4d421" category="list-text">pedidos</block>
   <block id="4f11865970671ba7b86c9b6eda8a46ed" category="list-text">pedidos-cinto de ferramentas</block>
@@ -1954,4 +1941,19 @@
   <block id="973c87360e5799b65d34a6ed39aa97fa" category="paragraph">Você pode usar o kit de ferramentas do NetApp.ONTAP PowerShell para automatizar a administração de um cluster do ONTAP a partir de um host do Windows. Consulte <block ref="c3cab3c4ac16333d767da4a7df87c248" category="inline-link-macro-rx"></block> para obter mais informações.</block>
   <block id="32a3b0f895ce3b2bab0fd75296a6d7f7" category="inline-link">Documentação do OnCommand Workflow Automation</block>
   <block id="a370e7923c07d85d87e81fefb3ea1979" category="list-text"><block ref="a370e7923c07d85d87e81fefb3ea1979" category="inline-link-rx"></block></block>
+  <block id="4194600c450cd5967951e54d38f6d438" category="paragraph">A biblioteca cliente Python é um pacote que você pode usar ao escrever scripts para acessar a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento de solicitações assíncronas e tratamento de exceções. Ao usar a biblioteca cliente Python, você pode desenvolver rapidamente um código robusto para dar suporte aos seus objetivos de automação do ONTAP. Consulte <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block> para obter mais informações.</block>
+  <block id="c05717e9174f828651b78317f146b66b" category="paragraph">A biblioteca cliente Python é um pacote que você pode instalar e usar para acessar a API REST do ONTAP com Python. Ele permite que você desenvolva rapidamente código robusto para a automação de suas implantações do ONTAP. Para saber mais sobre a biblioteca cliente Python, <block ref="816918ba5e9c5f6dcac33de8016d4ab9" category="inline-link-macro-rx"></block>consulte .</block>
+  <block id="cca5d0ba9969f6743317e980adb3c9e1" category="summary">A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo.</block>
+  <block id="460a180d16bdae0c968e9ef22e4c7936" category="doc">Saiba mais sobre a biblioteca de clientes do ONTAP Python</block>
+  <block id="13ce983c03db476a78e9bb2eaaa5cdcc" category="paragraph-title">Benefícios e recursos</block>
+  <block id="95b1610941323127f65cb3db6cff1ca1" category="paragraph">Você pode usar a biblioteca cliente Python para desenvolver rapidamente código robusto para automatizar a administração de suas implantações do ONTAP. Ele fornece vários serviços subjacentes, incluindo:</block>
+  <block id="35a07dde4cdfcf3565f03875ee748ac6" category="list-text">Gerenciamento de conexão</block>
+  <block id="8fe3bb19a244ccfeddfe93062360622d" category="list-text">Tratamento de exceções</block>
+  <block id="06856d0d21cf25fed37bf8f01dd8e070" category="list-text">Mensagens de erro uniformes</block>
+  <block id="4eabbfd21dbe2c323da49bedb2a5c62c" category="paragraph">O nome do pacote de biblioteca cliente Python é *NetApp-ONTAP*. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para a biblioteca cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem 9,6.1, 9,6.2 e 9,7.1.</block>
+  <block id="472bdbf647fdfc94078ab6f39ba1a11e" category="paragraph">Você deve usar o utilitário *pip* para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).</block>
+  <block id="5316c1611ca1b378546362193d538427" category="paragraph">Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI e documentação associada. Consulte <block ref="75af8f7877b901b5fed8d9ea10b7425b" category="inline-link-macro-rx"></block> para obter mais informações. Os requisitos de instalação estão incluídos em cada pacote e especificam diferentes versões do seguinte:</block>
+  <block id="05ccfbea6601dcca671775f24a6b14d3" category="paragraph-title">Amostras de código</block>
+  <block id="2284945e609b7e5c75ffeed3e93b30dc" category="paragraph">O NetApp mantém um repositório do GitHub com amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python. Consulte os seguintes locais no GitHub para obter detalhes:</block>
+  <block id="a9672c1d2a17caa13c69c68927db925b" category="sidebar">Saiba mais sobre a biblioteca cliente Python</block>
 </blocks>

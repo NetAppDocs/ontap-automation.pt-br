@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: python/learn-about-pcl.html 
+keywords: learn about python client library, learn about pcl, pcl overview, pcl 
+summary: A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo. 
+---
+= Saiba mais sobre a biblioteca de clientes do ONTAP Python
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo.
+
+.Benefícios e recursos
+Você pode usar a biblioteca cliente Python para desenvolver rapidamente código robusto para automatizar a administração de suas implantações do ONTAP. Ele fornece vários serviços subjacentes, incluindo:
+
+* Gerenciamento de conexão
+* Processamento assíncrono
+* Tratamento de exceções
+* Mensagens de erro uniformes
+
+
+.Nome e versão do pacote
+O nome do pacote de biblioteca cliente Python é *NetApp-ONTAP*. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para a biblioteca cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem 9,6.1, 9,6.2 e 9,7.1.
+
+.Instalação
+Você deve usar o utilitário *pip* para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).
+
+.Pacotes e documentação da versão ONTAP
+Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI e documentação associada. Consulte link:../python/packages.html["Pacotes e documentação"] para obter mais informações. Os requisitos de instalação estão incluídos em cada pacote e especificam diferentes versões do seguinte:
+
+* python
+* pedidos
+* pedidos-cinto de ferramentas
+* marshmallow
+
+
+.Amostras de código
+O NetApp mantém um repositório do GitHub com amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python. Consulte os seguintes locais no GitHub para obter detalhes:
+
+* https://github.com/NetApp/ontap-rest-python["Repositório REST do ONTAP Python"^]
+* https://github.com/NetApp/ontap-rest-python/tree/master/examples/python_client_library["Exemplos de Biblioteca de Cliente Python REST do ONTAP"^]
+

@@ -35,7 +35,7 @@ A API ONTAPI (Zephyr API ou ZAPI) é o conjunto original de chamadas proprietár
 O NetApp fornece kits de ferramentas do cliente que abstraem a API REST do ONTAP e facilitam a criação de código de automação. Você deve escolher um apropriado para sua linguagem de desenvolvimento e ambiente.
 
 .Biblioteca cliente Python
-A biblioteca cliente Python é um pacote que você pode usar ao escrever scripts para acessar a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento de solicitações assíncronas e tratamento de exceções. Ao usar a biblioteca cliente Python, você pode desenvolver rapidamente um código robusto para dar suporte aos seus objetivos de automação do ONTAP. Consulte link:../python/overview_pcl.html["Biblioteca cliente Python"] para obter mais informações.
+A biblioteca cliente Python é um pacote que você pode usar ao escrever scripts para acessar a API REST do ONTAP. Ele fornece suporte para vários serviços subjacentes, incluindo gerenciamento de conexão, processamento de solicitações assíncronas e tratamento de exceções. Ao usar a biblioteca cliente Python, você pode desenvolver rapidamente um código robusto para dar suporte aos seus objetivos de automação do ONTAP. Consulte link:../python/learn-about-pcl.html["Biblioteca cliente Python"] para obter mais informações.
 
 .Kit de ferramentas do PowerShell
 Você pode usar o kit de ferramentas do NetApp.ONTAP PowerShell para automatizar a administração de um cluster do ONTAP a partir de um host do Windows. Consulte link:../pstk/overview_pstk.html["Visão geral do PowerShell Toolkit"] para obter mais informações.
