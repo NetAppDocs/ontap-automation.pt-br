@@ -7,12 +7,7 @@
   <block id="e874bfe48b1932682eea5f15cdac547d" category="list-text">Um bom resumo das tecnologias atuais de automação da ONTAP.</block>
   <block id="0dd46819f1e5a6578f91522b3ccce0d5" category="inline-link">Novo normal para automação</block>
   <block id="2459315257ccea8fa6d62e2fb4393e71" category="paragraph"><block ref="2459315257ccea8fa6d62e2fb4393e71" category="inline-link-rx"></block></block>
-  <block id="60b0a2f4de372813ce0c25e3f42a92d7" category="list-text">Uma introdução ao acesso e uso dos scripts de amostras Python no GitHub para a API REST do ONTAP.</block>
-  <block id="14e4b8ad2412579270cd2cebdea092a3" category="inline-link">Comece a usar scripts de exemplo no GitHub</block>
-  <block id="7ef78cb3e5e9a6eb7e9b12ce6b631862" category="paragraph"><block ref="7ef78cb3e5e9a6eb7e9b12ce6b631862" category="inline-link-rx"></block></block>
-  <block id="4561b01a73d4a9676d22f56757f49ab2" category="list-text">A passagem CLI fornece uma técnica para executar comandos ONTAP CLI usando a API REST.</block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="inline-link">Usando a passagem de CLI privada com a API REST do ONTAP</block>
-  <block id="7c4309c7347e40c4e823d0bc8c4d6c52" category="paragraph"><block ref="7c4309c7347e40c4e823d0bc8c4d6c52" category="inline-link-rx"></block></block>
   <block id="3232acac3eec8e3d87880c5b41ab690d" category="list-text">É bom começar a usar o Ansible para automação do ONTAP.</block>
   <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="inline-link">Primeiros passos com o NetApp e o Ansible: Instale o Ansible</block>
   <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
@@ -25,10 +20,8 @@
   <block id="798ae5c6621da1def7dfe9ad86f985f2" category="list-text">Você pode usar a API REST para configurar funções e níveis de acesso como parte de um ambiente de segurança RBAC.</block>
   <block id="0ca9887d7651aa13af35dedfbc7ff232" category="inline-link">Controle de acesso baseado em função (RBAC) usando APIS REST do ONTAP</block>
   <block id="372901dd8cca763e7c848d950ad9aa2a" category="paragraph"><block ref="372901dd8cca763e7c848d950ad9aa2a" category="inline-link-rx"></block></block>
-  <block id="f62a1193e5d6157ad520784d503dd173" category="list-text">O NetApp fornece scripts de exemplo Python para usar a API REST do ONTAP.</block>
   <block id="5feaaa740aecb867a44dd31f2ad57c95" category="inline-link">Os scripts de exemplo de Python da API REST do ONTAP agora estão disponíveis no GitHub!</block>
   <block id="8672380e8a084cc66d295882a9470f26" category="paragraph"><block ref="8672380e8a084cc66d295882a9470f26" category="inline-link-rx"></block></block>
-  <block id="fe0b675f6971f659beff04cec0058cbf" category="list-text">Coffee breaks com DESCANSO (6 episódios).</block>
   <block id="ababb8b6a8734f386dea1560ea9db197" category="inline-link">Noções básicas das APIs REST do ONTAP</block>
   <block id="1ba0e6e215c953e85183c8495eb322fb" category="list-text"><block ref="1ba0e6e215c953e85183c8495eb322fb" category="inline-link-rx"></block></block>
   <block id="4da480e8a798230788926916a5db51aa" category="inline-link">Recursos das APIS REST do ONTAP</block>
@@ -163,22 +156,11 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidade</block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="cb92722e64f82db47ee23f2328dab4f8" category="summary">Existem vários artigos de blog disponíveis para ajudá-lo a entender melhor como migrar do ONTAPI para a API REST do ONTAP.</block>
   <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI para mapeamento REST</block>
   <block id="934e5799967276baeea05569ba62d8bf" category="paragraph">O NetApp fornece suporte para passar da API patenteada ONTAPI para a API REST do ONTAP por meio de documentação de mapeamento.</block>
-  <block id="66678bc28616cb8b07e14e87fe993fc3" category="inline-link">NetApp.io/2020/12/17/ontapi-to-rest-mapping</block>
-  <block id="62bed9184b42d07dbb453a2b1a516b44" category="paragraph"><block ref="62bed9184b42d07dbb453a2b1a516b44" category="inline-link-rx"></block></block>
-  <block id="805b9473c23e0b45b5fd4963679c3e01" category="paragraph-title">Transforme sua automação em API REST do ONTAP com o ONTAPI</block>
   <block id="2ed29ad200a6fbf15d4f57d753e35d13" category="paragraph">Há várias tecnologias disponíveis para ajudar você a transformar seu ambiente de automação do ONTAP com base na API REST.</block>
-  <block id="8d86b95caa5436677bd35f7cc5d37007" category="inline-link">www.NetApp.com/blog/transform-automation-ONTAP-rest-api</block>
-  <block id="bac1aa7d8c1a68d24cd17b24f39e06b0" category="paragraph"><block ref="bac1aa7d8c1a68d24cd17b24f39e06b0" category="inline-link-rx"></block></block>
   <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">Para ajudar os usuários da CLI e do ONTAP a fazer a transição para a API REST do ONTAP, o ONTAP fornece um endpoint de API REST privado que pode ser usado para acessar qualquer comando da CLI.</block>
-  <block id="b1499db826a2349f9ed4124e74094a5c" category="inline-link"><block ref="b1499db826a2349f9ed4124e74094a5c" category="inline-link-rx"></block></block>
-  <block id="bec415242b70caa298d3b8964f06c830" category="paragraph"><block ref="bec415242b70caa298d3b8964f06c830" category="inline-link-rx"></block></block>
-  <block id="1619e1c3b30e9ffacda0df56950f805b" category="paragraph-title">Transição do ONTAPI usando a ferramenta de relatórios de uso do ONTAPI</block>
   <block id="a744a6f8fd15a39f0d95ce77ce3db16c" category="paragraph">O NetApp fornece uma ferramenta para ajudar clientes e parceiros a fazer a transição para a API REST do ONTAP.</block>
-  <block id="e69e5f7f3b9067e533a0c848ce387094" category="inline-link">NetApp.io/2022/03/21/transiting-from-ontapizapi-using-ontapi-use-reporting-tool</block>
-  <block id="9a602388f357467e0f50667f5767b094" category="paragraph"><block ref="9a602388f357467e0f50667f5767b094" category="inline-link-rx"></block></block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="doc">ONTAPI para mapeamento de API REST</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">A API REST do ONTAP inclui funcionalidade equivalente à ONTAPI na maioria das áreas. O NetApp fornece documentação que descreve o mapeamento das chamadas ONTAPI para as chamadas de API REST equivalentes.</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="inline-link">ONTAP 9.15,1</block>
@@ -296,7 +278,6 @@
   <block id="3d1c384a3746b6aef27889dab20ca2a0" category="doc">Ferramentas e software</block>
   <block id="0a88f9e4d64baf56329012472f2f7f1c" category="paragraph">O NetApp fornece exemplos de scripts Python e outros softwares relacionados para dar suporte à migração do ONTAPI para a API REST do ONTAP. As amostras mais importantes são descritas abaixo.</block>
   <block id="2025f1a4ba0e95c1bd1bd27f08690087" category="inline-link">Python REST do NetApp ONTAP</block>
-  <block id="122b5178f05cbf36001150787ae34516" category="admonition">Todas as amostras de código Python estão disponíveis no<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> repositório GitHub.</block>
   <block id="5d22b30ce5603c5346d7b65cbcf3433f" category="section-title">Ferramenta de relatórios de uso ONTAPI</block>
   <block id="7842d4d8803b176c1b2259dec8456d2e" category="paragraph">A ferramenta de relatórios de uso da ONTAPI foi projetada para ajudar os serviços profissionais, clientes e parceiros da NetApp a identificar o uso da ONTAPI em seu ambiente ONTAP. Os scripts são fornecidos para três casos de uso diferentes, conforme descrito na tabela abaixo.</block>
   <block id="f907e651164789346ae0a1e257c462d8" category="cell">Script</block>
@@ -328,20 +309,7 @@
   <block id="501fd8414e2cb7ea1f33c45defefd651" category="paragraph">O PowerShell é um programa da Microsoft que você pode usar para automação de tarefas e gerenciamento de configuração. Ele inclui um ambiente shell de linha de comando, bem como uma linguagem de script.</block>
   <block id="c714c2b9a4fb9d44e4562afa883f47ea" category="paragraph-title">Kit de ferramentas do NetApp ONTAP</block>
   <block id="d61a36a5306e6c21551315a0807bb00a" category="paragraph">O kit de ferramentas do NetApp.ONTAP PowerShell inclui o módulo do PowerShell para NetApp ONTAP. O kit de ferramentas dá suporte ao ONTAP executado em vários ambientes, incluindo sistemas NetApp AFF e FAS, hardware comum e nuvem. O módulo inclui mais de 2.400 cmdlets que suportam coletivamente a administração de armazenamento em hosts Windows.</block>
-  <block id="3bf379567e5ff2ee0ebd31f7d516b365" category="summary">Existem vários artigos e vídeos de blog disponíveis para ajudá-lo a entender melhor como usar a biblioteca cliente Python.</block>
-  <block id="86670b28b0a0c13eeda3cbeec2b6362d" category="paragraph">Existem vários artigos de blog disponíveis para ajudá-lo a entender melhor como usar a biblioteca cliente Python.</block>
-  <block id="e6979ee7f5a6d9111fa5704e882d44b3" category="paragraph-title">Simplifique o consumo de API REST do ONTAP com a biblioteca cliente Python</block>
   <block id="fb370e018bd573b7f61e8a3ee3eac836" category="paragraph">Este blog fornece uma boa introdução aos recursos da biblioteca cliente do ONTAP Python.</block>
-  <block id="323ea4c0945153e3df0ff4e8435a6484" category="inline-link">www.NetApp.com/blog/simplify-ONTAP-rest-api-consumption</block>
-  <block id="cd5bb5c12dffd9e08ed24efc3c708c87" category="paragraph"><block ref="cd5bb5c12dffd9e08ed24efc3c708c87" category="inline-link-rx"></block></block>
-  <block id="dd81fb49af5a569debc17c94c6e143f6" category="paragraph-title">Primeiros passos com a API REST do ONTAP Biblioteca de clientes Python</block>
-  <block id="d40594433775c44239cdb1be6c2145dc" category="paragraph">Esta é uma série de blogs de três partes que cobre mais detalhes sobre a biblioteca cliente Python.</block>
-  <block id="72ac1e17860ab83140bee5f8b63ab3b5" category="inline-link">NetApp.io/2020/06/09/ONTAP-rest-api-python-client-library-pt1</block>
-  <block id="6ce15c3400f2e95cd0f8f03dc9e181b1" category="paragraph">Parte 1:<block ref="621451882a122e45c1ea129fd2febf12" category="inline-link-rx"></block></block>
-  <block id="476672cb8735d01fb3d8edf30fa2009a" category="inline-link">NetApp.io/2020/06/09/ONTAP-rest-api-python-client-library-pt2/</block>
-  <block id="490e2dee1b4d1da33a1ba638e5861b68" category="paragraph">Parte 2:<block ref="0e829edfac15b600e5db829e0dbcae43" category="inline-link-rx"></block></block>
-  <block id="a9adf5e105b5d632566d99bb7f32a6f9" category="inline-link">NetApp.io/2020/06/09/ONTAP-rest-api-python-client-library-pt3</block>
-  <block id="e22079c2317a1e68e469eede383260df" category="paragraph">Parte 3:<block ref="f97052e0926ab7c2261472d6fa9ba8c2" category="inline-link-rx"></block></block>
   <block id="e5a1747d44133108641b2ef511e802b0" category="inline-link">Repositório REST do ONTAP Python</block>
   <block id="62277cb84205b149ab77912513497f3a" category="list-text"><block ref="62277cb84205b149ab77912513497f3a" category="inline-link-rx"></block></block>
   <block id="82285d8d320aa0ca532320803369535d" category="inline-link">Exemplos de Biblioteca de Cliente Python REST do ONTAP</block>
@@ -1956,4 +1924,26 @@
   <block id="05ccfbea6601dcca671775f24a6b14d3" category="paragraph-title">Amostras de código</block>
   <block id="2284945e609b7e5c75ffeed3e93b30dc" category="paragraph">O NetApp mantém um repositório do GitHub com amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python. Consulte os seguintes locais no GitHub para obter detalhes:</block>
   <block id="a9672c1d2a17caa13c69c68927db925b" category="sidebar">Saiba mais sobre a biblioteca cliente Python</block>
+  <block id="71b7850b814b7b3f6a252f8b1388d29c" category="doc">Saiba mais sobre a API REST do ONTAP</block>
+  <block id="a02290eb5e813cedf47247b3adf306c8" category="paragraph">Os artigos do blog são organizados em várias seções com base no assunto.</block>
+  <block id="0db377921f4ce762c62526131097968f" category="section-title">Geral</block>
+  <block id="a8f7f4170b418c4edcd8ff5a4c735cf9" category="list-text">Coffee breaks with REST (6 episódios):</block>
+  <block id="189695f6b233799c22edeae9ef743a5e" category="list-text">Uma introdução ao uso dos scripts de exemplo Python que o NetApp fornece no GitHub para acessar a API REST do ONTAP.</block>
+  <block id="f790901c0bd3db94c97c95372da93eba" category="inline-link">Simplifique o consumo de API REST do ONTAP com a biblioteca de clientes Python</block>
+  <block id="c1daf9700f6d042dec0127ce0de95f43" category="paragraph"><block ref="c1daf9700f6d042dec0127ce0de95f43" category="inline-link-rx"></block></block>
+  <block id="c7e50ae6f1278232800cf396d2473ff5" category="list-text">Esta é uma série de blogs de três partes sobre como começar a usar a biblioteca cliente Python:</block>
+  <block id="f3353b172c62b25c5b5749c72b138281" category="inline-link">Parte 1</block>
+  <block id="9a63c9de19a8eb52690f451f08d98966" category="list-text"><block ref="9a63c9de19a8eb52690f451f08d98966" category="inline-link-rx"></block></block>
+  <block id="6417c68d02736b9d6bbccd60d0e3bd39" category="inline-link">Parte 2</block>
+  <block id="abbc3d8dfab1ac762a8c74871f8d356d" category="list-text"><block ref="abbc3d8dfab1ac762a8c74871f8d356d" category="inline-link-rx"></block></block>
+  <block id="09acdc2204c9ba42a05804a7a4ed4f76" category="inline-link">Parte 3</block>
+  <block id="68abb8ef58d33d29d013d34fa31e3f9f" category="list-text"><block ref="68abb8ef58d33d29d013d34fa31e3f9f" category="inline-link-rx"></block></block>
+  <block id="be7a051497b75c91b2ec91ffdbdb5cc3" category="section-title">Migração para a API REST</block>
+  <block id="a67b7864a36cd08cc608eba2720d18f7" category="paragraph"><block ref="a67b7864a36cd08cc608eba2720d18f7" category="inline-link-rx"></block></block>
+  <block id="e0e8eb9fa6a9c4b6836a42b5f9badc22" category="inline-link">Transforme sua automação em API REST do ONTAP com o ONTAPI</block>
+  <block id="a8229f2e627898671ea5ee497a4c5489" category="paragraph"><block ref="a8229f2e627898671ea5ee497a4c5489" category="inline-link-rx"></block></block>
+  <block id="15cf2f6738a770890a0ba990f1543d8d" category="inline-link">Transição do ONTAPI (ZAPI) usando a ferramenta de relatórios de uso do ONTAPI</block>
+  <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
+  <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">Todas as amostras de código Python estão disponíveis no<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> repositório GitHub. Você também deve analisar os recursos disponíveis no <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>.</block>
+  <block id="afadfcc5e8834b85c88b2a5e94fdf7bc" category="admonition">Você também deve analisar os recursos disponíveis no <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>.</block>
 </blocks>
