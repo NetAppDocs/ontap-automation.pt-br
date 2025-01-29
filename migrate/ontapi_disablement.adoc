@@ -4,7 +4,7 @@ permalink: migrate/ontapi_disablement.html
 keywords: ONTAPI, ONTAPI disablement, migrate, migrate to REST API 
 summary: A interface ONTAPI será desativada em versões futuras do ONTAP. Se você estiver usando o ONTAPI, Planeje sua migração para a API REST do ONTAP. 
 ---
-= Desativação da ONTAPI
+= ONTAPI Disablement e a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: legal-notices.html
 keywords: copyrights, notice, trademarks, patents, privacy, open source 
 summary: Avisos legais fornecem acesso a declarações de direitos autorais, marcas registradas, patentes e muito mais. 
 ---
-= Avisos legais
+= Avisos legais para a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
