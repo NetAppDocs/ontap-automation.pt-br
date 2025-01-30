@@ -628,7 +628,6 @@
   <block id="d294313e121bfbd45fa5b55ca0e3324d" category="paragraph">Você pode criar uma política S3 e associá-la a um recurso para definir várias permissões. Este tipo de recurso é novo com o ONTAP 9.8.</block>
   <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="paragraph-title">Usuários</block>
   <block id="fcb4876473d3ad9e68e00cb94089cd42" category="paragraph">As contas de usuário S3 são mantidas no servidor S3. As contas de usuário são baseadas em um par de chaves e associadas aos buckets que controlam. Este tipo de recurso foi introduzido com o ONTAP 9.7.</block>
-  <block id="4e04bad1fd3bbdb3c69e856ffc49ff73" category="doc">Visão geral das categorias de recursos</block>
   <block id="4e8316643e7aaa485e54110d73c76f12" category="paragraph">Os recursos disponíveis por meio da API REST do ONTAP são organizados em categorias. Cada uma das categorias de recursos inclui uma breve descrição, juntamente com considerações de uso adicionais, quando apropriado.</block>
   <block id="3df33987b53f76052b03396d19f4cb71" category="paragraph">Os RECURSOS REST descritos no resumo são baseados na versão mais recente do produto. Se você precisar de uma compreensão mais detalhada das alterações feitas em versões anteriores, consulte <block ref="364c4ee8563aaa25f3410cba7aa49bfa" category="inline-link-macro-rx"></block>bem como o<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
   <block id="0ea16c1b878b2cbbbc3d0b12297d9b11" category="admonition">Para muitos dos pontos finais REST, você pode incluir uma chave UUID como parte da cadeia de carateres de caminho para acessar uma instância de objeto específica. No entanto, em muitos casos, você também pode acessar objetos usando um valor de propriedade em um parâmetro de consulta.</block>
@@ -1021,7 +1020,6 @@
   <block id="e393851263b97103e1b16673bad43724" category="inline-link-macro">Referências de objetos e acesso</block>
   <block id="4d89f3083454f3531f41ee418943d490" category="list-text"><block ref="4d89f3083454f3531f41ee418943d490" category="inline-link-macro-rx"></block></block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="summary">Cada solicitação de API gera uma resposta de volta ao cliente. Você deve examinar a resposta para determinar se ela foi bem-sucedida e recuperar dados adicionais, conforme necessário.</block>
-  <block id="32bab1cda6687d8af3648df1b3e2f763" category="doc">Interpretando uma resposta da API</block>
   <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">Código de status HTTP</block>
   <block id="9cc7f2c4c4cb3a083eaa0fa002427217" category="paragraph">Os códigos de status HTTP usados pela API REST do ONTAP são descritos abaixo.</block>
   <block id="ca0dbad92a874b2f69b549293387925e" category="cell">Código</block>
@@ -1121,7 +1119,6 @@
   <block id="99efb2d280df5dfb88ff3974d6ba377a" category="list-text">GET baseado em consulta para recuperar a coleção</block>
   <block id="b493da72818f74a4523850f1316fabdc" category="list-text">Sequência serial de PATCH ou EXCLUIR chamadas em cada objeto da coleção</block>
   <block id="d42ef5aeeeac3bae2faf89cff30ba1b2" category="paragraph">O tempo limite para a operação pode ser definido por<block ref="25da76d23d15f841b09a860ea321146d" prefix=" " category="inline-code"></block> com um padrão de 15 segundos. Se não for concluída antes do tempo limite, a resposta inclui um link para o próximo objeto. Você deve reemitir o mesmo método HTTP usando o próximo link para continuar a operação.</block>
-  <block id="f9423483f907b342ce1d6b2a5646580f" category="doc">Caraterísticas operacionais básicas</block>
   <block id="d9ea677ef356bfa08eea805869f9eded" category="paragraph">Embora O REST estabeleça um conjunto comum de tecnologias e práticas recomendadas, os detalhes de cada API podem variar com base nas escolhas de design.</block>
   <block id="fc068ae597c9019f5d61b19badc39991" category="section-title">Transação de API de solicitação e resposta</block>
   <block id="52cbf28bd4927df9cf59c3544b5ae581" category="paragraph">Cada chamada de API REST é executada como uma solicitação HTTP para o sistema ONTAP, que gera uma resposta associada ao cliente. Esse par de solicitação/resposta é considerado uma transação de API. Antes de usar a API, você deve estar familiarizado com as variáveis de entrada disponíveis para controlar uma solicitação e o conteúdo da saída de resposta.</block>
@@ -1163,7 +1160,6 @@
   <block id="022958270d2e89acef5cfe895ac4a5a4" category="list-text">Autorização ONTAP</block>
   <block id="ecada31be49896665065d57659291715" category="list-text">O ONTAP implementa um modelo de autorização baseado em função. A conta que você usa ao acessar a API REST do ONTAP ou a página de documentação da API deve ter a autoridade adequada.</block>
   <block id="fb561ab31583e301eb08f35a50a87c44" category="summary">O ONTAP coleta métricas de performance sobre protocolos e objetos de storage selecionados da SVM e relata essas informações por meio da API REST. Você pode usar esses dados para monitorar o desempenho de um sistema ONTAP.</block>
-  <block id="cae712fa1badd396170b95946efaaab8" category="doc">Métricas de performance para recursos de storage</block>
   <block id="59bd18a80f293dee3954f314ed6e11af" category="paragraph">Para um determinado objeto de storage ou protocolo, os dados de performance se dividem em três categorias:</block>
   <block id="79073619fba8242703524f16870ff858" category="list-text">IOPS</block>
   <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="list-text">Latência</block>
@@ -1200,7 +1196,6 @@
   <block id="982b599888f90ebfbaf2ff013ca5d6b6" category="cell">Protocolo SVM iSCSI</block>
   <block id="95a02cab92aa50cc8b3fa691276c0382" category="cell">Protocolo SVM NVMe</block>
   <block id="58722e059e2f5bb0441a986407122c33" category="summary">O ONTAP inclui uma funcionalidade robusta e extensível de controle de acesso baseado em funções (RBAC). Você pode atribuir a cada conta uma função diferente para controlar o acesso do usuário aos recursos expostos por meio da API REST e da CLI. As funções definem diferentes níveis de acesso administrativo para os vários usuários do ONTAP.</block>
-  <block id="40631aef1c7a95be86710dae30e73e3d" category="doc">Visão geral da segurança RBAC</block>
   <block id="fb40fe81e6f182515c987233a6044be5" category="inline-link-macro">Resumo da evolução da RBAC</block>
   <block id="b61d835a52b302e3c0dbeedac89aecec" category="inline-link-macro">Novidades da API REST do ONTAP</block>
   <block id="f617bf9bf27979ddd862da656c1ac630" category="admonition">O recurso RBAC do ONTAP continuou a se expandir e foi significativamente aprimorado com o ONTAP 9.11,1 (e versões subsequentes). <block ref="a7069b5bd09115d6dd0ed5b5c7e1ff08" category="inline-link-macro-rx"></block>Consulte e <block ref="1d53a2f90038290ad464bebe3ee5abe5" category="inline-link-macro-rx"></block> para obter mais informações.</block>
@@ -1821,7 +1816,6 @@
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Entenda as opções de automação</block>
   <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">Como acessar a API REST</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">Interpretar uma resposta da API</block>
-  <block id="8f4fc3addf595e93ce580272da612827" category="sidebar">Processamento assíncrono usando o objeto de tarefa</block>
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">Ferramentas de software</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">Script para recuperar a configuração do cluster</block>
   <block id="326737de1766f7c8b80a5acde0f18651" category="sidebar">Baixe e instale</block>
@@ -1954,4 +1948,16 @@
   <block id="f96e7d2ed62f1d1dbbd27c415dfa237d" category="doc">Ferramentas e software compatíveis com a API REST do ONTAP</block>
   <block id="426bacf234f4a8f3095a2847314d55b0" category="doc">Referência para a API REST do ONTAP</block>
   <block id="a2201ab0fd73e897fe98bd45ca71061d" category="doc">Prepare-se para usar os workflows da API REST do ONTAP</block>
+  <block id="bcc9a2132297815fc027add5a436948a" category="doc">Recursos de aplicações na API REST do ONTAP</block>
+  <block id="eec2cbc696ccc578df798a96160bf183" category="doc">Visão geral das categorias de recursos na API REST do ONTAP</block>
+  <block id="efcb5f574c1de0467f4e66c4a07add5f" category="doc">Processamento assíncrono com a API REST do ONTAP</block>
+  <block id="9b2df43e4bec630fa4504501800e1b6b" category="doc">Variáveis de entrada para uma solicitação de API REST do ONTAP</block>
+  <block id="1b0bd65580a152f66ee09f993666fc14" category="doc">Interpretar uma resposta da API REST do ONTAP</block>
+  <block id="f5e837ffcba4ed9f59e55e708b69b4b2" category="doc">Referências e acesso a objetos da API REST do ONTAP</block>
+  <block id="ea29eadd59b6ae07ee97408fb3e9d88c" category="doc">Características operacionais da API REST do ONTAP</block>
+  <block id="fd59abbb2badcd8fdfa670e39e0c6619" category="doc">Acesse métricas de performance com a API REST do ONTAP</block>
+  <block id="79f078dac9397adc5e4d383ab0f49eea" category="doc">Visão geral da segurança RBAC com a API REST do ONTAP</block>
+  <block id="98dce57b0664e78870d257a648e96612" category="doc">Trabalhe com funções e usuários na API REST do ONTAP</block>
+  <block id="8e7104f8cdaf55507f25e0b9a816f34b" category="doc">Obtenha a configuração do cluster usando a API REST do ONTAP</block>
+  <block id="19ca54acf953a715866f203d447d92ef" category="sidebar">Caraterísticas operacionais</block>
 </blocks>

@@ -4,7 +4,7 @@ permalink: rest/rbac_roles_users.html
 keywords: rbac, roles, users, rest endpoints, cli, privileges, access level, cluster, svm 
 summary: Depois de entender os recursos básicos do RBAC, você pode começar a trabalhar com as funções e os usuários do ONTAP. 
 ---
-= Trabalhe com funções e usuários
+= Trabalhe com funções e usuários na API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

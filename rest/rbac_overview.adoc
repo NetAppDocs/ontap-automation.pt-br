@@ -4,7 +4,7 @@ permalink: rest/rbac_overview.html
 keywords: rbac, rbac security, rbac overview, roles, scope, role mapping 
 summary: 'O ONTAP inclui uma funcionalidade robusta e extensível de controle de acesso baseado em funções (RBAC). Você pode atribuir a cada conta uma função diferente para controlar o acesso do usuário aos recursos expostos por meio da API REST e da CLI. As funções definem diferentes níveis de acesso administrativo para os vários usuários do ONTAP.' 
 ---
-= Visão geral da segurança RBAC
+= Visão geral da segurança RBAC com a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
