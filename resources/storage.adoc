@@ -4,7 +4,7 @@ permalink: resources/storage.html
 keywords: storage resources 
 summary: Você pode usar essas chamadas de API para gerenciar o armazenamento físico e lógico. 
 ---
-= Armazenamento
+= Recursos de storage na API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

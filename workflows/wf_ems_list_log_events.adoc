@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_list_log_events.html
 keywords: support, ems, event management system, get events, get notifications, retrieve events 
 summary: Você pode recuperar todas as mensagens de notificação de eventos ou aquelas com caraterísticas específicas. 
 ---
-= Listar os eventos de log do EMS
+= Listar os eventos de log do EMS usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_role_limit_svm.html
 keywords: rbac, role, storage volume, limited storage volume administration 
 summary: É possível definir uma função para restringir a administração de volumes de storage em uma SVM. 
 ---
-= Limitar o acesso a operações de volume do SVM
+= Limitar o acesso a operações de volume do SVM com a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: resources/snaplock.html
 keywords: snaplock resources 
 summary: Você pode usar essas chamadas de API para administrar o recurso SnapLock. 
 ---
-= SnapLock
+= Recursos do SnapLock na API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

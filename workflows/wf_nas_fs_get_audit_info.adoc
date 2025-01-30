@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_get_audit_info.html
 keywords: nas, file security, sacl, dacl, get auditing 
 summary: Você pode recuperar todas as informações de auditoria de um arquivo ou pasta específico. 
 ---
-= Obtenha as informações de auditoria de um arquivo
+= Obtenha informações de auditoria de um arquivo usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

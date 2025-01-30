@@ -4,7 +4,7 @@ permalink: workflows/wf_ems_prepare.html
 keywords: support, ems, event management system, event notifications, notifications 
 summary: 'Você pode configurar o processamento do sistema de gerenciamento de eventos (EMS) para um cluster ONTAP, bem como recuperar mensagens EMS, conforme necessário.' 
 ---
-= Prepare-se para gerenciar os serviços de suporte EMS
+= Prepare-se para gerenciar os serviços de suporte do EMS usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

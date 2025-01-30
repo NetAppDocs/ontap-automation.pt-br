@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_delete_ace.html
 keywords: nas, file security, access control entry, ace, delete ace 
 summary: 'Você pode excluir uma entrada de controle de acesso existente (ACE) de um arquivo ou pasta específico. A mudança se propaga para quaisquer objetos filho.' 
 ---
-= Eliminar uma entrada de controlo de acesso
+= Exclua uma entrada de controle de acesso usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

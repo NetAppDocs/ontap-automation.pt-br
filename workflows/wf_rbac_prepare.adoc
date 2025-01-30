@@ -4,7 +4,7 @@ permalink: workflows/wf_rbac_prepare.html
 keywords: security, rbac, prepare rbac, rbac workflows 
 summary: Você pode usar a funcionalidade RBAC do ONTAP de várias maneiras diferentes, dependendo do seu ambiente. Alguns cenários comuns são apresentados como fluxos de trabalho nesta seção. Em cada caso, o foco está em um objetivo específico de segurança e administração. 
 ---
-= Prepare-se para usar o RBAC
+= Prepare-se para usar o RBAC usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

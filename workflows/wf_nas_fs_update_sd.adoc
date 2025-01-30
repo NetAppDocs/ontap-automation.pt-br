@@ -4,7 +4,7 @@ permalink: workflows/wf_nas_fs_update_sd.html
 keywords: nas, file security, security descriptor, sd, update security descriptor 
 summary: Você pode atualizar um descritor de segurança específico para um arquivo ou pasta específico, incluindo os sinalizadores principal do proprietário, grupo ou controle. 
 ---
-= Atualize as informações do descritor de segurança
+= Atualize as informações do descritor de segurança usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

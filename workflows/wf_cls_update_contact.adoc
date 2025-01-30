@@ -4,7 +4,7 @@ permalink: workflows/wf_cls_update_contact.html
 keywords: workflow, update cluster, cluster contact 
 summary: Pode atualizar as informações de contacto de um cluster. Como a solicitação é processada de forma assíncrona, você também precisa determinar se a tarefa em segundo plano associada foi concluída com êxito. 
 ---
-= Atualizar contacto do cluster
+= Atualize o Contato do cluster usando a API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
