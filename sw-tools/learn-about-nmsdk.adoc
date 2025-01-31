@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: sw-tools/nmsdk.html 
+permalink: sw-tools/learn-about-nmsdk.html 
 keywords: netapp manageability sdk, oncommand workflow automation, oncommand wfa, ontapi, zapi 
 summary: O SDK de gerenciamento do NetApp fornece um conjunto de chamadas de API do ONTAPI para desenvolver aplicativos para monitorar e gerenciar seu storage do ONTAP. Juntamente com o pacote OnCommand Workflow Automation, o SDK apoia seus esforços para automatizar o gerenciamento de seus sistemas ONTAP. 
 ---
-= SDK de gerenciamento do NetApp
+= Saiba mais sobre o SDK de gerenciamento do NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

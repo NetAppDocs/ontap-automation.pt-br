@@ -11,10 +11,6 @@ entries:
   - title: Script para recuperar a configuração do cluster
     url: "/python/script_retrieve_cluster_configuration.html"
 - title: Kit de ferramentas do PowerShell
-  entries:
-  - title: Visão geral
-    url: "/pstk/overview_pstk.html"
-  - title: Baixe e instale
-    url: "/pstk/install_pstk.html"
+  url: "/pstk/learn-about-pstk.html"
 - title: SDK de gerenciamento do NetApp
-  url: "/sw-tools/nmsdk.html"
+  url: "/sw-tools/learn-about-nmsdk.html"
