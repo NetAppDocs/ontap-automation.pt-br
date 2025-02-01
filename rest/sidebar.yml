@@ -4,8 +4,6 @@ title: API REST do ONTAP
 entries:
 - title: Detalhes da implementação REST
   entries:
-  - title: Base de serviços web REST
-    url: "/rest/rest_web_services_foundation.html"
   - title: Caraterísticas operacionais
     url: "/rest/operational_characteristics.html"
   - title: Variáveis de entrada

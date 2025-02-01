@@ -1337,7 +1337,6 @@
   <block id="2dcd39fd89691d20d107d37e822309c0" category="section-title">Precisão do caminho de acesso</block>
   <block id="8dcea28ae0e36ecb9fb7a7682e6c8323" category="paragraph">O caminho de acesso definido para uma FUNÇÃO REST é baseado em um endpoint REST. O caminho de acesso para uma função tradicional é baseado em um comando CLI ou diretório de comando. Além disso, você pode incluir um parâmetro de consulta opcional com uma função tradicional para restringir ainda mais o acesso com base nos valores de parâmetro do comando.</block>
   <block id="c0aefd46729e17daeac7adf6c79cc100" category="summary">Representational State Transfer (REST) é um estilo para a criação de aplicações web distribuídas. Quando aplicada ao design de uma API de serviços da Web, ela estabelece um conjunto de tecnologias para expor recursos baseados em servidor e gerenciar seus estados. Ele usa protocolos e padrões convencionais para fornecer uma base flexível para administrar clusters ONTAP.</block>
-  <block id="8ed6428212b41847f33c5db651c2aa70" category="doc">Base de serviços web REST</block>
   <block id="a3262c740712f07d5eb90eab53b90682" category="admonition">Embora O REST estabeleça um conjunto comum de tecnologias e práticas recomendadas, os detalhes de cada API podem variar com base nas escolhas feitas durante o desenvolvimento. Você deve estar ciente das caraterísticas de design da API REST do ONTAP antes de usá-la com uma implantação ativa.</block>
   <block id="b0fcdfb2c58efafaace08609d3e95f6d" category="section-title">Recursos e representação do Estado</block>
   <block id="d2d07b32aecf22c6a25dc91e4b898e5e" category="paragraph">Os recursos são os componentes básicos de um sistema baseado na Web. Ao criar um aplicativo REST de serviços da Web, as tarefas iniciais de design incluem:</block>
@@ -1982,4 +1981,5 @@
   <block id="f1f7a58e7fbfd1ed521da099492f9928" category="paragraph">O PowerShell é outra opção para automatizar a administração dos clusters do ONTAP.</block>
   <block id="a96db3613c36742398cc9d0c8e5e717a" category="paragraph">O PowerShell é uma linguagem de programação da Microsoft que você pode usar para automação de tarefas e gerenciamento de configuração. Ele inclui um ambiente shell de linha de comando, bem como uma linguagem de script.</block>
   <block id="f8769a3b6c00e170fce8e2d7779f5f7c" category="doc">Saiba mais sobre o SDK de gerenciamento do NetApp</block>
+  <block id="40165cda75e3c737682e919501eec98c" category="doc">Saiba mais sobre os serviços REST da Web</block>
 </blocks>
