@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: python/learn-about-pcl.html 
 keywords: learn about python client library, learn about pcl, pcl overview, pcl 
-summary: A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo. 
+summary: 'A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo. Você precisa usar o utilitário _pip_ para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).' 
 ---
 = Saiba mais sobre a biblioteca de clientes do ONTAP Python
 :hardbreaks:
@@ -14,12 +14,16 @@ summary: A biblioteca cliente NetApp ONTAP Python é um pacote que você pode in
 
 
 [role="lead"]
-A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo.
+A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo. Você precisa usar o utilitário _pip_ para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).
+
+.Informações relacionadas
+* link:../additional/learn_more.html["Saiba mais sobre a API REST do ONTAP"].
 
 
-NOTE: Você também deve analisar os recursos disponíveis no link:../additional/learn_more.html["Saiba mais sobre a API REST do ONTAP"].
 
-.Benefícios e recursos
+
+== Caraterísticas e benefícios
+
 Você pode usar a biblioteca cliente Python para desenvolver rapidamente código robusto para automatizar a administração de suas implantações do ONTAP. Ele fornece vários serviços subjacentes, incluindo:
 
 * Gerenciamento de conexão
@@ -28,22 +32,81 @@ Você pode usar a biblioteca cliente Python para desenvolver rapidamente código
 * Mensagens de erro uniformes
 
 
-.Nome e versão do pacote
+
+
+== Pacotes separados por ONTAP release
+
 O nome do pacote de biblioteca cliente Python é *NetApp-ONTAP*. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para a biblioteca cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem 9,6.1, 9,6.2 e 9,7.1.
 
-.Instalação
-Você deve usar o utilitário *pip* para instalar o pacote NetApp_ONTAP a partir do site PyPi (Python Package Index).
-
-.Pacotes e documentação da versão ONTAP
-Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI e documentação associada. Consulte link:../python/packages.html["Pacotes e documentação"] para obter mais informações. Os requisitos de instalação estão incluídos em cada pacote e especificam diferentes versões do seguinte:
-
-* python
-* pedidos
-* pedidos-cinto de ferramentas
-* marshmallow
 
 
-.Amostras de código
+=== Pacotes e documentação
+
+Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI e documentação associada. Os requisitos de instalação estão incluídos em cada pacote e especificam diferentes versões de: python, requests, requests-toolbelt e marshmallow.
+
+.Lista de pacotes e documentação
+[%collapsible]
+====
+.ONTAP 9.16,1
+* https://pypi.org/project/netapp-ontap/9.16.1.0/["PyPI: NetApp ONTAP 9.16,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3331665/html/index.html["Documentação NetApp PCL para 9.16.1"^]
+
+
+.ONTAP 9.15,1
+* https://pypi.org/project/netapp-ontap/9.15.1.0/["PyPI: NetApp ONTAP 9.15,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3319064/html/index.html["Documentação NetApp PCL para 9.15.1"^]
+
+
+.ONTAP 9.14,1
+* https://pypi.org/project/netapp-ontap/9.14.1.0/["PyPI: NetApp ONTAP 9.14,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2886776/html/index.html["Documentação NetApp PCL para 9.14.1"^]
+
+
+.ONTAP 9.13,1
+* https://pypi.org/project/netapp-ontap/9.13.1.0/["PyPI: NetApp ONTAP 9.13,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2885777/html/index.html["Documentação NetApp PCL para 9.13.1"^]
+
+
+.ONTAP 9.12,1
+* https://pypi.org/project/netapp-ontap/9.12.1.0/["PyPI: NetApp ONTAP 9.12,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2884819/html/index.html["Documentação NetApp PCL para 9.12.1"^]
+
+
+.ONTAP 9.11,1
+* https://pypi.org/project/netapp-ontap/9.11.1.0/["PyPI: NetApp ONTAP 9.11,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2882316/html/index.html["Documentação NetApp PCL para 9.11.1"^]
+
+
+.ONTAP 9.10,1
+* https://pypi.org/project/netapp-ontap/9.10.1.0/["PyPI: NetApp ONTAP 9.10,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2879970/html/index.html["Documentação NetApp PCL para 9.10.1"^]
+
+
+.ONTAP 9.9,1
+* https://pypi.org/project/netapp-ontap/9.9.1/["PyPI: NetApp ONTAP 9.9,1"^]
+* https://library.netapp.com/ecmdocs/ECMLP2876965/html/index.html["Documentação NetApp PCL para 9.9.1"^]
+
+
+.ONTAP 9,8
+* https://pypi.org/project/netapp-ontap/9.8.0/["PyPI: NetApp ONTAP 9.8"^]
+* https://library.netapp.com/ecmdocs/ECMLP2874673/html/index.html["Documentação NetApp PCL para 9,8"^]
+
+
+.ONTAP 9,7
+* https://pypi.org/project/netapp-ontap/9.7.3/["PyPI: NetApp ONTAP 9.7"^]
+* https://library.netapp.com/ecmdocs/ECMLP2858435/html/index.html["Documentação NetApp PCL para 9,7"^]
+
+
+.ONTAP 9,6
+* https://pypi.org/project/netapp-ontap/9.6.0/["PyPI: NetApp ONTAP 9.6"^]
+* https://library.netapp.com/ecmdocs/ECMLP2870387/html/index.html["Documentação NetApp PCL para 9,6"^]
+
+
+====
+
+
+== Amostras de código
+
 O NetApp mantém um repositório do GitHub com amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python. Consulte os seguintes locais no GitHub para obter detalhes:
 
 * https://github.com/NetApp/ontap-rest-python["Repositório REST do ONTAP Python"^]

@@ -4,7 +4,7 @@ permalink: python/script_retrieve_cluster_configuration.html
 keywords: Python, sample script, Python example 
 summary: Você pode executar o script usando Python 3 na CLI para recuperar a configuração do cluster do ONTAP. 
 ---
-= Script para recuperar a configuração do cluster
+= Script para recuperar a configuração do cluster usando a biblioteca cliente Python
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -27,7 +27,7 @@ O script a seguir fornece um exemplo simples de como usar a biblioteca cliente P
 # python3 get_cluster.py
 #
 #
-# (C) Copyright 2024 NetApp, Inc.
+# (C) Copyright 2025 NetApp, Inc.
 #
 # This sample code is provided AS IS, with no support or warranties of
 # any kind, including but not limited for warranties of merchantability
