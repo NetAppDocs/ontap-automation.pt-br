@@ -58,4 +58,4 @@ A biblioteca cliente Python é um pacote que você pode instalar e usar para ace
 
 == Kit de ferramentas do ONTAP
 
-O kit de ferramentas do NetApp.ONTAP PowerShell aprimora seu ambiente local do PowerShell com um módulo que inclui mais de 2.400 cmdlets. Ele permite que você desenvolva rapidamente código para seu host Windows para automatizar as implantações do ONTAP. Para obter mais informações, link:../pstk/overview_pstk.html["Visão geral do PowerShell Toolkit"]consulte .
+O kit de ferramentas do NetApp.ONTAP PowerShell aprimora seu ambiente local do PowerShell com um módulo que inclui mais de 2.400 cmdlets. Ele permite que você desenvolva rapidamente código para seu host Windows para automatizar as implantações do ONTAP. Para obter mais informações, link:../pstk/learn-about-pstk.html["Saiba mais sobre o kit de ferramentas do NetApp PowerShell"]consulte .
