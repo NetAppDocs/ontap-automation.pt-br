@@ -10,7 +10,7 @@ summary: O NetApp continua a aprimorar e atualizar a API REST do ONTAP com cada 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
