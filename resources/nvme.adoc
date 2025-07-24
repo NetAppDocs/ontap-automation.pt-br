@@ -35,4 +35,4 @@ As controladoras do subsistema NVMe representam conexões dinâmicas entre hosts
 Um mapa de subsistema NVMe é uma associação de um namespace NVMe com um subsistema NVMe. Este tipo de recurso foi introduzido com o ONTAP 9.6.
 
 .Subsistemas NVMe
-Um subsistema NVMe mantém o controle de acesso ao estado da configuração e ao namespace para um conjunto de hosts conectados a NVMe. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+Um subsistema NVMe mantém o estado da configuração e o controle de acesso ao namespace para um conjunto de hosts conectados via NVMe. Este tipo de recurso foi introduzido com o ONTAP 9.6 e atualizado com a versão 9.17.1.

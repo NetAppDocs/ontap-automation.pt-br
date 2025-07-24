@@ -21,6 +21,18 @@ TIP: Você deve rever o https://library.netapp.com/ecm/ecm_download_file/ECMLP24
 
 
 
+== ONTAP 9.17.1
+
+A versão 9.17.1 do ONTAP continua a expandir os recursos da API REST do ONTAP com quase duas dúzias de novas chamadas de API. Esta versão se concentra principalmente em melhorias de segurança, com atualizações adicionais para processamento de mediadores, subsistemas NMVe e contêineres de aplicativos.
+
+Segurança:: Há quatro principais recursos de segurança introduzidos com a API REST do ONTAP 9.17.1. A elevação de privilégios just-in-time (JIT) do ONTAP é um aprimoramento do controle de acesso baseado em função (RBAC). Os administradores de cluster podem solicitar a elevação temporária para uma função existente, o que permite acesso a comandos privilegiados. O recurso inclui um conjunto robusto de opções de configuração. Foi adicionado suporte para o gerenciador de chaves OpenStack Barbican. Este KMS é usado para manter chaves para o NetApp Volume Encryption (NVE). A Proteção Autônoma contra Ransomware (ARP) para volumes SAN está incluída no ONTAP 9.17.1. Estatísticas detalhadas de entropia ARP estão disponíveis por meio da API REST. Várias chamadas de API também foram adicionadas para gerenciar a configuração padrão de metadados SAML para um cluster.
+Mediadores de cluster:: Você pode executar ping no serviço de nuvem BlueXP usando a API REST do ONTAP . Você também pode modificar a configuração de um mediador específico usando o método PATCH com um endpoint existente.
+NVMe:: Os subsistemas NVMe mantêm o estado de configuração e o controle de acesso ao namespace para um conjunto de hosts conectados via NVMe. Com o ONTAP 9.17.1, você pode modificar um subsistema NVMe usando o método PATCH com um endpoint existente.
+Contêineres de aplicação:: Os contêineres de aplicativos são uma novidade no ONTAP 9.17.1 e permitem o provisionamento de um ou mais objetos de armazenamento. Você pode configurar as políticas e regras necessárias para o acesso do cliente ao armazenamento. Volumes FlexCache também podem ser provisionados.
+
+
+
+
 == ONTAP 9.16,1
 
 O ONTAP 9.16,1 inclui mais de duas dúzias novas chamadas de API que continuam a expandir os recursos da API REST do ONTAP. Essas melhorias se concentram principalmente na segurança, mas também incluem melhorias com métricas e administração de buckets.
