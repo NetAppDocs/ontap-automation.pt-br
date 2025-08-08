@@ -20,13 +20,13 @@ Há várias opções disponíveis para automatizar a implantação e a administr
 
 == API REST do ONTAP
 
-A partir do ONTAP 9.6, o ONTAP inclui uma API REST expansiva que constitui a base para automatizar a implantação e a administração dos sistemas de storage. Desde então, a API REST continuou a se expandir e amadurecer. Agora, ele oferece a opção preferida e estratégica ao automatizar a administração de suas implantações do ONTAP.
+A partir do ONTAP 9.6, o ONTAP inclui uma API REST robusta que fornece a base para automatizar a implantação e a administração dos seus sistemas de armazenamento.  Desde então, a API REST continuou a se expandir e amadurecer.  Agora ele fornece a opção preferencial e estratégica ao automatizar a administração de suas implantações ONTAP .
 
 .Acessando a API REST nativamente
 Você pode acessar a API REST do ONTAP diretamente usando qualquer linguagem de programação compatível com um CLIENTE REST. As opções de linguagem populares incluem Python, PowerShell e Java.
 
 .Migrando código legacy ONTAPI para usar REST
-A API ONTAPI (Zephyr API ou ZAPI) é o conjunto original de chamadas proprietárias incluídas no software NetApp ONTAP para suportar a automação de suas tarefas de administração e gerenciamento de armazenamento de dados. A API faz parte do link:../sw-tools/learn-about-nmsdk.html["SDK de gerenciamento do NetApp"]. Espera-se que a interface ONTAPI seja desativada em versões futuras do ONTAP. Se você tem código existente usando a API ONTAPI, você deve Planejar migrar para fora da ONTAPI. O NetApp fornece suporte para converter seu código para usar a API REST do ONTAP mais recente. Consulte link:../migrate/ontapi_disablement.html["Migre da ONTAPI para a API REST"] para obter mais informações.
+A API ONTAPI (Zephyr API ou ZAPI) é o conjunto original de chamadas proprietárias incluído no software NetApp ONTAP para dar suporte à automação de suas tarefas de administração e gerenciamento de armazenamento de dados.  A API faz parte dolink:../sw-tools/learn-about-nmsdk.html["SDK de gerenciamento do NetApp"] .  Se você tiver código existente usando a API ONTAPI, planeje sua migração para a API REST ONTAP para aproveitar o conjunto de recursos expandido disponível com a API REST.  A NetApp fornece suporte para converter seu código para usar a API REST ONTAP mais recente. Ver link:../migrate/migration-considerations.html["Migre da ONTAPI para a API REST"] para maiores informações.
 
 
 
@@ -44,7 +44,7 @@ Você pode usar o kit de ferramentas do NetApp.ONTAP PowerShell para automatizar
 
 == Estruturas de automação
 
-Você pode criar e implantar código de automação usando uma das várias estruturas
+Você pode criar e implantar código de automação usando uma das várias estruturas.
 
 .Ansible
 O Ansible é uma ferramenta de software de código aberto compatível com o provisionamento, o gerenciamento de configurações e a implantação de aplicações. Desde o seu lançamento e posterior aquisição pela RedHat, ela continuou a crescer em popularidade. O NetApp fornece módulos certificados pelo Ansible que os clientes podem usar para automatizar a administração dos sistemas de storage da ONTAP. link:../additional/learn_more.html["Saiba mais"]Consulte e https://www.netapp.com/devops-solutions/ansible/["Soluções de DevOps do NetApp Ansible"^] para obter informações adicionais.

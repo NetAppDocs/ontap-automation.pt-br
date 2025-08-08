@@ -14,7 +14,13 @@ summary: 'Antes de migrar para a API REST do ONTAP a partir da API ONTAPI (ZAPI)
 
 
 [role="lead"]
-Antes de migrar para a API REST do ONTAP a partir da API ONTAPI (ZAPI) ou da CLI do ONTAP, há vários problemas que você deve considerar.
+A API ONTAPI (ZAPI) é o conjunto original de chamadas proprietárias incluído no software NetApp ONTAP .  A API é fornecida pelo Network Manageability SDK e oferece suporte à automação de tarefas de administração e gerenciamento de armazenamento de dados.  Se estiver usando o ONTAPI, você deve planejar sua migração para a API REST do ONTAP para aproveitar o conjunto de recursos expandidos do ONTAP disponível com a API REST.
+
+.Informações relacionadas
+* link:../get-started/ontap_automation_options.html["Entenda as opções de automação do ONTAP"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 adiamento do anúncio de fim de disponibilidade do ONTAPI (ZAPI)"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Perguntas frequentes sobre a transformação da API REST do ONTAP para CPC"^]
+
 
 
 
@@ -57,9 +63,3 @@ A disponibilidade da API SnapDiff em versões do ONTAP é definida da seguinte f
 
 
 O suporte foi retirado em diferentes pontos em cada lançamento. Isso inclui o ONTAP 9.10.1 P11 e posterior, 9.11.1 P7 e posterior e 9.12.1 GA e posterior. Consulte https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de versão do ONTAP"^] para obter mais informações.
-
-
-
-== Envie sua ONTAPI para lacunas de API REST
-
-A NetApp tem o compromisso de oferecer suporte aos nossos clientes com a migração do ONTAPI para a API REST do ONTAP. Se você notar algo faltando na API REST, informe-nos. Você pode enviar essas lacunas e quaisquer outras ideias na https://forms.office.com/Pages/ResponsePage.aspx?id=oBEJS5uSFUeUS8A3RRZbOtlEKM3rNwBHjLH8dubcgOVURVM2UzIzTkQzSzdTU0pQRVFFRENZWlAxNi4u["ONTAPI PARA API REST"^] página.
