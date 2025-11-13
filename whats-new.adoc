@@ -21,6 +21,16 @@ TIP: Você deve rever o https://library.netapp.com/ecm/ecm_download_file/ECMLP24
 
 
 
+== ONTAP 9.18.1
+
+A versão 9.18.1 do ONTAP continua a expandir as capacidades da API REST do ONTAP com onze novas chamadas de API. As melhorias focam-se principalmente na segurança, mas também incluem uma otimização relacionada à administração de armazenamento.
+
+Segurança:: Existem duas grandes melhorias de segurança introduzidas com a API REST do ONTAP 9.18.1. Você pode usar os novos endpoints da API de rede do cluster para exibir e atualizar a configuração de segurança da rede do cluster. O sistema inclui suporte robusto para gerenciamento de certificados na rede do cluster. Além disso, você pode exibir e atualizar a configuração de segurança da rede HA para o tráfego NVLog.
+Armazenamento:: O NetApp FlexCache é um cache persistente de um volume de origem. Ele suporta o recurso de fan-out, permitindo a criação de mais de um FlexCache a partir de um único volume de origem. A API REST inclui suporte para a recuperação do status da conexão entre as instâncias de cache e os volumes de origem.
+
+
+
+
 == ONTAP 9.17.1
 
 A versão 9.17.1 do ONTAP continua a expandir os recursos da API REST do ONTAP com quase duas dúzias de novas chamadas de API. Esta versão se concentra principalmente em melhorias de segurança, com atualizações adicionais para processamento de mediadores, subsistemas NMVe e contêineres de aplicativos.
