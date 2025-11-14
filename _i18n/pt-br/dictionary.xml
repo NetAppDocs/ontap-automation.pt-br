@@ -8,9 +8,6 @@
   <block id="0dd46819f1e5a6578f91522b3ccce0d5" category="inline-link">Novo normal para automação</block>
   <block id="2459315257ccea8fa6d62e2fb4393e71" category="paragraph"><block ref="2459315257ccea8fa6d62e2fb4393e71" category="inline-link-rx"></block></block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="inline-link">Usando a passagem de CLI privada com a API REST do ONTAP</block>
-  <block id="3232acac3eec8e3d87880c5b41ab690d" category="list-text">É bom começar a usar o Ansible para automação do ONTAP.</block>
-  <block id="f4a4d3f8e378d11233851c0c7c1aeda7" category="inline-link">Primeiros passos com o NetApp e o Ansible: Instale o Ansible</block>
-  <block id="940b33dd3ba3d167b07b98a018af32be" category="paragraph"><block ref="940b33dd3ba3d167b07b98a018af32be" category="inline-link-rx"></block></block>
   <block id="fa835357fbfbf43ac89809a345631107" category="list-text">Você pode explorar usando a API REST do ONTAP para gerenciar a segurança e as permissões de arquivos.</block>
   <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">Gerenciamento simplificado de permissões de segurança de arquivos com APIs REST do ONTAP</block>
   <block id="91a2d97cb1dce93a24a0e1d4e0fccd05" category="paragraph"><block ref="91a2d97cb1dce93a24a0e1d4e0fccd05" category="inline-link-rx"></block></block>
@@ -1996,4 +1993,8 @@
   <block id="98480199e938c1b0182ce374c8874655" category="paragraph">A versão 9.18.1 do ONTAP continua a expandir as capacidades da API REST do ONTAP com onze novas chamadas de API. As melhorias focam-se principalmente na segurança, mas também incluem uma otimização relacionada à administração de armazenamento.</block>
   <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">Existem duas grandes melhorias de segurança introduzidas com a API REST do ONTAP 9.18.1. Você pode usar os novos endpoints da API de rede do cluster para exibir e atualizar a configuração de segurança da rede do cluster. O sistema inclui suporte robusto para gerenciamento de certificados na rede do cluster. Além disso, você pode exibir e atualizar a configuração de segurança da rede HA para o tráfego NVLog.</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">O NetApp FlexCache é um cache persistente de um volume de origem. Ele suporta o recurso de fan-out, permitindo a criação de mais de um FlexCache a partir de um único volume de origem. A API REST inclui suporte para a recuperação do status da conexão entre as instâncias de cache e os volumes de origem.</block>
+  <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
+  <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
+  <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">Documentação do NetApp PCL para a versão 9.17.1</block>
+  <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
 </blocks>
