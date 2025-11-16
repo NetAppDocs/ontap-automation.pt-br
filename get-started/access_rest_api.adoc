@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/access_rest_api.html 
-keywords: accessing the rest api, lif 
+keywords: access rest api, lif, cluster lif, svm lif, node lif 
 summary: Você pode acessar a API REST do ONTAP de várias maneiras diferentes. 
 ---
 = Como acessar a API REST do ONTAP
@@ -20,17 +20,14 @@ Você pode acessar a API REST do ONTAP de várias maneiras diferentes.
 
 == Considerações de rede
 
-Você pode se conetar à API REST através das seguintes interfaces:
+Você pode se conectar à API REST do ONTAP usando um dos vários tipos de interfaces disponíveis. A LIF escolhida precisa ser configurada para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall em sua rede deve permitir o tráfego HTTPS. As seguintes interfaces são suportadas:
 
 * LIF de gerenciamento de clusters
 * LIF de gerenciamento de nós
 * LIF de gerenciamento do SVM
 
 
-O LIF que você escolher usar deve estar configurado para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall na rede deve permitir o tráfego HTTPS.
-
-
-TIP: Você deve sempre usar um LIF de gerenciamento de cluster. Isso equilibrará a carga das solicitações de API em todos os nós e evitará os nós que estão offline ou que apresentam problemas de conetividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST.
+Embora você possa usar qualquer uma dessas LIFs, a prática recomendada é usar a LIF de gerenciamento de cluster. Isso permite que o cluster seja endereçado como uma única unidade lógica e proporciona o mais alto nível de resiliência e balanceamento de carga. Uma LIF de cluster pode ser realocada dentro do cluster conforme necessário para lidar com atualizações planejadas, eventos de quorum e outros problemas de conectividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST. Os LIFs de gerenciamento do SVM também possuem balanceamento de carga, mas as solicitações enviadas para LIFs com escopo em nível de nó são tratadas localmente.
 
 
 

@@ -76,12 +76,9 @@
   <block id="3c09024082538b393ae85161883b78ab" category="summary">Você pode acessar a API REST do ONTAP de várias maneiras diferentes.</block>
   <block id="0a9491f69a61e4af806e090fdb7f64e0" category="doc">Como acessar a API REST do ONTAP</block>
   <block id="1391ec09425a9a140a4aef306e42d0cb" category="section-title">Considerações de rede</block>
-  <block id="480df78a66061b5c3b61f69d89342d23" category="paragraph">Você pode se conetar à API REST através das seguintes interfaces:</block>
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">LIF de gerenciamento de clusters</block>
   <block id="e2578ec54f85b5b6333c94364b756a1c" category="list-text">LIF de gerenciamento de nós</block>
   <block id="a954bd55e944d7b65a02512356ab0177" category="list-text">LIF de gerenciamento do SVM</block>
-  <block id="3869128f90019baba527314ae533f075" category="paragraph">O LIF que você escolher usar deve estar configurado para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall na rede deve permitir o tráfego HTTPS.</block>
-  <block id="2a698685a16733183bec999b7c2ac13d" category="admonition">Você deve sempre usar um LIF de gerenciamento de cluster. Isso equilibrará a carga das solicitações de API em todos os nós e evitará os nós que estão offline ou que apresentam problemas de conetividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST.</block>
   <block id="649819179ab6bae8f5294207b4462523" category="section-title">Página de documentação online da API ONTAP</block>
   <block id="ca5aea2c13440a3ecc9b8840e770344f" category="inline-link-macro">Resumo dos recursos REST</block>
   <block id="424fc80aa929edad9729b9b006049584" category="paragraph">A página de documentação on-line da API do ONTAP fornece um ponto de acesso ao usar um navegador da Web. Além de fornecer uma maneira de executar chamadas individuais de API diretamente, a página inclui uma descrição detalhada da API, incluindo parâmetros de entrada e outras opções para cada chamada. As chamadas de API são organizadas em categorias funcionais. Consulte <block ref="b04c0c0415c8329423a4dc5d04335c63" category="inline-link-macro-rx"></block> para obter mais informações.</block>
@@ -1997,4 +1994,6 @@
   <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
   <block id="75b2bbb70260967ef570af8d23db0285" category="inline-link">Documentação do NetApp PCL para a versão 9.17.1</block>
   <block id="d086e4fa900ed41930da384119898669" category="list-text"><block ref="d086e4fa900ed41930da384119898669" category="inline-link-rx"></block></block>
+  <block id="7457b2724d298830c8cd4519df6c4264" category="paragraph">Você pode se conectar à API REST do ONTAP usando um dos vários tipos de interfaces disponíveis. A LIF escolhida precisa ser configurada para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall em sua rede deve permitir o tráfego HTTPS. As seguintes interfaces são suportadas:</block>
+  <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">Embora você possa usar qualquer uma dessas LIFs, a prática recomendada é usar a LIF de gerenciamento de cluster. Isso permite que o cluster seja endereçado como uma única unidade lógica e proporciona o mais alto nível de resiliência e balanceamento de carga. Uma LIF de cluster pode ser realocada dentro do cluster conforme necessário para lidar com atualizações planejadas, eventos de quorum e outros problemas de conectividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST. Os LIFs de gerenciamento do SVM também possuem balanceamento de carga, mas as solicitações enviadas para LIFs com escopo em nível de nó são tratadas localmente.</block>
 </blocks>
