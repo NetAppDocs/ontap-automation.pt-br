@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: get-started/ontap_automation_options.html 
-keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console 
+keywords: ontap automation, rest api, python client library, powershell, ansible, bluexp automation catalog, netapp, console, hub 
 summary: Há várias opções disponíveis para automatizar a implantação e a administração dos sistemas de storage da ONTAP. 
 ---
 = Entenda as opções de automação do ONTAP
@@ -49,5 +49,5 @@ Você pode criar e implantar código de automação usando uma das várias estru
 .Ansible
 O Ansible é uma ferramenta de software de código aberto compatível com o provisionamento, o gerenciamento de configurações e a implantação de aplicações. Desde o seu lançamento e posterior aquisição pela RedHat, ela continuou a crescer em popularidade. O NetApp fornece módulos certificados pelo Ansible que os clientes podem usar para automatizar a administração dos sistemas de storage da ONTAP. link:../additional/learn_more.html["Saiba mais"]Consulte e https://www.netapp.com/devops-solutions/ansible/["Soluções de DevOps do NetApp Ansible"^] para obter informações adicionais.
 
-.Catálogo de automação do NetApp Console
-O NetApp https://console.netapp.com/automationCatalog/["Catálogo de automação do NetApp Console"^] está disponível por meio da interface de usuário da web do Console.  O catálogo fornece acesso a soluções empacotadas que podem ajudar você a automatizar a implantação e a integração do ONTAP com outros produtos.  Ver https://docs.netapp.com/us-en/netapp-automation/["Automação da NetApp"^] para documentação e mais informações.
+.Hub de automação do NetApp Console
+O https://console.netapp.com/automationHub["Hub de automação do NetApp Console"^] Está disponível através da interface web do Console. O hub de automação fornece acesso a soluções prontas que podem ajudar você a automatizar a implantação e a integração do ONTAP com outros produtos. Ver https://docs.netapp.com/us-en/netapp-automation/["Automação da NetApp"^] Para obter documentação e mais informações.
