@@ -99,7 +99,7 @@ Além dos parâmetros comuns com todas as chamadas de API REST, os seguintes par
 [source, curl]
 ----
 curl --request POST \
---location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/priveleges" \
+--location "https://$FQDN_IP/api/security/roles/$SVM_ID/$ROLE_NAME/privileges" \
 --include \
 --header "Accept: */*" \
 --header "Authorization: Basic $BASIC_AUTH" \
