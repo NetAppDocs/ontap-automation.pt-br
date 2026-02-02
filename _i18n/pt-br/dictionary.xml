@@ -8,17 +8,10 @@
   <block id="0dd46819f1e5a6578f91522b3ccce0d5" category="inline-link">Novo normal para automação</block>
   <block id="2459315257ccea8fa6d62e2fb4393e71" category="paragraph"><block ref="2459315257ccea8fa6d62e2fb4393e71" category="inline-link-rx"></block></block>
   <block id="bc00f7a5406f8f98848784d25ca2e573" category="inline-link">Usando a passagem de CLI privada com a API REST do ONTAP</block>
-  <block id="fa835357fbfbf43ac89809a345631107" category="list-text">Você pode explorar usando a API REST do ONTAP para gerenciar a segurança e as permissões de arquivos.</block>
   <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">Gerenciamento simplificado de permissões de segurança de arquivos com APIs REST do ONTAP</block>
-  <block id="91a2d97cb1dce93a24a0e1d4e0fccd05" category="paragraph"><block ref="91a2d97cb1dce93a24a0e1d4e0fccd05" category="inline-link-rx"></block></block>
   <block id="e79e715e42c36e10134f5afe5466361c" category="list-text">Você pode monitorar eventos do ONTAP para se manter ciente da atividade do sistema. A configuração e o gerenciamento desses eventos podem ser automatizados usando a API REST.</block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">APIS REST do ONTAP: Automatize a notificação de eventos de alta gravidade</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="paragraph"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
-  <block id="798ae5c6621da1def7dfe9ad86f985f2" category="list-text">Você pode usar a API REST para configurar funções e níveis de acesso como parte de um ambiente de segurança RBAC.</block>
-  <block id="0ca9887d7651aa13af35dedfbc7ff232" category="inline-link">Controle de acesso baseado em função (RBAC) usando APIS REST do ONTAP</block>
-  <block id="372901dd8cca763e7c848d950ad9aa2a" category="paragraph"><block ref="372901dd8cca763e7c848d950ad9aa2a" category="inline-link-rx"></block></block>
-  <block id="5feaaa740aecb867a44dd31f2ad57c95" category="inline-link">Os scripts de exemplo de Python da API REST do ONTAP agora estão disponíveis no GitHub!</block>
-  <block id="8672380e8a084cc66d295882a9470f26" category="paragraph"><block ref="8672380e8a084cc66d295882a9470f26" category="inline-link-rx"></block></block>
   <block id="ababb8b6a8734f386dea1560ea9db197" category="inline-link">Noções básicas das APIs REST do ONTAP</block>
   <block id="1ba0e6e215c953e85183c8495eb322fb" category="list-text"><block ref="1ba0e6e215c953e85183c8495eb322fb" category="inline-link-rx"></block></block>
   <block id="4da480e8a798230788926916a5db51aa" category="inline-link">Recursos das APIS REST do ONTAP</block>
@@ -37,16 +30,6 @@
   <block id="b14f0823ef1919b70916eb917808d544" category="list-text">Uma coleção de vídeos na NetApp TechComm TV.</block>
   <block id="f25cc755b082b3ec873045ff971fda14" category="inline-link">Automatize o gerenciamento de NetApp ONTAP</block>
   <block id="411d667e28e2d91b38e4ffea1e9a1620" category="paragraph"><block ref="411d667e28e2d91b38e4ffea1e9a1620" category="inline-link-rx"></block></block>
-  <block id="bfe5d32b02621a0adb06ef0719b339f9" category="section-title">Formação técnica e eventos</block>
-  <block id="0e58850b3d57f50238400b261118a678" category="list-text">Apresentação do Insight 2022 (26 minutos).</block>
-  <block id="b2b8de6a3c3bf80d8c2caabcb4925413" category="inline-link">Modernize seu gerenciamento de storage do ONTAP com a API REST do ONTAP</block>
-  <block id="d239da172f3ae62623c76921d1e69cef" category="paragraph"><block ref="d239da172f3ae62623c76921d1e69cef" category="inline-link-rx"></block></block>
-  <block id="e9930ef688b9c712d956fe54c341824d" category="list-text">Apresentação do Insight 2021 (31 minutos).</block>
-  <block id="d179249207be943a8870bd6215e63e34" category="inline-link">NetApp ONTAP: Economize tempo e simplifique o uso de APIs REST</block>
-  <block id="26b14521138b1a45cc04a8b552b937c3" category="paragraph"><block ref="26b14521138b1a45cc04a8b552b937c3" category="inline-link-rx"></block></block>
-  <block id="5da2d15e5ed96882dfddf6695345366f" category="list-text">Serviços de Aprendizagem da NetApp.</block>
-  <block id="ff0e39f8c14072a133c51dcb06ebf74c" category="inline-link">Automatize a administração de storage com a API REST do ONTAP e o Ansible</block>
-  <block id="31b6ea8a88845f72f0b8acf957d34bf2" category="paragraph"><block ref="31b6ea8a88845f72f0b8acf957d34bf2" category="inline-link-rx"></block></block>
   <block id="668e2078ef1b1722c77cdb5c523a4463" category="section-title">Base de dados de Conhecimento da NetApp</block>
   <block id="5df88274e14e903651820773d3e86455" category="list-text">Se você encontrar um problema com a API REST do ONTAP, poderá denunciá-lo ao NetApp.</block>
   <block id="8c794f15d1374d6b379ce22239afcae7" category="inline-link">Como relatar problemas na API REST do ONTAP e na biblioteca de clientes Python da API REST do ONTAP</block>
@@ -144,11 +127,7 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidade</block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="2e02e4fcb54e6e1277182e7dcc734294" category="paragraph-title">ONTAPI para mapeamento REST</block>
-  <block id="934e5799967276baeea05569ba62d8bf" category="paragraph">O NetApp fornece suporte para passar da API patenteada ONTAPI para a API REST do ONTAP por meio de documentação de mapeamento.</block>
   <block id="2ed29ad200a6fbf15d4f57d753e35d13" category="paragraph">Há várias tecnologias disponíveis para ajudar você a transformar seu ambiente de automação do ONTAP com base na API REST.</block>
-  <block id="07eb085f158de3f60622e4d2e80f4439" category="paragraph">Para ajudar os usuários da CLI e do ONTAP a fazer a transição para a API REST do ONTAP, o ONTAP fornece um endpoint de API REST privado que pode ser usado para acessar qualquer comando da CLI.</block>
-  <block id="a744a6f8fd15a39f0d95ce77ce3db16c" category="paragraph">O NetApp fornece uma ferramenta para ajudar clientes e parceiros a fazer a transição para a API REST do ONTAP.</block>
   <block id="d15c7ef669111b1c40233338c66dfc44" category="doc">ONTAPI para mapeamento de API REST</block>
   <block id="b728900a222dcfb25f698d581d9e8863" category="paragraph">A API REST do ONTAP inclui funcionalidade equivalente à ONTAPI na maioria das áreas. O NetApp fornece documentação que descreve o mapeamento das chamadas ONTAPI para as chamadas de API REST equivalentes.</block>
   <block id="8cd7d5cbedf290a9b729cc263d9b289c" category="inline-link">ONTAP 9.15,1</block>
@@ -1856,22 +1835,11 @@
   <block id="a02290eb5e813cedf47247b3adf306c8" category="paragraph">Os artigos do blog são organizados em várias seções com base no assunto.</block>
   <block id="0db377921f4ce762c62526131097968f" category="section-title">Geral</block>
   <block id="a8f7f4170b418c4edcd8ff5a4c735cf9" category="list-text">Coffee breaks with REST (6 episódios):</block>
-  <block id="189695f6b233799c22edeae9ef743a5e" category="list-text">Uma introdução ao uso dos scripts de exemplo Python que o NetApp fornece no GitHub para acessar a API REST do ONTAP.</block>
   <block id="f790901c0bd3db94c97c95372da93eba" category="inline-link">Simplifique o consumo de API REST do ONTAP com a biblioteca de clientes Python</block>
   <block id="c1daf9700f6d042dec0127ce0de95f43" category="paragraph"><block ref="c1daf9700f6d042dec0127ce0de95f43" category="inline-link-rx"></block></block>
-  <block id="c7e50ae6f1278232800cf396d2473ff5" category="list-text">Esta é uma série de blogs de três partes sobre como começar a usar a biblioteca cliente Python:</block>
-  <block id="f3353b172c62b25c5b5749c72b138281" category="inline-link">Parte 1</block>
-  <block id="9a63c9de19a8eb52690f451f08d98966" category="list-text"><block ref="9a63c9de19a8eb52690f451f08d98966" category="inline-link-rx"></block></block>
-  <block id="6417c68d02736b9d6bbccd60d0e3bd39" category="inline-link">Parte 2</block>
-  <block id="abbc3d8dfab1ac762a8c74871f8d356d" category="list-text"><block ref="abbc3d8dfab1ac762a8c74871f8d356d" category="inline-link-rx"></block></block>
-  <block id="09acdc2204c9ba42a05804a7a4ed4f76" category="inline-link">Parte 3</block>
-  <block id="68abb8ef58d33d29d013d34fa31e3f9f" category="list-text"><block ref="68abb8ef58d33d29d013d34fa31e3f9f" category="inline-link-rx"></block></block>
   <block id="be7a051497b75c91b2ec91ffdbdb5cc3" category="section-title">Migração para a API REST</block>
-  <block id="a67b7864a36cd08cc608eba2720d18f7" category="paragraph"><block ref="a67b7864a36cd08cc608eba2720d18f7" category="inline-link-rx"></block></block>
   <block id="e0e8eb9fa6a9c4b6836a42b5f9badc22" category="inline-link">Transforme sua automação em API REST do ONTAP com o ONTAPI</block>
   <block id="a8229f2e627898671ea5ee497a4c5489" category="paragraph"><block ref="a8229f2e627898671ea5ee497a4c5489" category="inline-link-rx"></block></block>
-  <block id="15cf2f6738a770890a0ba990f1543d8d" category="inline-link">Transição do ONTAPI (ZAPI) usando a ferramenta de relatórios de uso do ONTAPI</block>
-  <block id="2718df1a2d0085e67f1f9cfb09960b20" category="paragraph"><block ref="2718df1a2d0085e67f1f9cfb09960b20" category="inline-link-rx"></block></block>
   <block id="6f44ad18926a737f5583547164ea23a6" category="admonition">Todas as amostras de código Python estão disponíveis no<block ref="e359793ef9022d56bacc77e70a2f7722" category="inline-link-rx"></block> repositório GitHub. Você também deve analisar os recursos disponíveis no <block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>.</block>
   <block id="f0e9bdffcded3071566cc636f2645353" category="doc">Avisos legais para a API REST do ONTAP</block>
   <block id="0d2211154e74dec09269bf1111f07b01" category="doc">ONTAPI para mapeamento de API REST do ONTAP</block>
@@ -1985,8 +1953,6 @@
   <block id="dcbd4560482ab6a221d6d830ae26a732" category="paragraph-title">Status da conexão FlexCache</block>
   <block id="32c698ea847d2a277ff9d589cf3e9933" category="paragraph">Você pode recuperar o status da conexão FlexCache . Este tipo de recurso foi introduzido com o ONTAP 9.18.</block>
   <block id="e48e73e576f724fd4213ab1eca7edb4a" category="section-title">ONTAP 9.18.1</block>
-  <block id="98480199e938c1b0182ce374c8874655" category="paragraph">A versão 9.18.1 do ONTAP continua a expandir as capacidades da API REST do ONTAP com onze novas chamadas de API. As melhorias focam-se principalmente na segurança, mas também incluem uma otimização relacionada à administração de armazenamento.</block>
-  <block id="d36ba93814bec12a880acf6b6dbf29e3" category="list-text">Existem duas grandes melhorias de segurança introduzidas com a API REST do ONTAP 9.18.1. Você pode usar os novos endpoints da API de rede do cluster para exibir e atualizar a configuração de segurança da rede do cluster. O sistema inclui suporte robusto para gerenciamento de certificados na rede do cluster. Além disso, você pode exibir e atualizar a configuração de segurança da rede HA para o tráfego NVLog.</block>
   <block id="c7358a24d3b2dba34beefab7cc925d5d" category="list-text">O NetApp FlexCache é um cache persistente de um volume de origem. Ele suporta o recurso de fan-out, permitindo a criação de mais de um FlexCache a partir de um único volume de origem. A API REST inclui suporte para a recuperação do status da conexão entre as instâncias de cache e os volumes de origem.</block>
   <block id="7b650aee25731b28a4a26e1237de6717" category="inline-link">PyPI: NetApp ONTAP 9.17.1</block>
   <block id="5ebb87aae4f7e8c0fda80f126a8bf511" category="list-text"><block ref="5ebb87aae4f7e8c0fda80f126a8bf511" category="inline-link-rx"></block></block>
@@ -1996,4 +1962,12 @@
   <block id="213f95a0c2380efc295db05b4d8410d0" category="paragraph">Embora você possa usar qualquer uma dessas LIFs, a prática recomendada é usar a LIF de gerenciamento de cluster. Isso permite que o cluster seja endereçado como uma única unidade lógica e proporciona o mais alto nível de resiliência e balanceamento de carga. Uma LIF de cluster pode ser realocada dentro do cluster conforme necessário para lidar com atualizações planejadas, eventos de quorum e outros problemas de conectividade. Se você tiver várias LIFs de gerenciamento de cluster configuradas, todas elas serão equivalentes em relação ao acesso à API REST. Os LIFs de gerenciamento do SVM também possuem balanceamento de carga, mas as solicitações enviadas para LIFs com escopo em nível de nó são tratadas localmente.</block>
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">Hub de automação do NetApp Console</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">O<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> Está disponível através da interface web do Console. O hub de automação fornece acesso a soluções prontas que podem ajudar você a automatizar a implantação e a integração do ONTAP com outros produtos. Ver<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> Para obter documentação e mais informações.</block>
+  <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI: NetApp ONTAP 9.18.1</block>
+  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
+  <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL documentação para 9.18.1</block>
+  <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
+  <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">Capacitação anti-ransomware</block>
+  <block id="8decbf8aa6be13f4f523f23aac8e2e6a" category="paragraph">Você pode controlar a operação do recurso de capacitação da Proteção Autônoma contra Ransomware (ARP). Isso inclui recuperar e modificar as configurações. Esse tipo de recurso foi introduzido com o ONTAP 9.18.1.</block>
+  <block id="4f51f80a409afbda03654a8b1a0d7478" category="paragraph">A versão 9.18.1 do ONTAP continua a expandir os recursos da API REST do ONTAP com treze novas chamadas de API. Os aprimoramentos focam principalmente na segurança, mas também incluem uma melhoria relacionada à administração de armazenamento.</block>
+  <block id="2b6417c7e24c5efdcdbe136fac22e8b2" category="list-text">Diversas melhorias de segurança foram introduzidas com a ONTAP 9.18.1 API REST. Você pode usar os novos endpoints de rede do cluster para exibir e atualizar a configuração de segurança da rede do cluster, incluindo o gerenciamento de certificados. Além disso, você pode administrar a configuração de segurança da rede HA para o tráfego NVLog. A Proteção Autônoma contra Ransomware (ARP) foi aprimorada para permitir que você exiba e atualize o recurso de capacitação.</block>
 </blocks>
