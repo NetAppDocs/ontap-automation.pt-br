@@ -24,7 +24,7 @@ Essa chamada de API REST usa o método e o endpoint a seguir.
 | Método HTTP | Caminho 
 
 
-| OBTER | /api/storage/discos 
+| OBTER | /api/storage/aggregates 
 |===
 .Tipo de processamento
 Síncrono
