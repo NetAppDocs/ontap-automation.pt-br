@@ -21,6 +21,16 @@ TIP: Você deve rever o https://library.netapp.com/ecm/ecm_download_file/ECMLP24
 
 
 
+== ONTAP 9.19.1
+
+A versão ONTAP 9.19.1 inclui diversas atualizações que continuam a aprimorar e refinar a API REST do ONTAP.
+
+Segurança:: Uma nova  `whoami` funcionalidade foi adicionada para recuperar o nome de usuário, a função e as informações de permissões do usuário conectado. A capacidade de autenticação web (WebAuthn) também foi aprimorada.
+SAN:: A administração do mapa LUN foi atualizada com uma capacidade de atualização aprimorada.
+
+
+
+
 == ONTAP 9.18.1
 
 A versão 9.18.1 do ONTAP continua a expandir os recursos da API REST do ONTAP com treze novas chamadas de API. Os aprimoramentos focam principalmente na segurança, mas também incluem uma melhoria relacionada à administração de armazenamento.

@@ -46,7 +46,7 @@ Uma sessão iSCSI é uma ou mais ligações TCP que ligam um iniciador iSCSI a u
 Os atributos LUN são pares de nome/valor definidos pelo chamador que podem ser armazenados opcionalmente com um LUN. Os atributos estão disponíveis para salvar pequenas quantidades de metadados específicos da aplicação e não são interpretados pelo ONTAP. Os endpoints permitem que você crie, atualize, exclua e descubra atributos para um LUN. Este tipo de recurso foi introduzido com o ONTAP 9.10.
 
 .Mapas LUN
-Um mapa LUN é uma associação entre um LUN e um grupo de iniciadores. Este tipo de recurso foi introduzido com o ONTAP 9.6.
+Um mapa LUN é uma associação entre um LUN e um grupo iniciador. Esse tipo de recurso foi introduzido no ONTAP 9.6 e atualizado no ONTAP 9.19.1.
 
 .LUN mapeia nós de relatórios
 Os nós de relatório são os nós de cluster a partir dos quais os caminhos de rede para um LUN mapeado são anunciados usando os protocolos SAN como parte do recurso mapa de LUN seletivo (SLM) do ONTAP. Os novos endpoints permitem adicionar, remover e descobrir os nós de relatórios de um mapa LUN. Este tipo de recurso foi introduzido com o ONTAP 9.10.
