@@ -7,8 +7,6 @@
   <block id="e874bfe48b1932682eea5f15cdac547d" category="list-text">Um bom resumo das tecnologias atuais de automação da ONTAP.</block>
   <block id="0dd46819f1e5a6578f91522b3ccce0d5" category="inline-link">Novo normal para automação</block>
   <block id="2459315257ccea8fa6d62e2fb4393e71" category="paragraph"><block ref="2459315257ccea8fa6d62e2fb4393e71" category="inline-link-rx"></block></block>
-  <block id="bc00f7a5406f8f98848784d25ca2e573" category="inline-link">Usando a passagem de CLI privada com a API REST do ONTAP</block>
-  <block id="673cd1c7bc219dafd3ab44f7789c7963" category="inline-link">Gerenciamento simplificado de permissões de segurança de arquivos com APIs REST do ONTAP</block>
   <block id="e79e715e42c36e10134f5afe5466361c" category="list-text">Você pode monitorar eventos do ONTAP para se manter ciente da atividade do sistema. A configuração e o gerenciamento desses eventos podem ser automatizados usando a API REST.</block>
   <block id="04a23c4efdbd2046f23f7897eaf905ba" category="inline-link">APIS REST do ONTAP: Automatize a notificação de eventos de alta gravidade</block>
   <block id="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="paragraph"><block ref="83ca92150c32a0d9b3b4b2ab9e9a2df4" category="inline-link-rx"></block></block>
@@ -1607,7 +1605,6 @@
   <block id="eb8b558a40765e93b8be653d5fb7656c" category="cell">/api/protocols/file-security/effective-permissions/</block>
   <block id="698f9eb192e6aa6224d8848f98d6a530" category="summary">Você pode gerenciar as permissões e as políticas de auditoria de arquivos disponíveis nos SVMs em um cluster do ONTAP.</block>
   <block id="7e2e1102b90cfd81da1a2e5002c37c9c" category="paragraph">O ONTAP usa listas de controle de acesso do sistema (SACLs) e listas de controle de acesso discricionárias (DACLs) para atribuir permissões a objetos de arquivo. A partir do ONTAP 9.9,1, a API REST inclui suporte para gerenciar as permissões SACL e DACL. Você pode usar a API para automatizar a administração das permissões de segurança de arquivos. Em muitos casos, você pode usar uma única chamada de API REST em vez de vários comandos CLI ou chamadas ONTAPI (ZAPI).</block>
-  <block id="3c4e118c8471cd86da2e54560f34234b" category="admonition">Para as versões do ONTAP anteriores a 9,9.1, você pode automatizar a administração das permissões de SACL e DACL usando o recurso de passagem da CLI. <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block>Consulte e<block ref="cc458ed66c48b12b86281fe13e008c20" category="inline-link-rx"></block> para obter mais informações.</block>
   <block id="5a4c76b14341d9a5432b024437f965d1" category="paragraph">Vários fluxos de trabalho de exemplo estão disponíveis para ilustrar como gerenciar os serviços de segurança de arquivos do ONTAP usando a API REST. Antes de usar os fluxos de trabalho e emitir qualquer uma das chamadas de API REST, verifique <block ref="8db76eb28f35a2f0429c5f03bc9feadd" category="inline-link-macro-rx"></block>o .</block>
   <block id="f13ddbbf96dbd385b6b39bedaac4e6f7" category="inline-link">file_security_permissions.py</block>
   <block id="b3b08c8a5c5a09ffbe1430bb1e019e74" category="paragraph">Se você usar Python, consulte também o script<block ref="3ccddfdb1872f5bc3b7f054cd270fc1b" category="inline-link-rx"></block> para obter exemplos de como automatizar algumas das atividades de segurança de arquivos.</block>
@@ -1628,8 +1625,6 @@
   <block id="7faf05b9e4d90529c54562f216bfb2d6" category="list-text"><block ref="8f7088b1308a9efa94a1fadb415a83fe" prefix="" category="inline-code"></block></block>
   <block id="3d1a91a3f9c08c95df6cb1eff36db464" category="inline-link">Script Python ilustrando permissões de arquivos</block>
   <block id="bd9e252fe191d999eeb79daa2d91b6a8" category="list-text"><block ref="bd9e252fe191d999eeb79daa2d91b6a8" category="inline-link-rx"></block></block>
-  <block id="6f49384b8a99fec44a7cd1d6ed52add4" category="list-text"><block ref="6f49384b8a99fec44a7cd1d6ed52add4" category="inline-link-rx"></block></block>
-  <block id="0c30cc0a8be3231b1496649b8f111c07" category="list-text"><block ref="0c30cc0a8be3231b1496649b8f111c07" category="inline-link-rx"></block></block>
   <block id="a2ec471f92f85173e4ba00d9da0db114" category="summary">Você pode atualizar um descritor de segurança específico para um arquivo ou pasta específico, incluindo os sinalizadores principal do proprietário, grupo ou controle.</block>
   <block id="bb059379feb749c05906d3ac23b4816d" category="section-title">Etapa 1: Atualize o descritor de segurança</block>
   <block id="1c6adf46eca226877c802f6585be28ec" category="paragraph">Você pode recuperar os LIFs IP atribuídos ao cluster e aos SVMs. Você pode fazer isso para confirmar a configuração da rede ou ao Planejar adicionar outro LIF.</block>
@@ -1987,4 +1982,5 @@
   <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">Uma nova <block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> funcionalidade foi adicionada para recuperar o nome de usuário, a função e as informações de permissões do usuário conectado. A capacidade de autenticação web (WebAuthn) também foi aprimorada.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">A administração do mapa LUN foi atualizada com uma capacidade de atualização aprimorada.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">Alterações e considerações da API REST do ONTAP</block>
+  <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">Para versões do ONTAP anteriores à 9.9.1, você pode automatizar a administração das permissões SACL e DACL usando o recurso de passagem direta da CLI. Consulte <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> para mais informações.</block>
 </blocks>
