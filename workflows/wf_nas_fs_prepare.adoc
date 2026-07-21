@@ -18,6 +18,7 @@ Você pode gerenciar as permissões e as políticas de auditoria de arquivos dis
 
 
 
+[[overview]]
 === Visão geral
 
 O ONTAP usa listas de controle de acesso do sistema (SACLs) e listas de controle de acesso discricionárias (DACLs) para atribuir permissões a objetos de arquivo. A partir do ONTAP 9.9,1, a API REST inclui suporte para gerenciar as permissões SACL e DACL. Você pode usar a API para automatizar a administração das permissões de segurança de arquivos. Em muitos casos, você pode usar uma única chamada de API REST em vez de vários comandos CLI ou chamadas ONTAPI (ZAPI).
@@ -31,6 +32,7 @@ Se você usar Python, consulte também o script https://github.com/NetApp/ontap-
 
 
 
+[[ontap-rest-api-versus-ontap-cli-commands]]
 === API REST do ONTAP versus comandos CLI do ONTAP
 
 Para muitas tarefas, o uso da API REST do ONTAP requer menos chamadas do que as chamadas equivalentes de comandos CLI do ONTAP ou de ONTAPI (ZAPI). A tabela abaixo inclui uma lista de chamadas de API e o equivalente aos comandos CLI necessários para cada tarefa.

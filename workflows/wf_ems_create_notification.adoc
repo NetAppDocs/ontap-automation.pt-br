@@ -18,6 +18,7 @@ Pode utilizar o seguinte fluxo de trabalho para criar um novo destino de notific
 
 
 
+[[step-1-configure-the-system-wide-email-settings]]
 == Passo 1: Configure as configurações de e-mail em todo o sistema
 
 Você pode emitir a seguinte chamada de API para configurar as configurações de e-mail em todo o sistema.
@@ -59,6 +60,7 @@ curl --request PATCH \
 ----
 
 
+[[step-2-define-a-message-filter]]
 == Passo 2: Defina um filtro de mensagens
 
 Você pode emitir uma chamada de API para definir uma regra de filtro que corresponda às mensagens.
@@ -107,6 +109,7 @@ curl --request POST \
 ----
 
 
+[[step-3-create-a-message-destination]]
 == Passo 3: Crie um destino de mensagem
 
 Você pode emitir uma chamada de API para criar um destino de mensagem.

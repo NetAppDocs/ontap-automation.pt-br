@@ -18,12 +18,14 @@ Embora O REST estabeleça um conjunto comum de tecnologias e práticas recomenda
 
 
 
+[[request-and-response-api-transaction]]
 == Transação de API de solicitação e resposta
 
 Cada chamada de API REST é executada como uma solicitação HTTP para o sistema ONTAP, que gera uma resposta associada ao cliente. Esse par de solicitação/resposta é considerado uma transação de API. Antes de usar a API, você deve estar familiarizado com as variáveis de entrada disponíveis para controlar uma solicitação e o conteúdo da saída de resposta.
 
 
 
+[[support-for-crud-operations]]
 == Suporte para operações CRUD
 
 Cada um dos recursos disponíveis por meio da API REST do ONTAP é acessado com base no modelo CRUD:
@@ -38,6 +40,7 @@ Para alguns dos recursos, apenas um subconjunto das operações é suportado. Vo
 
 
 
+[[object-identifiers]]
 == Identificadores de objeto
 
 Cada instância ou objeto de recurso recebe um identificador exclusivo quando é criado. Na maioria dos casos, o identificador é um UUID de 128 bits. Esses identificadores são globalmente exclusivos dentro de um cluster ONTAP específico. Depois de emitir uma chamada de API que cria uma nova instância de objeto, um URL com o valor de id associado é retornado ao chamador no cabeçalho do local da resposta HTTP. Você pode extrair o identificador e usá-lo em chamadas subsequentes quando se refere à instância de recurso.
@@ -47,12 +50,14 @@ NOTE: O conteúdo e a estrutura interna dos identificadores de objeto podem muda
 
 
 
+[[object-instances-and-collections]]
 == Instâncias e coleções de objetos
 
 Dependendo do caminho do recurso e do método HTTP, uma chamada de API pode ser aplicada a uma instância de objeto específica ou a uma coleção de objetos.
 
 
 
+[[synchronous-and-asynchronous-operations]]
 == Operações síncronas e assíncronas
 
 Existem duas maneiras pelas quais o ONTAP executa uma solicitação HTTP recebida de um cliente.
@@ -76,6 +81,7 @@ NOTE: O `return_timeout` parâmetro de consulta está disponível com chamadas a
 
 
 
+[[security]]
 == Segurança
 
 A segurança fornecida com a API REST é baseada principalmente nos recursos de segurança existentes disponíveis com o ONTAP. A seguinte segurança é usada pela API:

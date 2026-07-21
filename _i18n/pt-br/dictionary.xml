@@ -321,7 +321,6 @@
   <block id="b112c8c17f296b55ffc035363cc1cac3" category="paragraph"><block ref="5d395fe1e6baa7dad74ad6ac1530b309" prefix="" category="inline-code"></block></block>
   <block id="86537fad07b98a84cd28189507075143" category="list-text">Inicie sessão utilizando a conta ONTAP.</block>
   <block id="4a7f5568d4707b4e4a381d4a753ed791" category="paragraph">A página de documentação da API do ONTAP é exibida com as chamadas da API organizadas nas principais categorias de recursos na parte inferior.</block>
-  <block id="b7998fdfa579757468dfd6407b7df0e3" category="list-text">Como exemplo de uma chamada de API individual, role para baixo até a categoria *cluster* e clique em *GET /cluster*.</block>
   <block id="e126569377e0b2c42e1f2b3f1f4a111c" category="summary">Você pode usar essas chamadas de API para gerenciar os recursos do aplicativo ONTAP.</block>
   <block id="e498749f3c42246d50b15c81c101d988" category="doc">Aplicação</block>
   <block id="53407aeec220be7474e15c2a9f182a5a" category="paragraph-title">Instantâneos de aplicações</block>
@@ -631,9 +630,7 @@
   <block id="006138580199bd3b75b397daaf66da34" category="paragraph-title">Certificados de CA IPsec</block>
   <block id="49594609d9f640b0c454c45b305cb943" category="paragraph">Você pode adicionar, remover e recuperar certificados de CA IPSec. Este tipo de recurso é novo com o ONTAP 9.10.</block>
   <block id="edc104bcf18fda8f2113e04baac67d3f" category="paragraph-title">Diretivas IPsec</block>
-  <block id="28ce73d536ecffee09317e2b063905dc" category="paragraph">Você pode usar esse conjunto de chamadas de API para gerenciar as políticas em vigor para uma implantação IPSec. Este tipo de recurso é novo com o ONTAP 9.8.</block>
   <block id="3d2b68c7bdb9f30e1ccfb464eeb00966" category="paragraph-title">Associações de segurança IPsec</block>
-  <block id="ef19ac6a1e5ee7e640a48a20d2ea90d2" category="paragraph">Você pode usar esse conjunto de chamadas de API para gerenciar as associações de segurança em vigor para uma implantação IPSec. Este tipo de recurso é novo com o ONTAP 9.8.</block>
   <block id="a4c782a0e5bd7be239b96d4d35ffe4fb" category="paragraph-title">Configurações do Gerenciador de chaves</block>
   <block id="c9fc87bcce85ba9b55c70c4a5a618d7b" category="paragraph">Esses endpoints permitem que você recupere e atualize as configurações para os gerenciadores de chaves. Este tipo de recurso é novo com o ONTAP 9.10.</block>
   <block id="5e2f9eab3699a50f20260789850a272c" category="paragraph-title">Principais gerentes</block>
@@ -1952,7 +1949,6 @@
   <block id="5d5d8414d96fc428f736ae2f6fa3ada7" category="paragraph-title">Hub de automação do NetApp Console</block>
   <block id="e250d9825e173c1f8f38848dad857fa0" category="paragraph">O<block ref="dc3bfae542b9e4cc3361fc7eb5625d17" category="inline-link-rx"></block> Está disponível através da interface web do Console. O hub de automação fornece acesso a soluções prontas que podem ajudar você a automatizar a implantação e a integração do ONTAP com outros produtos. Ver<block ref="f695c17dc058de697d44814f47eefe4f" category="inline-link-rx"></block> Para obter documentação e mais informações.</block>
   <block id="29b6d9e80417ebf4ac723dd56e4f6322" category="inline-link">PyPI: NetApp ONTAP 9.18.1</block>
-  <block id="ad4162572ca44b98fde9ffd6f23c426d" category="list-text"><block ref="ad4162572ca44b98fde9ffd6f23c426d" category="inline-link-rx"></block></block>
   <block id="90e2aef8589fa5b53a7c288f4dee47c8" category="inline-link">NetApp PCL documentação para 9.18.1</block>
   <block id="c7dcdb34a106576d21e7bce6b5b431e5" category="list-text"><block ref="c7dcdb34a106576d21e7bce6b5b431e5" category="inline-link-rx"></block></block>
   <block id="4d0c0700e788305f919db46d1de4d0c6" category="paragraph-title">Capacitação anti-ransomware</block>
@@ -1973,14 +1969,22 @@
   <block id="71c05fa8077a773e095376bb567cd291" category="cell"><block ref="56d408287fc247401a306f946d8667db" prefix="" category="inline-code"></block></block>
   <block id="131e71b08dd73776358a31f5b869388f" category="cell">Ao recuperar informações de licença por meio da API REST para clusters ONTAP muito grandes (32 nós ou mais), você poderá experimentar lentidão no tempo de resposta. Esse problema afeta as guias de licenciamento do System Manager e os fluxos de trabalho automatizados que consultam todas as licenças simultaneamente. Para minimizar o impacto, você pode buscar as licenças de recursos específicos uma de cada vez usando parâmetros de consulta ou usar a CLI com o comando<block ref="684590f66f47755afa88d3f70f9f25ad" prefix=" " category="inline-code"></block>, em vez de recuperar todas as licenças em uma única chamada de API.</block>
   <block id="cc420b198b8f8ad3d8233549a925dced" category="paragraph">À medida que a NetApp aprimora e atualiza a API REST do ONTAP, às vezes erros podem ser introduzidos na documentação de referência online. Esses erros podem gerar confusão ao usar a API, mas geralmente não afetam ou interrompem seu software de automação do ONTAP ou ambiente. Você deve revisar a lista de erros na tabela abaixo. Isso ajudará você a entender e navegar melhor pela documentação de referência da API REST do ONTAP. Cada entrada inclui o endpoint ou área da API aplicável, uma descrição do erro e a versão do ONTAP em que ele foi introduzido.</block>
-  <block id="265b7201a1a1b0248d25d88bde5d5b3d" category="paragraph">Um mapa LUN é uma associação entre um LUN e um grupo iniciador. Esse tipo de recurso foi introduzido no ONTAP 9.6 e atualizado no ONTAP 9.19.1.</block>
-  <block id="d466bf08db43e32247cf12faafc07c3e" category="paragraph">A autenticação web (WebAuthn) é um padrão web para autenticar usuários com segurança, baseado em criptografia de chave pública. Com o ONTAP, ela oferece suporte à administração de MFAs resistentes a phishing por meio do System Manager e da API REST do ONTAP. Esse recurso foi adicionado no ONTAP 9.16 e atualizado no ONTAP 9.19.1.</block>
   <block id="b5905e09f21d5864e3d35c42e06cc891" category="paragraph-title">Quem sou eu</block>
-  <block id="99bd4fa5b8d549d8817c7c1fd47f1a07" category="paragraph">Um endpoint está disponível para exibir os detalhes do usuário autenticado, incluindo nome de usuário, função e permissões. Esse tipo de recurso foi introduzido no ONTAP 9.19.1.</block>
   <block id="ea7f38fbe84ac28be0f7c90cca730a69" category="section-title">ONTAP 9.19.1</block>
   <block id="aea50297ce3c7b46d330df439a818aad" category="paragraph">A versão ONTAP 9.19.1 inclui diversas atualizações que continuam a aprimorar e refinar a API REST do ONTAP.</block>
-  <block id="7c152b2ce344c1d6fc432fba33fc71cf" category="list-text">Uma nova <block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> funcionalidade foi adicionada para recuperar o nome de usuário, a função e as informações de permissões do usuário conectado. A capacidade de autenticação web (WebAuthn) também foi aprimorada.</block>
   <block id="50627d24ccfbf3209a01226c32f4208c" category="list-text">A administração do mapa LUN foi atualizada com uma capacidade de atualização aprimorada.</block>
   <block id="92d15479dd92b1e555eec98a86d59c71" category="sidebar">Alterações e considerações da API REST do ONTAP</block>
   <block id="5c7f695288b6d2a3f37f4f2e098cf200" category="admonition">Para versões do ONTAP anteriores à 9.9.1, você pode automatizar a administração das permissões SACL e DACL usando o recurso de passagem direta da CLI. Consulte <block ref="2827875b29ddc93c1111f4063df563c8" category="inline-link-macro-rx"></block> para mais informações.</block>
+  <block id="930f6e309ea31ddf8913bc2743474206" category="inline-link">PyPI: NetApp ONTAP 9.19.1</block>
+  <block id="fc079a70c22d237bf5ba1cb37fd321ed" category="list-text"><block ref="fc079a70c22d237bf5ba1cb37fd321ed" category="inline-link-rx"></block></block>
+  <block id="ed9d9bda2b176aa2a1f17944b6d4a5b8" category="inline-link">NetApp PCL documentação para 9.19.1</block>
+  <block id="7203ae9325dee2a32f00ac70dd5380eb" category="list-text"><block ref="7203ae9325dee2a32f00ac70dd5380eb" category="inline-link-rx"></block></block>
+  <block id="f2b97056166d6335cc220aa8ed571bd5" category="list-text"><block ref="f2b97056166d6335cc220aa8ed571bd5" category="inline-link-rx"></block></block>
+  <block id="7396427871824f6e3ab00adb004f3863" category="list-text">Como exemplo de uma chamada de API individual, role para baixo até a categoria *cluster* e selecione *GET /cluster*.</block>
+  <block id="2cd51d1ef50a2fdcfcd54b6bd7545da6" category="paragraph">Um mapa LUN é uma associação entre um LUN e um grupo iniciador. Esse tipo de recurso foi introduzido no ONTAP 9.6 e atualizado no ONTAP 9.19.</block>
+  <block id="5143cbd37fee11e20d0f08ba1a56ffe3" category="paragraph">Você pode usar esse conjunto de chamadas de API para gerenciar as políticas em vigor em uma implementação IPSec. Esse tipo de recurso é novo no ONTAP 9.8. Elas foram atualizadas na versão 9.19 para recuperar as políticas usadas na rede do cluster.</block>
+  <block id="534aa7412e40ee98329aa6cbf7e73921" category="paragraph">Você pode usar esse conjunto de chamadas de API para gerenciar as associações de segurança em vigor para uma implementação IPSec. Esse tipo de recurso é novo no ONTAP 9.8. Elas foram atualizadas na versão 9.19 para recuperar as associações de segurança usadas na rede do cluster.</block>
+  <block id="1e546dde5ec48b72b17c80c9fd9a4326" category="paragraph">A autenticação na web (WebAuthn) é um padrão web para autenticar usuários com segurança, baseado em criptografia de chave pública. Com ONTAP, ela oferece suporte à administração de MFAs resistentes a phishing por meio do System Manager e da API REST do ONTAP. Esse recurso foi adicionado no ONTAP 9.16 e atualizado no ONTAP 9.19.</block>
+  <block id="552a4b441f2408a18f59e549d17ab486" category="paragraph">Um endpoint está disponível para exibir os detalhes do usuário autenticado, incluindo nome de usuário, função e permissões. Esse tipo de recurso foi introduzido no ONTAP 9.19.</block>
+  <block id="d9eb7c3d944a1a4dbd6e7c30275c219a" category="list-text">Um novo<block ref="1b0679be72ad976ad5d491ad57a5eec0" prefix=" " category="inline-code"></block> recurso foi adicionado para recuperar o nome de usuário, a função e as informações de permissões do usuário conectado. A capacidade de autenticação web (WebAuthn) também foi aprimorada. O IPsec foi atualizado para recuperar as políticas e associações de segurança usadas com a rede do cluster.</block>
 </blocks>

@@ -27,6 +27,7 @@ Você pode, então, opcionalmente, atualizar a função conforme necessário. Ne
 
 
 
+[[step-1-create-the-role]]
 == Passo 1: Crie a função
 
 Você pode emitir uma chamada de API para criar a função RBAC.
@@ -68,6 +69,7 @@ curl --request POST \
 ----
 
 
+[[step-2-update-the-role]]
 == Passo 2: Atualize a função
 
 Você pode emitir uma chamada de API para atualizar a função existente.

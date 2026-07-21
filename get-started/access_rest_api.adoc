@@ -18,6 +18,7 @@ Você pode acessar a API REST do ONTAP de várias maneiras diferentes.
 
 
 
+[[network-considerations]]
 == Considerações de rede
 
 Você pode se conectar à API REST do ONTAP usando um dos vários tipos de interfaces disponíveis. A LIF escolhida precisa ser configurada para suportar o protocolo de gerenciamento HTTPS. Além disso, a configuração do firewall em sua rede deve permitir o tráfego HTTPS. As seguintes interfaces são suportadas:
@@ -31,6 +32,7 @@ Embora você possa usar qualquer uma dessas LIFs, a prática recomendada é usar
 
 
 
+[[ontap-api-online-documentation-page]]
 == Página de documentação online da API ONTAP
 
 A página de documentação on-line da API do ONTAP fornece um ponto de acesso ao usar um navegador da Web. Além de fornecer uma maneira de executar chamadas individuais de API diretamente, a página inclui uma descrição detalhada da API, incluindo parâmetros de entrada e outras opções para cada chamada. As chamadas de API são organizadas em categorias funcionais. Consulte link:../resources/overview_categories.html["Resumo dos recursos REST"] para obter mais informações.
@@ -41,6 +43,7 @@ O formato do URL usado para acessar a página de documentação para a versão m
 
 
 
+[[custom-software-and-tools]]
 == Software e ferramentas personalizadas
 
 Você pode acessar a API do ONTAP usando qualquer uma das várias linguagens e ferramentas de programação diferentes. As opções populares incluem Python, Java, Curl e PowerShell. Um programa, script ou ferramenta que usa a API atua como um cliente de serviços da Web REST. O uso de uma linguagem de programação permite uma compreensão mais profunda da API e oferece uma oportunidade para automatizar a administração do ONTAP.

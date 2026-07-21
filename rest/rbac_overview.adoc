@@ -21,12 +21,14 @@ NOTE: O recurso RBAC do ONTAP continuou a se expandir e foi significativamente a
 
 
 
+[[ontap-roles]]
 == Funções do ONTAP
 
 Uma função é um conjunto de Privileges que definem coletivamente quais ações o usuário pode realizar. Cada privilégio identifica um caminho de acesso específico e o nível de acesso associado. As funções são atribuídas a contas de usuário e aplicadas pelo ONTAP ao tomar decisões de controle de acesso.
 
 
 
+[[types-of-roles]]
 === Tipos de papéis
 
 Existem dois tipos de funções. Eles foram introduzidos e adaptados a diferentes ambientes à medida que o ONTAP evoluiu.
@@ -46,6 +48,7 @@ NOTE: Há vantagens e desvantagens ao usar cada tipo de função. Consulte link:
 |===
 
 
+[[scope]]
 === Âmbito de aplicação
 
 Cada função tem um escopo ou contexto dentro do qual é definida e aplicada. O escopo determina onde e como uma função específica é usada.
@@ -65,6 +68,7 @@ NOTE: As contas de usuário do ONTAP também têm um escopo semelhante que deter
 |===
 
 
+[[source-of-the-role-definitions]]
 === Fonte das definições de função
 
 Há duas maneiras de definir uma função ONTAP.
@@ -81,6 +85,7 @@ Há duas maneiras de definir uma função ONTAP.
 |===
 
 
+[[role-mapping-and-ontap-processing]]
 == Mapeamento de funções e processamento de ONTAP
 
 Dependendo da versão do ONTAP que você está usando, todas ou quase todas as chamadas de API REST mapeiam para um ou mais comandos CLI. Quando você cria uma FUNÇÃO REST, uma função tradicional ou legada também é criada. Esta função tradicional *mapeada* é baseada nos comandos CLI correspondentes e não pode ser manipulada ou alterada.
@@ -90,6 +95,7 @@ NOTE: O mapeamento de função reversa não é suportado. Ou seja, criar uma fun
 
 
 
+[[summary-of-rbac-evolution]]
 == Resumo da evolução da RBAC
 
 As funções tradicionais estão incluídas em todas as versões do ONTAP 9. Os papéis RESTANTES foram introduzidos mais tarde e evoluíram como descrito abaixo.

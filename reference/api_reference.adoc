@@ -21,12 +21,14 @@ NOTE: Você pode acessar a documentação de referência da API REST em um dos v
 
 
 
+[[access-the-ontap-api-reference-documentation-online]]
 == Acesse a documentação de referência da API do ONTAP on-line
 
 Você pode acessar o atual https://docs.netapp.com/us-en/ontap-restapi/getting_started_with_the_ontap_rest_api.html["Referência da API REST do ONTAP"^] documentação on-line. Há também um seletor de versão disponível para acessar versões anteriores da documentação com base na versão ONTAP .
 
 
 
+[[access-the-ontap-api-reference-documentation-through-the-swagger-ui]]
 == Acesse a documentação de referência da API do ONTAP por meio da IU do Swagger
 
 Você pode acessar a documentação da API REST do ONTAP por meio da IU do Swagger em seu sistema ONTAP local.
@@ -47,5 +49,5 @@ Você deve ter o seguinte:
 +
 A página de documentação da API do ONTAP é exibida com as chamadas da API organizadas nas principais categorias de recursos na parte inferior.
 
-. Como exemplo de uma chamada de API individual, role para baixo até a categoria *cluster* e clique em *GET /cluster*.
+. Como exemplo de uma chamada de API individual, role para baixo até a categoria *cluster* e selecione *GET /cluster*.
 

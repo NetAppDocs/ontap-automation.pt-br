@@ -21,12 +21,14 @@ NOTE: link:../workflows/wf_rbac_prepare.html["Workflows de RBAC"]Consulte para o
 
 
 
+[[administrative-access]]
 == Acesso administrativo
 
 Você pode criar e gerenciar as funções do ONTAP por meio da API REST ou da interface de linha de comando. Os detalhes de acesso são descritos abaixo.
 
 
 
+[[rest-api]]
 === API REST
 
 Existem vários endpoints que podem ser usados ao trabalhar com funções RBAC e contas de usuário. Os quatro primeiros na tabela são usados para criar e gerenciar as funções. Os dois últimos são usados para criar e gerenciar contas de usuário.
@@ -58,6 +60,7 @@ TIP: Você pode acessar a documentação on-line do ONTAP link:../reference/api_
 |===
 
 
+[[command-line-interface]]
 === Interface de linha de comando
 
 Os comandos ONTAP CLI relevantes são descritos abaixo. Todos os comandos são acessados no nível do cluster por meio de uma conta de administrador.
@@ -77,6 +80,7 @@ Os comandos ONTAP CLI relevantes são descritos abaixo. Todos os comandos são a
 |===
 
 
+[[role-definitions]]
 == Definições de função
 
 Os papéis REST e tradicionais são definidos através de um conjunto de atributos.
@@ -95,12 +99,14 @@ Cada função contém um conjunto de um ou mais Privileges. Cada privilégio ide
 
 
 
+[[privileges]]
 == Privileges
 
 Uma função pode conter um ou mais Privileges. Cada definição de privilégio é uma tupla e estabelece o nível de acesso a um recurso ou operação específico.
 
 
 
+[[resource-path]]
 === Caminho do recurso
 
 O caminho do recurso é identificado como um endpoint REST ou caminho do diretório de comando/comando CLI.
@@ -113,6 +119,7 @@ Um comando CLI identifica o destino para uma função tradicional. Um diretório
 
 
 
+[[access-level]]
 === Nível de acesso
 
 O nível de acesso define o tipo de acesso que a função tem ao caminho ou comando específico do recurso. Os níveis de acesso são identificados através de um conjunto de palavras-chave predefinidas. Três níveis de acesso foram introduzidos com o ONTAP 9.6. Eles podem ser usados para papéis tradicionais e REST. Além disso, três novos níveis de acesso foram adicionados com o ONTAP 9.11,1. Esses novos níveis de acesso só podem ser usados com funções REST.
@@ -144,18 +151,21 @@ NOTE: Os níveis de acesso seguem o modelo CRUD. Com REST, isso é baseado nos m
 |===
 
 
+[[optional-query]]
 === Consulta opcional
 
 Ao criar uma função tradicional, você pode opcionalmente incluir um valor *query* para identificar o subconjunto de objetos aplicáveis para o diretório de comando ou comando.
 
 
 
+[[summary-of-the-built-in-roles]]
 == Resumo das funções incorporadas
 
 Há várias funções predefinidas incluídas no ONTAP que podem ser usadas no cluster ou no nível da SVM.
 
 
 
+[[cluster-scoped-roles]]
 === Funções de escopo do cluster
 
 Há várias funções incorporadas disponíveis no escopo do cluster.
@@ -186,6 +196,7 @@ Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-clu
 |===
 
 
+[[svm-scoped-roles]]
 === Funções com escopo do SVM
 
 Há várias funções incorporadas disponíveis no escopo da SVM. O *vsadmin* fornece acesso aos recursos mais gerais e poderosos. Existem várias funções adicionais adaptadas a tarefas administrativas específicas, incluindo:
@@ -201,6 +212,7 @@ Consulte https://docs.netapp.com/us-en/ontap/authentication/predefined-roles-svm
 
 
 
+[[comparing-the-role-types]]
 == Comparando os tipos de função
 
 Antes de selecionar uma função *REST* ou *tradicional*, você deve estar ciente das diferenças. Algumas das maneiras como os dois tipos de função podem ser comparados são descritas abaixo.
@@ -210,6 +222,7 @@ NOTE: Para casos de uso de RBAC mais avançados ou complexos, você normalmente 
 
 
 
+[[how-the-user-accesses-ontap]]
 === Como o usuário acessa o ONTAP
 
 Antes de criar uma função, é importante saber como o usuário acessará o sistema ONTAP. Com base nisso, um tipo de função pode ser determinado.
@@ -229,6 +242,7 @@ Antes de criar uma função, é importante saber como o usuário acessará o sis
 |===
 
 
+[[precision-of-the-access-path]]
 === Precisão do caminho de acesso
 
 O caminho de acesso definido para uma FUNÇÃO REST é baseado em um endpoint REST. O caminho de acesso para uma função tradicional é baseado em um comando CLI ou diretório de comando. Além disso, você pode incluir um parâmetro de consulta opcional com uma função tradicional para restringir ainda mais o acesso com base nos valores de parâmetro do comando.

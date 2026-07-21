@@ -21,6 +21,7 @@ TIP: Você deve garantir que sua versão do ONTAP ofereça suporte a todas as ch
 
 
 
+[[introduction]]
 == Introdução
 
 Um _workflow_ é uma sequência de uma ou mais etapas necessárias para realizar uma tarefa ou objetivo administrativo específico. Os fluxos de trabalho do ONTAP incluem as etapas e os parâmetros principais que você precisa para realizar cada tarefa. Eles fornecem um ponto de partida para personalizar o ambiente de automação do ONTAP.
@@ -41,12 +42,14 @@ Um fluxo de trabalho pode conter apenas uma etapa. Esses _fluxos de trabalho de 
 
 
 
+[[input-variables]]
 == Variáveis de entrada
 
 Os fluxos de trabalho são projetados para serem o mais gerais possível para que possam ser usados em qualquer ambiente ONTAP. Com isso em mente, as chamadas REST API usam variáveis nos exemplos curl e outras entradas. As chamadas de API REST podem ser facilmente adaptadas a diferentes ambientes ONTAP.
 
 
 
+[[base-url-format]]
 === Formato URL base
 
 Você pode acessar a API REST do ONTAP diretamente através do curl ou de uma linguagem de programação. Nesse caso, o URL base é diferente do URL usado ao acessar a documentação on-line do ONTAP ou o Gerenciador de sistema.
@@ -59,6 +62,7 @@ Consulte link:../get-started/access_rest_api.html["Como acessar a API REST do ON
 
 
 
+[[common-input-parameters]]
 === Parâmetros de entrada comuns
 
 Existem vários parâmetros de entrada comumente usados com a maioria das chamadas de API REST. Esses parâmetros normalmente não são descritos nos fluxos de trabalho individuais. Você deve estar familiarizado com os parâmetros. Consulte link:../rest/input_variables.html["Variáveis de entrada que controlam uma solicitação de API"] para obter mais informações.
@@ -67,6 +71,7 @@ Se forem necessários parâmetros adicionais para uma chamada de API REST espec�
 
 
 
+[[variable-format]]
 === Formato variável
 
 Os valores de ID e outras variáveis usadas com os exemplos de fluxo de trabalho são opacos e podem variar com cada cluster ONTAP. Para melhorar a legibilidade dos exemplos, os valores reais não são usados. Variáveis são usadas em vez disso. Esta abordagem, baseada em um formato consistente e conjunto de nomes reservados, tem vários benefícios, incluindo:
@@ -95,6 +100,7 @@ Aqui estão algumas das palavras-chave variáveis comuns. Esta lista não é exa
 |===
 
 
+[[json-input-examples]]
 === Exemplos de entrada JSON
 
 Algumas das chamadas de API REST, como aquelas que usam POST ou PATCH, exigem entrada JSON no corpo da solicitação. Os exemplos de entrada JSON são apresentados separadamente dos exemplos curl para maior clareza. Você pode usar os exemplos de entrada JSON com uma das técnicas descritas abaixo.
@@ -107,12 +113,14 @@ Primeiro você precisa copiar e colar o exemplo curl em um shell terminal. Em se
 
 
 
+[[authentication-options]]
 == Opções de autenticação
 
 A técnica de autenticação primária disponível para a API REST é a autenticação básica HTTP. A partir do ONTAP 9.14, você também tem a opção de usar a estrutura Open Authorization (OAuth 2,0) com autenticação e autorização baseadas em token.
 
 
 
+[[http-basic-authentication]]
 === Autenticação básica HTTP
 
 Ao usar a autenticação básica, as credenciais do usuário devem ser incluídas em cada solicitação HTTP. Existem duas opções para enviar as credenciais.
@@ -145,6 +153,7 @@ Você precisa substituir as credenciais apropriadas para o seu ambiente. As cred
 
 
 
+[[oauth-2-0]]
 === OAuth 2,0
 
 Ao usar o OAuth 2,0, você precisa solicitar um token de acesso a um servidor de autorização externo e incluí-lo em cada solicitação HTTP. Os passos básicos de alto nível são descritos abaixo. Consulte também https://docs.netapp.com/us-en/ontap/authentication/overview-oauth2.html["Visão geral da implementação do ONTAP OAuth 2,0"^] para obter mais detalhes sobre o OAuth 2,0 e como usá-lo com o ONTAP.
@@ -169,6 +178,7 @@ Depois de obter um token de acesso, você pode construir um cabeçalho de autori
 
 
 
+[[using-the-examples-with-bash]]
 == Usando os exemplos com Bash
 
 Se você usar os exemplos de cURL de fluxo de trabalho diretamente, você deve atualizar as variáveis que eles contêm com os valores apropriados para o seu ambiente. Você pode editar manualmente os exemplos ou confiar no shell Bash para fazer a substituição por você, conforme descrito abaixo.

@@ -18,6 +18,7 @@ O NetApp fornece um kit de ferramentas para aplicativos do PowerShell que você 
 
 
 
+[[overview]]
 == Visão geral
 
 O PowerShell é outra opção para automatizar a administração dos clusters do ONTAP.
@@ -30,6 +31,7 @@ O kit de ferramentas do NetApp.ONTAP PowerShell inclui o módulo do PowerShell p
 
 
 
+[[download-and-install]]
 == Baixe e instale
 
 Há duas opções disponíveis para baixar e instalar o kit de ferramentas do NetApp ONTAP PowerShell.

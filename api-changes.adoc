@@ -18,6 +18,7 @@ NetApp continua aprimorando e atualizando a API REST do ONTAP a cada nova versã
 
 
 
+[[changes-to-existing-ontap-rest-api-calls]]
 == Alterações nas chamadas de API REST do ONTAP existentes
 
 Alterações nas chamadas da API REST do ONTAP existentes, como endpoints e parâmetros, podem afetar o software que utiliza a API. Na maioria das situações, dependendo do seu ambiente, essas são consideradas _alterações incompatíveis_. Você deve revisar a lista na tabela abaixo para determinar se há algum impacto no seu ambiente de automação. Cada entrada inclui o endpoint ou área da API aplicável, uma descrição da alteração e a versão do ONTAP em que foi introduzida.
@@ -35,6 +36,7 @@ Alterações nas chamadas da API REST do ONTAP existentes, como endpoints e par�
 |===
 
 
+[[additional-rest-api-usage-considerations]]
 == Considerações adicionais sobre o uso da API REST
 
 Além de alterações disruptivas ou que quebrem a compatibilidade, existem diversas outras considerações ao usar a API REST do ONTAP. Há diferentes tipos de problemas, incluindo a introdução de chamadas de API novas ou alternativas, bem como alterações no processamento interno do ONTAP. Cada entrada inclui o endpoint ou área da API aplicável, uma descrição do comportamento e a versão do ONTAP em que foi introduzida.
@@ -51,6 +53,7 @@ Além de alterações disruptivas ou que quebrem a compatibilidade, existem dive
 |===
 
 
+[[ontap-rest-api-reference-documentation-errors]]
 == Erros de documentação de referência da API REST do ONTAP
 
 À medida que a NetApp aprimora e atualiza a API REST do ONTAP, às vezes erros podem ser introduzidos na documentação de referência online. Esses erros podem gerar confusão ao usar a API, mas geralmente não afetam ou interrompem seu software de automação do ONTAP ou ambiente. Você deve revisar a lista de erros na tabela abaixo. Isso ajudará você a entender e navegar melhor pela documentação de referência da API REST do ONTAP. Cada entrada inclui o endpoint ou área da API aplicável, uma descrição do erro e a versão do ONTAP em que ele foi introduzido.

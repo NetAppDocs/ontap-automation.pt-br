@@ -22,6 +22,7 @@ A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e 
 
 
 
+[[features-and-benefits]]
 == Caraterísticas e benefícios
 
 Você pode usar a biblioteca cliente Python para desenvolver rapidamente código robusto para automatizar a administração de suas implantações do ONTAP. Ele fornece vários serviços subjacentes, incluindo:
@@ -34,6 +35,7 @@ Você pode usar a biblioteca cliente Python para desenvolver rapidamente código
 
 
 
+[[packages-and-documentation]]
 == Pacotes e documentação
 
 O nome do pacote de biblioteca cliente Python é _NetApp-ONTAP_. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para a biblioteca cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem 9,6.1, 9,6.2 e 9,7.1.
@@ -43,8 +45,13 @@ Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI com documentação 
 .Lista de pacotes e documentação
 [%collapsible]
 ====
+.ONTAP 9.19.1
+* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.19.1"^]
+* https://library.netapp.com/ecmdocs/ECMLP3383665/html/index.html["NetApp PCL documentação para 9.19.1"^]
+
+
 .ONTAP 9.18.1
-* https://pypi.org/project/netapp-ontap/["PyPI: NetApp ONTAP 9.18.1"^]
+* https://pypi.org/project/netapp-ontap/9.18.1.0["PyPI: NetApp ONTAP 9.18.1"^]
 * https://library.netapp.com/ecmdocs/ECMLP3364865/html/index.html["NetApp PCL documentação para 9.18.1"^]
 
 
@@ -111,6 +118,7 @@ Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI com documentação 
 ====
 
 
+[[code-samples]]
 == Amostras de código
 
 O NetApp mantém um repositório do GitHub com amostras de código e outras informações úteis. Você pode navegar para a pasta _examples_ para acessar amostras usando a biblioteca cliente Python. Consulte os seguintes locais no GitHub para obter detalhes:

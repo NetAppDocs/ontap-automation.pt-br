@@ -21,6 +21,7 @@ Este fluxo de trabalho inclui as etapas típicas necessárias para criar uma FUN
 
 
 
+[[step-1-list-the-data-svms-in-the-cluster]]
 == Etapa 1: Listar os SVMs de dados no cluster
 
 Execute a seguinte chamada de API REST para listar os SVMs no cluster. O UUID e o nome de cada SVM são fornecidos na saída.
@@ -49,6 +50,7 @@ Selecione o SVM desejado na lista onde você criará o novo usuário e a funçã
 
 
 
+[[step-2-list-the-users-defined-to-the-svm]]
 == Etapa 2: Listar os usuários definidos para o SVM
 
 Execute a seguinte chamada à API REST para listar os usuários definidos no SVM selecionado. Você pode identificar o SVM por meio do parâmetro proprietário.
@@ -77,6 +79,7 @@ Com base nos usuários já definidos no SVM, escolha um nome exclusivo para o no
 
 
 
+[[step-3-list-the-rest-roles-defined-to-the-svm]]
 == Etapa 3: Listar as funções REST definidas no SVM
 
 Execute a seguinte chamada à API REST para listar as funções definidas no SVM selecionado. Você pode identificar o SVM por meio do parâmetro proprietário.
@@ -106,6 +109,7 @@ Com base nas funções já definidas no SVM, escolha um nome exclusivo para a no
 
 
 
+[[step-4-create-a-custom-rest-role]]
 == Passo 4: Crie uma FUNÇÃO REST personalizada
 
 Execute a seguinte chamada de API REST para criar uma FUNÇÃO REST personalizada no SVM. A função inicialmente tem apenas um privilégio que estabelece um acesso padrão de *none* para que todo o acesso seja negado.
@@ -149,6 +153,7 @@ Opcionalmente, execute a etapa 3 novamente para exibir a nova função. Você ta
 
 
 
+[[step-5-update-the-role-by-adding-more-privileges]]
 == Passo 5: Atualize a função adicionando mais Privileges
 
 Execute a seguinte chamada de API REST para modificar a função adicionando Privileges conforme necessário.
@@ -199,6 +204,7 @@ Opcionalmente, execute a etapa 3 novamente para exibir a nova função. Você ta
 
 
 
+[[step-6-create-a-user]]
 == Passo 6: Crie um usuário
 
 Execute a seguinte chamada de API REST para criar uma conta de usuário. A função *dprole1* criada acima está associada ao novo usuário.
