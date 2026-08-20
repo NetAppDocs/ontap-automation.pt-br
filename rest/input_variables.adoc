@@ -193,10 +193,10 @@ Observe o seguinte:
 [[pagination-when-retrieving-objects-in-a-collection]]
 == Paginação ao recuperar objetos em uma coleção
 
-Ao emitir uma chamada de API usando GET para acessar uma coleção de objetos do mesmo tipo, o ONTAP tenta retornar o maior número possível de objetos com base em duas restrições. Você pode controlar cada uma dessas restrições usando parâmetros de consulta adicionais na solicitação. A primeira restrição alcançada para uma SOLICITAÇÃO GET específica termina a solicitação e, portanto, limita o número de Registros retornados.
+Ao fazer uma chamada de API usando GET para acessar uma coleção de objetos do mesmo tipo, o ONTAP tenta retornar o máximo de objetos possível com base em duas restrições (número máximo de objetos, tempo usado para recuperar os objetos). Você pode controlar cada uma delas usando parâmetros de consulta adicionais na solicitação. A primeira restrição atingida para uma solicitação GET específica encerra a solicitação e, portanto, limita o número de registros retornados. Se uma solicitação terminar antes de iterar sobre todos os objetos, a resposta contém o link necessário para recuperar o próximo lote de registros.
 
 
-NOTE: Se uma solicitação terminar antes de iterar todos os objetos, a resposta conterá o link necessário para recuperar o próximo lote de Registros.
+TIP: Se zero registros forem retornados em uma chamada à API, sem nenhum próximo link, isso pode indicar que ocorreu um tempo limite antes que qualquer registro pudesse ser obtido. Nesse caso, você pode tentar novamente a solicitação usando um valor  `return_timeout`maior ou um valor  `max_records`menor (ou ambos).
 
 Limitando o número de objetos:: Por padrão, o ONTAP retorna um máximo de 10.000 objetos para uma SOLICITAÇÃO GET. Você pode alterar esse limite usando o `max_records` parâmetro de consulta. Por exemplo:
 +

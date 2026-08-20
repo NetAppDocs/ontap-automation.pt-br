@@ -16,12 +16,6 @@ summary: 'Antes de migrar para a API REST do ONTAP a partir da API ONTAPI (ZAPI)
 [role="lead"]
 A API ONTAPI (ZAPI) é o conjunto original de chamadas proprietárias incluído no software NetApp ONTAP .  A API é fornecida pelo Network Manageability SDK e oferece suporte à automação de tarefas de administração e gerenciamento de armazenamento de dados.  Se estiver usando o ONTAPI, você deve planejar sua migração para a API REST do ONTAP para aproveitar o conjunto de recursos expandidos do ONTAP disponível com a API REST.
 
-.Informações relacionadas
-* link:../get-started/ontap_automation_options.html["Entenda as opções de automação do ONTAP"]
-* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 adiamento do anúncio de fim de disponibilidade do ONTAPI (ZAPI)"^]
-* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Perguntas frequentes sobre a transformação da API REST do ONTAP para CPC"^]
-
-
 
 
 [[general-design-differences]]
@@ -57,13 +51,21 @@ O caminho do recurso base para o acesso CLI é `/private/cli`. Consulte a págin
 [[changes-to-snapdiff-availability-in-ontapi]]
 == Alterações na disponibilidade SnapDiff no ONTAPI
 
-A partir do ONTAP 9.10,1, as chamadas SnapDiff v1 e v2 ONTAPI não podem ser invocadas. Qualquer aplicativo de terceiros que invoca chamadas SnapDiff v1 ou v2 ONTAPI não funcionará a partir do ONTAP 9.10,1. Os usuários do ONTAP devem verificar se seu aplicativo de backup suporta as chamadas REST do SnapDiff v3 antes de atualizar para o ONTAP 9.10,1.
-
-A disponibilidade da API SnapDiff em versões do ONTAP é definida da seguinte forma:
+SnapDiff v1 e v2 são baseadas na estrutura de gerenciamento ONTAPI (ZAPI) e há algumas limitações de usabilidade com certas versões do ONTAP. A API SnapDiff v3 não utiliza ONTAPI e é compatível com o ONTAP 9.8 e versões posteriores. A disponibilidade da API SnapDiff nas versões do ONTAP é definida da seguinte forma:
 
 * ONTAP 9.7 e versões anteriores: V1 e v2 (apenas ONTAPI)
-* ONTAP 9.8 – 9,9.1: V1, v2 e v3 (tanto o ONTAPI quanto O REST API)
-* ONTAP 9.10,1 e posterior: Somente V3 (somente API REST)
+* ONTAP 9.8 e versões posteriores: v1, v2 e v3. Algumas limitações se aplicam; consulte a  https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP["Perguntas frequentes: SnapDiff suporte no ONTAP"^] para obter mais detalhes sobre o suporte ao SnapDiff com base na versão do ONTAP.
 
 
-O suporte foi retirado em diferentes pontos em cada lançamento. Isso inclui o ONTAP 9.10.1 P11 e posterior, 9.11.1 P7 e posterior e 9.12.1 GA e posterior. Consulte https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de versão do ONTAP"^] para obter mais informações.
+Você deve verificar se seus aplicativos de backup oferecem suporte ao SnapDiff e estar ciente de quaisquer limitações de interoperabilidade com base na versão do ONTAP que você está usando. Veja também o  https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["Notas de versão do ONTAP"^] para mais informações.
+
+
+
+[[related-information]]
+== Informações relacionadas
+
+* link:../get-started/ontap_automation_options.html["Entenda as opções de automação do ONTAP"]
+* https://mysupport.netapp.com/info/communications/ECMLP2880232.html["CPC-00410 adiamento do anúncio de fim de disponibilidade do ONTAPI (ZAPI)"^]
+* https://kb.netapp.com/onprem/ontap/dm/REST_API/FAQs_on_ZAPI_to_ONTAP_REST_API_transformation_for_CPC_(Customer_Product_Communiques)_notification["Perguntas frequentes sobre a transformação da API REST do ONTAP para CPC"^]
+* https://kb.netapp.com/on-prem/ontap/DP/SnapDiff/SnapDiff-KBs/FAQ_SnapDiff_Support_in_ONTAP["Perguntas frequentes: SnapDiff suporte no ONTAP"^]
+
