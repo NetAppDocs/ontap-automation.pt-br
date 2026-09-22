@@ -4,7 +4,7 @@ permalink: get-started/first_call.html
 keywords: first REST API call, test REST API 
 summary: Você pode emitir um comando curl para começar a usar a API REST do ONTAP e confirmar sua disponibilidade. 
 ---
-= Sua primeira chamada da API REST do ONTAP
+= Faça sua primeira chamada à API REST do ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

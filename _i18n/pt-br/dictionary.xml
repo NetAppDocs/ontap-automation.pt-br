@@ -133,7 +133,6 @@
   <block id="74eb178224c5fa701fbcd96998feaafe" category="inline-link">ONTAP 9.9,1</block>
   <block id="2abfff2974f589f7a217325f304e0ec5" category="inline-link">ONTAP 9,8</block>
   <block id="e6a021828131c610a8d1434615483b06" category="summary">Antes de migrar para a API REST do ONTAP a partir da API ONTAPI (ZAPI) ou da CLI do ONTAP, há vários problemas que você deve considerar.</block>
-  <block id="f130aae767c73fd9684158ccdddb8f15" category="doc">Considerações sobre migração</block>
   <block id="1b3d9b05305989cf6898b061409738ed" category="section-title">Diferenças gerais de design</block>
   <block id="ee083ff11ffc430b7230624e8985e88c" category="inline-link-macro">Variáveis de entrada que controlam uma solicitação de API</block>
   <block id="19ec08da81a826d919d64ab860845c04" category="inline-link-macro">Referência da API</block>
@@ -1718,7 +1717,6 @@
   <block id="34a5cab8543c50812e1e9045207ef342" category="sidebar">ONTAP Select docs</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">O que há de novo</block>
   <block id="466b9c64436468f52860809312c8a835" category="sidebar">Entenda as opções de automação</block>
-  <block id="45cd4354f07a1ab359a1cc263ed79868" category="sidebar">Como acessar a API REST</block>
   <block id="bbd1bf9de2e4077d7d60ab5cd0b761b0" category="sidebar">Interpretar uma resposta da API</block>
   <block id="ef3f9b4af9353a465dd6a94d006c73a7" category="sidebar">Ferramentas de software</block>
   <block id="8cd67c079826033809b33b6f3ac2da9a" category="sidebar">Script para recuperar a configuração do cluster</block>
@@ -1988,4 +1986,8 @@
   <block id="b6d0a2a842f978459f1bd6e49da11974" category="doc">Saiba mais sobre como migrar para a API REST do ONTAP</block>
   <block id="249dde32b5b3415eea7043c85ab74e06" category="admonition">Para versões do ONTAP anteriores à 9.9.1, você pode automatizar a administração das permissões SACL e DACL usando o recurso de passagem direta da CLI. Consulte <block ref="4cdee464b402508aee95b27a583991b8" category="inline-link-macro-rx"></block> para mais informações.</block>
   <block id="76372f20d2a63611bf93c8514dcab6f2" category="sidebar">Saiba mais sobre migração</block>
+  <block id="2bba6f8cd1f39e40fa1f0d47e2b47620" category="doc">Formas de acessar a ONTAP REST API</block>
+  <block id="3c3bee5464454cc8c3e907834e3d4fda" category="doc">Faça sua primeira chamada à API REST do ONTAP</block>
+  <block id="bda838b652b88a842b6842d75ef9fd57" category="sidebar">Formas de acessar a API REST</block>
+  <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">Saiba mais sobre migração</block>
 </blocks>
