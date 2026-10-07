@@ -1885,7 +1885,6 @@
   <block id="7bafad8d0c182e2b6b31ac4018784823" category="list-text"><block ref="b91c0d7b0884fbccd6e11fc23dddcee7" category="inline-link-macro-rx"></block>.</block>
   <block id="35ae08a314ffffc02580e3c3fbfad924" category="section-title">Caraterísticas e benefícios</block>
   <block id="075eb829f6ad7e0f3047f5e1b0db251b" category="example-title">Lista de pacotes e documentação</block>
-  <block id="04e844fe21e462953e1fe26128de4115" category="doc">Script para recuperar a configuração do cluster usando a biblioteca cliente Python</block>
   <block id="408720b5ef7b85489771db314855817a" category="summary">A biblioteca cliente NetApp ONTAP Python é um pacote que você pode instalar e usar para escrever rapidamente scripts que acessam a API REST do ONTAP. Você precisará preparar o ambiente de tempo de execução local antes de usá-lo. Você pode usar o utilitário _pip_ para instalar o pacote a partir do site Python Package Index (PyPI).</block>
   <block id="45cbb31cae972c198bf60a227158efb0" category="paragraph">O nome do pacote de biblioteca cliente Python é _NetApp-ONTAP_. A versão associada ao pacote é uma combinação dos números de versão maior e menor do ONTAP a partir da qual a biblioteca foi gerada, juntamente com uma versão menor para a biblioteca cliente dentro da versão do ONTAP. Por exemplo, os números de versão válidos incluem 9,6.1, 9,6.2 e 9,7.1.</block>
   <block id="cfa5daa2060894d0e2b77ee5e70e0e94" category="paragraph">Cada versão do ONTAP que começa com 9,6 tem um pacote PyPI com documentação associada. Os requisitos de instalação estão incluídos em cada pacote e especificam versões das bibliotecas de suporte, como Python, requisições, tiests-toolbelt e marshmallow.</block>
@@ -1991,4 +1990,5 @@
   <block id="bda838b652b88a842b6842d75ef9fd57" category="sidebar">Formas de acessar a API REST</block>
   <block id="fe0515a8af283239225745febd13b5b5" category="sidebar">Saiba mais sobre migração</block>
   <block id="f84e398074d51e73de507e79d4754e19" category="doc">Recursos adicionais para a API REST do ONTAP</block>
+  <block id="1ead7860d2e1f85551e49767e066d13c" category="doc">Recupere a configuração do cluster usando a biblioteca cliente Python do ONTAP</block>
 </blocks>
